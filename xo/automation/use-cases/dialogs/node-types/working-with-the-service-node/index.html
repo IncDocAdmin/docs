@@ -16069,14 +16069,18 @@
 <p>Under <strong>Redaction of PII Data</strong>, you can specify the format for presenting this API response containing PII data in messages and post-processing:</p>
 <ul>
 <li>
-<p>De-identify PII data when presenting it to the user or in post-processing: The redacted value is shown in messages and post-processing.</p>
+<p>De-identify PII data when presenting it to the user or in post-processing: The redacted value is used in messages and post-processing.</p>
 </li>
 <li>
-<p>Use the original value of the PII data while presenting it to the user or in post-processing: The original value is shown in messages and post-processing.</p>
-<p>For more information, see <a href="../../../../../app-settings/advanced-settings/pii-data-masking" target="_blank">Redacting Personally Identifiable Information </a>.<br />
-       <a class="glightbox" href="../images/service-node-img11-pii-redaction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"></a></p>
+<p>Use the original value of the PII data while presenting it to the user or in post-processing: The original value is used in messages and post-processing.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These options only affect the respective instance during runtime or live interaction. PII data is always redacted/masked in chat history and internal logs, irrespective of the option selected here.</p>
+</div>
 </li>
 </ul>
+<p>For more information, see <a href="../../../../../app-settings/advanced-settings/pii-data-masking" target="_blank">Redacting Personally Identifiable Information </a>.<br />
+       <a class="glightbox" href="../images/service-node-img11-pii-redaction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"></a> </p>
 </li>
 </ul>
 </li>
