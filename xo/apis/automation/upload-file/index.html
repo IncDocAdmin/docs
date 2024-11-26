@@ -5915,11 +5915,53 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/asana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asana
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../searchai/content-sources/connectors/azure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Azure Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/box/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Box
   </span>
   
 
@@ -6209,6 +6251,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/onedrive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OneDrive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../searchai/content-sources/connectors/oracle/" class="md-nav__link">
         
   
@@ -6277,6 +6340,27 @@
   
   <span class="md-ellipsis">
     SharePoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/wordpress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WordPress
   </span>
   
 
@@ -12263,16 +12347,85 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../rate-limit/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3_1_2" id="__nav_8_3_1_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Rate Limits
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Rate Limits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rate-limit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automation AI
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rate-limit-ccai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact Center AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -15595,10 +15748,10 @@
 
 
 <h1 id="upload-file-api">Upload File API<a class="headerlink" href="#upload-file-api" title="Permanent link">&para;</a></h1>
-<p>To upload the <em>botdefinition</em>, <em>botconfig</em>, and <em>botfunction</em> files (if any) and the <strong>bot</strong> icon to the local server. Additionally, the API fetches the <em>file ID</em> to be used in <a href="../import-bot-as-new-bot">Import Bot API</a>.</p>
+<p>To upload the <em>botdefinition</em>, <em>botconfig</em>, and <em>botfunction</em> files (if any) and the <strong>bot</strong> icon to the local server. You can also use this API to upload files for ingestion using Search AI. The API returns the file ID in response which is required in Import Bot API or Ingest Data API for further actions on the file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You need to upload the files separately. You can upload a file by signing with any app created by the account administrator.</p>
+<p>To upload  botdefinition, botconfig, and botfunction files, you need to upload the files separately. You can upload a file by signing with any app created by the account administrator.</p>
 </div>
 <table>
   <tr>
@@ -15808,6 +15961,34 @@ See <a href="../api-introduction/#generating-the-jwt-token">How to generate the 
    <td><strong>fileExtension</strong>
    </td>
    <td>.json or .csv
+   </td>
+  </tr>
+</table>
+
+<p>For Data Ingestion in Search AI</p>
+<table>
+  <tr>
+   <td><strong>PARAMETER</strong>
+   </td>
+   <td><strong>DESCRIPTION</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>file</strong>
+   </td>
+   <td>Upload the file to be ingested into the Search AI application
+   </td>
+  </tr>
+  <tr>
+   <td><strong>fileContext</strong>
+   </td>
+   <td>findly
+   </td>
+  </tr>
+  <tr>
+   <td><strong>fileExtension</strong>
+   </td>
+   <td>pdf, docx, txt, pptx
    </td>
   </tr>
 </table>
