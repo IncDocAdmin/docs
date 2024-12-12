@@ -835,6 +835,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v106-december-12-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.0.6 December 12, 2024
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v105-november-20-2024" class="md-nav__link">
     <span class="md-ellipsis">
       v1.0.5 November 20, 2024
@@ -2306,11 +2315,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/open-source-models/model-optimization/" class="md-nav__link">
+      <a href="../../models/open-source-models/importing-models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Model Optimization Techniques
+    Import a model
   </span>
   
 
@@ -2319,6 +2328,46 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Deploy a model
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Deploy a model
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -2362,6 +2411,56 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/open-source-models/model-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Optimization Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/open-source-models/open-source-summary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open-Source models overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
               
                 
   
@@ -2381,10 +2480,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_4_3_4" id="__nav_4_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_3_5" id="__nav_4_3_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2395,8 +2494,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_5">
             <span class="md-nav__icon md-icon"></span>
             Model Settings
           </label>
@@ -3498,6 +3597,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v106-december-12-2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.0.6 December 12, 2024
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v105-november-20-2024" class="md-nav__link">
     <span class="md-ellipsis">
       v1.0.5 November 20, 2024
@@ -3562,6 +3670,30 @@
 
 <h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h1>
 <p>This document provides information on the feature updates and enhancements introduced in the recent GALE releases.</p>
+<h2 id="v106-december-12-2024">v1.0.6 December 12, 2024<a class="headerlink" href="#v106-december-12-2024" title="Permanent link">&para;</a></h2>
+<p><u> Minor Release </u></p>
+<p>This update includes new features, feature enhancements, and security enhancements, summarized below.</p>
+<p><strong>New Features</strong></p>
+<ul>
+<li>Export and import agents: The new agent export functionality allows users to export GALE agents as self-contained packages. Users can import the agents from the files, preserving node configurations, variables, and settings.</li>
+<li>Increased token limits and hyper-parameter changes for external models.</li>
+<li>Better validation for open-source model files under 500MB to streamline imports (files over 500MB continue to use server-side validation).</li>
+<li>Added support for Llama3.2 (1B, 3B) and Mistral-Nemo-12b open-source and fine-tuned models.</li>
+<li>Added support for using IAM roles to access AWS services like S3 and KMS, in addition to the existing key-based authentication for customers running GALE on an AWS VPC environment.</li>
+</ul>
+<p><strong>Feature Enhancements</strong></p>
+<ul>
+<li>Improved prompt API endpoint: The updated instructions in the prompt API endpoint help users properly set up and use the endpoint.</li>
+<li>Improved labels for credits and runs.</li>
+<li>Show deployment history after the first model deployment attempt, regardless of the deployment status.</li>
+</ul>
+<p><strong>Security Enhancements</strong></p>
+<ul>
+<li>Fixed stored XSS vulnerability in open-source model.</li>
+<li>Resolved security issues found in v1.0.4 scan.</li>
+</ul>
+<hr>
+
 <h2 id="v105-november-20-2024">v1.0.5 November 20, 2024<a class="headerlink" href="#v105-november-20-2024" title="Permanent link">&para;</a></h2>
 <p><u> Minor Release </u></p>
 <p>This update includes new features, improvements, and bug fixes, summarized below.</p>
