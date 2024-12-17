@@ -7502,6 +7502,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../contactcenter/routing/contact-center-ai-routing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact Center AI Routing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../contactcenter/routing/queues/queue-management/" class="md-nav__link">
         
   
@@ -12972,96 +12993,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2_2_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_3_2_2_6" id="__nav_8_3_2_2_6_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tutorials
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_8_3_2_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_3_2_2_6">
-            <span class="md-nav__icon md-icon"></span>
-            Tutorials
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/widget-sdk/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Widget SDK Tutorial
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/web-sdk/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Web SDK Tutorial
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -13252,117 +13183,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2_3_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_3_2_3_8" id="__nav_8_3_2_3_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tutorials
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_8_3_2_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_3_2_3_8">
-            <span class="md-nav__icon md-icon"></span>
-            Tutorials
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/blue-prism/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    BotKit - Blue Prism
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/flight-search-sample-bot/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    BotKit - Flight Search Sample VA
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../sdk/tutorials/agent-transfer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    BotKit - Agent Transfer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -15940,7 +15760,7 @@
 
 
 <h1 id="get-faqs-kg">Get FAQs – KG<a class="headerlink" href="#get-faqs-kg" title="Permanent link">&para;</a></h1>
-<p>To get a list of questions and nodes under the Knowledge task.</p>
+<p>To get a list of questions and nodes under the Knowledge task. This API supports parameters like  ktId and parentId (node ID).</p>
 <table>
   <tr>
    <td><strong>Method</strong>
@@ -16646,6 +16466,10 @@ You can retrieve the <em>parentId</em> from the response of the <em>GetFAQs</em>
 </span><span id="__span-1-542"><a id="__codelineno-1-542" name="__codelineno-1-542" href="#__codelineno-1-542"></a><span class="w">    </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span>
 </span><span id="__span-1-543"><a id="__codelineno-1-543" name="__codelineno-1-543" href="#__codelineno-1-543"></a><span class="p">}</span>
 </span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Refer to Get <a href="../get-faqs-from-knowledge-task-V2/">FAQs – KG V2</a>  which supports the Parameters: botId, language, mode (configured/published), and nodeName.</p>
+</div>
 
 
 
