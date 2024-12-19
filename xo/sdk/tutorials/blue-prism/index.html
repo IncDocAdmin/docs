@@ -15845,7 +15845,7 @@
 <h3 id="responses-from-blue-prism">Responses from Blue Prism<a class="headerlink" href="#responses-from-blue-prism" title="Permanent link">&para;</a></h3>
 <p>Response from Blue Prism services is received by the BotKit SDK and then it is passed on to your bot’s dialog task. The response is stored in the <em>context object</em> against the predefined key '<strong>ResponseFromBluePrism</strong>'. You may configure Blue Prism services to respond either in ‘<strong>sync</strong>‘ or ‘<strong>async</strong>‘ modes. In the case of ‘async’ mode, your Blue Prism services should call the following URL to post the response: <code>http://&lt;host&gt;/sdk/blueprismConnector/&lt;requestId&gt;</code></p>
 <ul>
-<li><host> refers to the environment of your bots. Example: bots.kore.ai</li>
+<li><host> refers to the environment of your bots. Example: platform.kore.ai</li>
 <li><requestId> refers to the unique reference number associated with the request made to the Blue Prism service from your bots</li>
 </ul>
 <p>Post processing the Webhook node, the platform will resume the task from that point forward and the dialog will be executed as per the regular conversation flow. As the Blue Prism response is present in the dialog’s context, you may use it for defining conversation flows, customizing responses to the end users, etc.</p>
