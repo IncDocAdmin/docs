@@ -1,15 +1,4 @@
-<script>
 
-    var link = document.createElement("link");
-    link.setAttribute("rel", "icon");
-    link.setAttribute("href", "../images/Kore_Black.svg");
-    
-    var head = document.getElementsByTagName("head")[0];
-    head.appendChild(link);
-    
-    </script>
-<div class="kore-home-cntr gale">
-    
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -22,23 +11,25 @@
       
       
       
+        <link rel="prev" href="../introduction/">
       
-        <link rel="next" href="../getting-started/introduction/">
+      
+        <link rel="next" href="../accessing-ai-for-work/">
       
       
-      <link rel="icon" href="../images/Kore_Black.svg">
+      <link rel="icon" href="../../images/Kore_Black.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>AI for Work - Kore ai Docs</title>
+        <title>Setup Guide - Kore ai Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -57,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra_kore.css">
+      <link rel="stylesheet" href="../../stylesheets/extra_kore.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -76,7 +67,7 @@
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -85,7 +76,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -102,6 +93,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#ai-for-work-setup-guide" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -211,7 +207,7 @@
 
     <!-- Link to home -->
     <!-- <a
-      href=".."
+      href="../.."
       title="Kore ai Docs"
       class="md-header__button md-logo"
       aria-label="Kore ai Docs"
@@ -239,7 +235,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AI for Work
+              Setup Guide
             
           </span>
         </div>
@@ -453,7 +449,6 @@
     <div class="md-container" data-md-component="container">
       
       
-      
         
           
             
@@ -464,11 +459,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../home/" class="md-tabs__link">
         
   
     
@@ -483,11 +476,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../getting-started/introduction/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../introduction/" class="md-tabs__link">
           
   
   Getting Started
@@ -505,7 +500,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../rag-agents/default-rag/" class="md-tabs__link">
+        <a href="../../rag-agents/default-rag/" class="md-tabs__link">
           
   
   RAG Agents
@@ -523,7 +518,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../custom-agents/overview/" class="md-tabs__link">
+        <a href="../../custom-agents/overview/" class="md-tabs__link">
           
   
   Custom Agents
@@ -541,7 +536,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../pre-built-agents/overview/" class="md-tabs__link">
+        <a href="../../pre-built-agents/overview/" class="md-tabs__link">
           
   
   Pre-built Agents
@@ -559,7 +554,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../pre-built-solutions/overview/" class="md-tabs__link">
+        <a href="../../pre-built-solutions/overview/" class="md-tabs__link">
           
   
   Pre-built Solutions
@@ -577,7 +572,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../analytics/overview/" class="md-tabs__link">
+        <a href="../../analytics/overview/" class="md-tabs__link">
           
   
   Analytics
@@ -595,7 +590,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../admin-overview/" class="md-tabs__link">
+        <a href="../../admin-overview/" class="md-tabs__link">
           
   
   Administration
@@ -612,751 +607,6 @@
           
         
       
-    
-      <!-- Additional styles for landing page -->
-      <style>
-    
-        /* Application header should be static for the landing page */
-        .md-header {
-          position: initial;
-        }
-    
-        /* Remove spacing, as we cannot hide it completely */
-        .md-main__inner {
-          margin: 0;
-        }
-    
-        /* Hide main content for now */
-        .md-content {
-          display: none;
-        }
-    
-        /* Hide table of contents */
-        @media screen and (min-width: 60em) {
-          .md-sidebar--secondary {
-            display: none;
-          }
-        }
-    
-        /* Hide navigation */
-        @media screen and (min-width: 76.25em) {
-          .md-sidebar--primary {
-            display: none;
-          }
-        }
-      </style>
-    
-      <!-- Hero for landing page -->
-        <style>
-      /* Banner styles start */
-        .mdc-main-banner{
-            background-image: url(assets/mdc-banner.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 110px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;            
-        }
-        [data-md-color-scheme=slate] .mdc-main-banner {
-            background-image: none;
-            background-color: transparent;
-        }
-        .mdc-main-banner h1{
-            color: var(--md-default-fg-color--light);
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 32px;
-            margin: 0px;
-        }
-        /* Banner styles end */
-
-
-        /* Banner search styles start */
-        .mdc-search{
-            width: 524px;
-            margin: auto;
-            position: relative;
-            transform: translateY(-20px);
-        }
-        .mdc-search-input{
-            padding: 11px 18px 11px 42px;
-            border-radius: 9.038px;
-            border: 0px solid var(--gray-300, #D0D5DD);
-            background: var(--base-white, #FFF);
-            box-shadow: 0px 1.13px 2.259px 0px rgba(16, 24, 40, 0.05);
-            outline: 0px;
-            width: 100%;
-        }
-        .mdc-search-icon{
-            position: absolute;
-            top: 0;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: default;
-            width: 54px;
-        }
-        /* Banner search styles end */
-
-         /* Explore section styles start */
-        .mdc-explore-wrapper{
-            display: flex;
-            justify-content: center;
-            margin-top: 24px;
-        }
-        .mdc-explore-block{
-            display: flex;
-            padding: var(--spacing-sm, 8px) 16px;
-            gap: 16px;
-            border-radius: 66px;
-            border: 1px solid var(--gray-200, #EAECF0);
-            background: var(--base-white, #FFF);
-            align-items: center;
-        }
-        .mdc-explore-block .mdc-explore-block-info{
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-        .mdc-explore-block .explore-icon{
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: linear-gradient(33deg, #9747FF -0.23%, #8DCFFF 94.28%);
-        }
-        .explore-content{
-            color: var(--gray-500, #667085);
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-        }
-        .explore-content span{
-            color: var(--gray-900, #0000008a);
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 20px;
-            margin-right: 8px;
-        }
-        .mdc-explore-block-action span{
-            color: var(--md-typeset-a-color);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 20px; 
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-        }
-        /* Explore section styles End */
-
-        /* Services section styles start */
-        .mdc-services{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            grid-gap: 14px;
-            margin-top: 14px;
-            justify-content: space-between;
-        }
-        .mdc-services-block{
-            display: flex;
-            border-radius: var(--radius-md, 8px);
-            padding: 14px;
-            border: 1px solid var(--gray-200, #EAECF0);
-            background: var(--base-white, #FFF);
-            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
-            gap: 14px;
-            cursor: pointer;
-        }
-
-        .mdc-services-block:hover{
-            background: #e9f2ff47;
-        }
-        .mdc-services-title{
-            color: var(--gray-900, #0000008a);
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 18px;
-            margin: 0;
-        }
-        .mdc-services-des{
-            color: var(--gray-500, #0000008a);
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-            margin: 5px 0px 10px 0px;
-        }
-        .mdc-services-action{
-            color: var(--md-typeset-a-color);
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            text-decoration: none;
-        }
-         /* Services section styles end */
-
-         /* Browse by offering section styles start */
-        .mdc-browse-by-offering{
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            background: var(--gray-50, #F9FAFB);
-            border-radius: 8px;
-            padding: 0px 64px;
-        }
-        .mdc-main-title{
-            color: var(--gray-900, #101828);
-            text-align: center;
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 32px; 
-            margin: 0;
-        }
-        .mdc-nav-tabs{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            list-style-type: none;
-            padding: 0px;
-            flex-wrap: wrap;
-        }
-        .mdc-nav-tabs .mdc-nav-item{
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-        .mdc-nav-tabs .mdc-nav-item .mdc-nav-link{
-            color: var(--gray-500, #667085);
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: none;
-            line-height: 20px;
-        }
-        .mdc-nav-tabs .mdc-nav-item:hover{
-            background: var(--primary-50, #EFF4FF);
-        }
-        .mdc-nav-tabs .mdc-nav-item:hover .mdc-nav-link{
-            background: var(--primary-50, #EFF4FF);
-            color: var(--md-typeset-a-color) !important;
-        }
-        .mdc-nav-tabs .mdc-nav-item.active{
-            background: var(--primary-50, #EFF4FF) !important;
-        }
-        .mdc-nav-tabs .mdc-nav-item.active .mdc-nav-link{
-            color: var(--md-typeset-a-color) !important;
-
-        }
-        .mdc-offering-data{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 12px;
-            padding-bottom: 20px;
-        }
-        .mdc-offering-data-block{
-            padding: var(--spacing-md, 16px);
-            border-radius: var(--radius-md, 8px);
-            transition: all 0.5s ease-in;
-            cursor: pointer;
-        }
-        .mdc-offering-data-block:hover{
-            box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
-            background-color: #fff;
-        }
-        .mdc-offering-data-block .mdc-offering-header{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--gray-900, #101828);
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-        }
-        .mdc-filter-icon{
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .mdc-offering-data-block:hover .mdc-filter-icon{
-            background: var(--primary-50, #EFF4FF);
-        }
-        .mdc-offering-data-block:hover .mdc-filter-icon svg path{
-            fill: var(--md-typeset-a-color) !important;
-        }
-        .mdc-offering-info{
-            color: var(--gray-500, #667085);
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-        }
-        .mdc-offering-action{
-            color: var(--md-typeset-a-color);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px; 
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            text-decoration: none;
-            margin-top: 12px;
-        }
-        /* Browse by offering section styles end */
-
-         /* Whats new section styles start */
-        .mdc-whats-new{
-            padding: 14px 0px;
-            display: flex;
-            gap: 24px;
-        }
-        .mdc-whats-new-left{
-            width: 50%;
-            padding: 0px 60px 0px 0px;
-        }
-        .mdc-heading{
-            color: var(--md-default-fg-color--light);
-            font-size: 22px;
-            font-weight: 600;
-            line-height: 28px; 
-            margin: 0px 0px 12px 0px;
-        }
-        .mdc-des{
-            color: var(--gray-500, #667085);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            margin: 0px 0px 24px 0px;
-        }
-        .mdc-whats-new-block{
-            margin-bottom: 12px;
-        }
-        .mdc-whats-new-title{
-            color: var(--gray-900, #101828);
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px; 
-            padding-left: 20px;
-            position: relative;
-            margin: 0px;
-            display: flex;
-            align-items: center;
-        }
-        .mdc-whats-new-title::before{
-            content: '';
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            border: 1.6px solid var(--purple-200, #D9D6FE);
-            background-color: var(--purple-600, #6938EF);
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .mdc-whats-new-des{
-            padding-left: 20px;
-            position: relative;
-        }
-        .mdc-whats-new-des p{
-            color: var(--gray-500, #667085);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            padding: 12px 0px;
-            margin: 0px;
-        }
-        .mdc-whats-new-des span{
-            color: var(--gray-400, #98A2B3);
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-        }
-        .mdc-whats-new-des::before{
-            content: '';
-            position: absolute;
-            height: 100%;
-            border-left: 1px dashed var(--purple-300, #BDB4FE);
-            left: 3px;
-            top: 0;
-        }
-        .mdc-whats-new-block span{
-            color: var(--gray-400, #98A2B3);
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px; 
-        }
-        .mdc-whats-new-right{
-            width: 50%;            
-            position: relative;
-            height: max-content;
-        }
-        .arrow-image{
-            position: absolute;
-            left: -61.309px;
-            top: -22.697px;
-            background-image: url(assets/quirky-paper-plane-with-dotted-line.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 138px;
-            height: 118px;
-        }
-        .mdc-whats-new-right h4{
-            color: var(--gray-900, #101828);
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0px;
-            line-height: 28px; 
-        }
-        .mdc-whats-new-right p{
-            margin: 0px;
-            color: var(--gray-700, #344054);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            margin: 8px 0px 40px 0px;
-        }
-        .mdc-email-notifi{
-            display: flex;
-            align-items: center;
-        }
-        .mdc-email-notifi .input-email{
-            padding: 10px 14px;
-            border-radius: var(--radius-md, 8px) 0px 0px var(--radius-md, 8px);
-            border: 1px solid var(--gray-300, #D0D5DD);
-            background: var(--base-white, #FFF);
-            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-            color: var(--gray-500, #667085);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            width: 100%;
-        }
-        .mdc-email-notifi  .send-btn{
-            padding: 10px 16px;
-            border-radius: 0px var(--radius-md, 8px) var(--radius-md, 8px) 0px;
-            border: 1px solid var(--gray-300, #D0D5DD);
-            background: var(--gray-50, #F9FAFB);
-            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-            color: var(--gray-500, #667085);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            display: inline-block;
-            flex-shrink: 0;
-        }
-        .relase-note-action{
-            color: var(--md-typeset-a-color);
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            display: inline-block;
-            text-decoration: none;
-        }
-         /* Whats new section styles end */
-
-
-        .mdc-spacing{
-            height: 64px;
-        }
-
-         /* hepler section styles start */
-        .mdc-help-wrapper{
-            border-bottom: 1px solid var(--gray-200, #EAECF0);
-            padding: 16px 0px 40px 0px;
-        }
-        .mdc-help-title{
-            color: var(--gray-700, #344054);
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 30px;
-            gap: 12px;
-            display: flex;
-            align-items: center;
-            margin: 0px;
-        }
-        .mdc-helpline-centers{
-            display: flex;
-            justify-content: center;
-            margin-top: 48px;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-        .mdc-helpline-block{
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .mdc-helpline-block .mdc-helpline-title{
-            color: #000;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px; 
-        }
-        .mdc-helpline-block .mdc-helpline-action{
-            color: var(--md-typeset-a-color);
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            line-height: 24px;
-        }
-         /* hepler section styles end */
-
-         /*Media quires for home page */
-         @media screen and (max-width:767px) {
-          .mdc-search{
-            width: 100%;
-            padding: 0px 20px;
-          }
-          .mdc-explore-wrapper{
-            margin-top: 15px;
-            padding: 0px 20px;
-          }
-          .mdc-explore-block{
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-          }
-          .mdc-explore-block-info{
-            flex-direction: column;
-            text-align: center;
-          }
-          .mdc-services{
-            padding: 0px 20px;
-          }
-          .mdc-browse-by-offering{
-            padding: 0px 20px;
-          }
-          .mdc-whats-new{
-            padding: 24px 20px;
-    flex-direction: column;
-
-          }
-          .mdc-whats-new-left{
-            padding: 0px;
-          }
-          .mdc-whats-new-right{
-            width: 100%;
-            padding: 20px !important;
-          }
-          .mdc-help-title{
-            justify-content: center;
-          }
-          .mdc-helpline-centers{
-            margin-top: 20px !important;
-            gap: 10px;
-          }
-          .mdc-main-banner h1{
-            font-size: 18px;
-          }
-        }
-        [data-md-color-scheme=slate] .mdc-services-block{
-            background: #2e303d;
-            border-color: var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate] .mdc-services-block:hover{
-            background: #2e303d;
-            border-color: #fff;
-        }
-        [data-md-color-scheme=slate] .mdc-services-title{
-          color: var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate] .mdc-services-des{
-          color: #fff;
-        }
-        [data-md-color-scheme=slate] .mdc-explore-block{
-            background: #2e303d;
-        }
-        [data-md-color-scheme=slate] .explore-content span{
-          color: var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate] .explore-content{
-          color: #fff;
-        }
-        [data-md-color-scheme=slate] .mdc-browse-by-offering{
-          background: #2e303d;
-        }
-        [data-md-color-scheme=slate] .mdc-main-title, [data-md-color-scheme=slate] .mdc-heading,[data-md-color-scheme=slate] .mdc-whats-new-title,[data-md-color-scheme=slate]  .mdc-whats-new-right h4{
-            color: var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate] .mdc-offering-data-block:hover{
-            border: 1px solid #fff;
-            background: #2e303d !important;
-        }
-        [data-md-color-scheme=slate]  .mdc-nav-tabs .mdc-nav-item .mdc-nav-link{
-            color: var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate] .mdc-offering-data-block .mdc-offering-header{
-            color: var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate] .mdc-offering-info, [data-md-color-scheme=slate] .mdc-des, [data-md-color-scheme=slate] .mdc-whats-new-des p, [data-md-color-scheme=slate] .mdc-whats-new-block span,[data-md-color-scheme=slate] .mdc-whats-new-right p{
-            color: #fff;
-        }
-        [data-md-color-scheme=slate]  .mdc-offering-data-block .mdc-filter-icon svg path{
-            fill: var(--md-default-fg-color--light) !important;
-        }
-        [data-md-color-scheme=slate] .mdc-offering-data-block:hover .mdc-filter-icon svg path{
-            fill: var(--md-typeset-a-color) !important;
-        }
-        [data-md-color-scheme=slate]  .mdc-whats-new-right{
-            background: transparent;
-           border: 1px solid var(--md-default-fg-color--light);
-        }
-        [data-md-color-scheme=slate]  .mdc-email-notifi .input-email,[data-md-color-scheme=slate]  .mdc-email-notifi .send-btn{
-            border-color: var(--md-default-fg-color--light);
-            background: transparent;
-            color: #fff;
-        }
-        [data-md-color-scheme=slate] .mdc-whats-new-title svg path{
-          fill: #fff !important;
-        }
-        [data-md-color-scheme=slate] .mdc-helpline-block .mdc-helpline-title{
-           color: var(--md-default-fg-color--light)
-        }
-        [data-md-color-scheme=slate] .mdc-helpline-block svg path{
-           color: var(--md-default-fg-color--light)
-        }
-        </style>
-      <section class="mdx-container">
-        <div class="mdc-main-banner">
-            <h1>Welcome to AI for Work Documentation</h1>
-        </div>
-        <main class="mdc-main md-grid">
-            <!--Banner search Start-->
-            <!-- <div class="mdc-search">
-                <input type="text" class="mdc-search-input">
-                <span class="mdc-search-icon">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" >
-                      <path d="M19.8465 20.2705L15.7512 16.1752M17.9636 10.856C17.9636 15.0155 14.5916 18.3876 10.432 18.3876C6.27241 18.3876 2.90039 15.0155 2.90039 10.856C2.90039 6.69636 6.27241 3.32434 10.432 3.32434C14.5916 3.32434 17.9636 6.69636 17.9636 10.856Z" stroke="#98A2B3" stroke-width="1.8829" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </span>
-            </div> -->
-             <!--Banner search End-->
-    
-            <!--Explore section start-->
-            <div class="mdc-explore-wrapper">
-                <div class="mdc-explore-block">
-                    <div class="mdc-explore-block-info">
-                        <div class="explore-icon">
-                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
-                                <path opacity="0.16" d="M9.16675 2.59485L10.3229 5.60076C10.5109 6.08958 10.6049 6.33399 10.7511 6.53957C10.8806 6.72178 11.0398 6.88098 11.222 7.01054C11.4276 7.15672 11.672 7.25072 12.1608 7.43873L15.1667 8.59485L12.1608 9.75097C11.672 9.93898 11.4276 10.033 11.222 10.1792C11.0398 10.3087 10.8806 10.4679 10.7511 10.6501C10.6049 10.8557 10.5109 11.1001 10.3229 11.5889L9.16675 14.5948L8.01063 11.5889C7.82262 11.1001 7.72862 10.8557 7.58244 10.6501C7.45287 10.4679 7.29368 10.3087 7.11147 10.1792C6.90589 10.033 6.66148 9.93898 6.17266 9.75097L3.16675 8.59485L6.17265 7.43873C6.66148 7.25072 6.90589 7.15672 7.11147 7.01054C7.29368 6.88098 7.45287 6.72178 7.58243 6.53957C7.72862 6.33399 7.82262 6.08958 8.01063 5.60076L9.16675 2.59485Z" fill="white"/>
-                                <path d="M3.49992 15.2615V11.9282M3.49992 5.26153V1.92819M1.83325 3.59486H5.16659M1.83325 13.5949H5.16659M9.16659 2.59486L8.01047 5.60077C7.82246 6.08959 7.72846 6.334 7.58227 6.53958C7.45271 6.72179 7.29352 6.88099 7.11131 7.01055C6.90572 7.15673 6.66131 7.25073 6.17249 7.43874L3.16659 8.59486L6.17249 9.75098C6.66131 9.93899 6.90572 10.033 7.11131 10.1792C7.29352 10.3087 7.45271 10.4679 7.58227 10.6501C7.72846 10.8557 7.82246 11.1001 8.01047 11.589L9.16659 14.5949L10.3227 11.589C10.5107 11.1001 10.6047 10.8557 10.7509 10.6501C10.8805 10.4679 11.0397 10.3087 11.2219 10.1792C11.4274 10.033 11.6719 9.93898 12.1607 9.75098L15.1666 8.59486L12.1607 7.43874C11.6719 7.25073 11.4274 7.15673 11.2219 7.01055C11.0397 6.88099 10.8805 6.72179 10.7509 6.53958C10.6047 6.334 10.5107 6.08959 10.3227 5.60077L9.16659 2.59486Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="explore-content">
-                           <span>AI for Work</span>a unified platform for enterprise productivity.
-                        </div>
-                    </div>
-                    <div class="mdc-explore-block-action">
-                        <a href="../getting-started/introduction/">
-                          <span>Get Started <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
-                            <path d="M4.66675 10.5948H16.3334M16.3334 10.5948L10.5001 4.76151M16.3334 10.5948L10.5001 16.4282" stroke="#6c91d5" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg></span>                            
-                        </a>
-                    </div>
-                </div>
-            </div>
-             <!--Explore section end-->
-    
-             <!--Services section start-->
-            <section class="mdc-services">
-                <a href="../rag-agents/default-rag/"  class="mdc-services-block">
-                    <div class="mdc-services-icon">
-                        <img src="assets/search-agents.svg" style="zoom:75%" alt="RAG Agents">
-                    </div>
-                    <div class="mdc-services-info">
-                        <h4 class="mdc-services-title">RAG Agents</h4>
-                        <p class="mdc-services-des">Retrieve information from existing knowledge bases to generate an accurate and precise response.</p>
-                        <span class="mdc-services-action">Learn More</span>
-                    </div>
-                </a>
-                <a href="../custom-agents/overview/"  class="mdc-services-block">
-                    <div class="mdc-services-icon">
-                        <img src="assets/custom-agents.svg" style="zoom:75%" alt="Custom Agents">
-                    </div>
-                    <div class="mdc-services-info">
-                        <h4 class="mdc-services-title">Custom Agents</h4>
-                        <p class="mdc-services-des">Create your own AI agents for unique departmental workflows and specialized business needs.</p>
-                        <span class="mdc-services-action">Learn More</span>
-                    </div>
-                </a> 
-                <a href="../pre-built-agents/overview/"  class="mdc-services-block">
-                    <div class="mdc-services-icon">
-                        <img src="assets/pre-built-agents.svg" style="zoom:75%" alt="Pre-built Agents">
-                    </div>
-                    <div class="mdc-services-info">
-                        <h4 class="mdc-services-title">Pre-built Agents</h4>
-                        <p class="mdc-services-des">Configurable AI agents designed for quick deployment and workflow integration with minimal setup.</p>
-                        <span class="mdc-services-action">Learn More</span>
-                    </div>
-                </a>
-                <a href="../pre-built-solutions/overview/"  class="mdc-services-block">
-                    <div class="mdc-services-icon">
-                        <img src="assets/pre-built-solutions.svg" style="zoom:75%" alt="Pre-built Solutions">
-                    </div>
-                    <div  class="mdc-services-info">
-                        <h4 class="mdc-services-title">Pre-built Solutions</h4>
-                        <p class="mdc-services-des">AI solutions designed for specific departments like IT, HR, and Recruitment to automate processes.</p>
-                        <span class="mdc-services-action">Learn More</span>
-                    </div>
-                </a>                           
-            </section>
-            <!--Services section end-->
-    
-            <div class="mdc-spacing"></div>
- 
-            <!--Whats new section start-->
-            <section class="mdc-whats-new">
-                <div class="mdc-whats-new-left">
-                    <h2 class="mdc-heading">Empower Employees with Intelligent Automation</h2>
-                    <p class="mdc-des">AI for Work is designed to make work more efficient, intelligent, and valuable for every employee. It combines powerful AI capabilities with a user-friendly interface.</p>
-                    <div class="mdc-whats-new-block">
-                        <h4 class="mdc-whats-new-title">Unified Information Access</h4>
-                        <div class="mdc-whats-new-des">
-                            <p>Break down information silos, provide employees with a single point of access to knowledge scattered across different systems.</p>                            
-                        </div>
-                     </div>
-                     <div class="mdc-whats-new-block">
-                        <h4 class="mdc-whats-new-title">Intelligent Task Automation</h4>
-                        <div class="mdc-whats-new-des">
-                            <p>Streamline work by automating routine and repetitive activities using intelligent workflows and pre-built integrations.</p>                            
-                        </div>
-                     </div>
-                     <div class="mdc-whats-new-block">
-                        <h4 class="mdc-whats-new-title">No-Code AI Tools</h4>
-                        <div class="mdc-whats-new-des">
-                            <p>Intuitive, no-code tools empower employees to build and customize AI-powered solutions for their specific needs quickly.</p>                            
-                        </div>
-                     </div>
-                     <a href="../getting-started/introduction/" class="relase-note-action">Get Started</a>
-                </div>
-                
-                <div class="mdc-whats-new-right">
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2024/12/04073748/Introduction-to-Kore-AI-for-Work.mp4" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AI for Work Overview" frameborder="0" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-
-            </section>
-             <!--Whats new section End-->
-
-
-
-
-
-            <!-- <div class="mdc-spacing"></div> -->
-    
-            <!--Documentation help start-->
-            
-            <!--Documentation help end-->
-        </main>
-      </section>
-    
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -1373,7 +623,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Kore ai Docs" class="md-nav__button md-logo" aria-label="Kore ai Docs" data-md-component="logo">
+    <a href="../.." title="Kore ai Docs" class="md-nav__button md-logo" aria-label="Kore ai Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -1400,17 +650,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../home/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1419,7 +662,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1428,25 +670,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1457,7 +704,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -1471,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1489,10 +736,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../getting-started/setup-guide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Setup Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1501,6 +768,100 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-sign-up-for-a-new-ai-for-work-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Sign Up for a New AI for Work Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configure-user-enrollments-sso-and-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Configure User Enrollments, SSO, and Service Accounts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-configure-llm-and-embedding-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Configure LLM and Embedding Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-configure-rate-limit-for-user-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Configure Rate Limit for User Queries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-configure-default-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Configure Default RAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-publish-pre-built-agents-to-be-available-for-your-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Publish Pre-built Agents to be Available for your Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-configure-custom-agents-as-per-your-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Configure Custom Agents As Per your Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-invite-your-users-to-ai-for-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Invite your Users to AI for Work
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1513,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/accessing-ai-for-work/" class="md-nav__link">
+      <a href="../accessing-ai-for-work/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1534,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/how-to-use/" class="md-nav__link">
+      <a href="../how-to-use/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1602,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rag-agents/default-rag/" class="md-nav__link">
+      <a href="../../rag-agents/default-rag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1623,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rag-agents/rag-agent/" class="md-nav__link">
+      <a href="../../rag-agents/rag-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1691,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom-agents/overview/" class="md-nav__link">
+      <a href="../../custom-agents/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1712,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom-agents/bot-agent/" class="md-nav__link">
+      <a href="../../custom-agents/bot-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1733,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom-agents/gpt-agents/" class="md-nav__link">
+      <a href="../../custom-agents/gpt-agents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1754,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom-agents/gale-agents/" class="md-nav__link">
+      <a href="../../custom-agents/gale-agents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1775,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../custom-agents/api-agents/" class="md-nav__link">
+      <a href="../../custom-agents/api-agents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1843,7 +1204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre-built-agents/overview/" class="md-nav__link">
+      <a href="../../pre-built-agents/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1911,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre-built-solutions/overview/" class="md-nav__link">
+      <a href="../../pre-built-solutions/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1932,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre-built-solutions/itassist/" class="md-nav__link">
+      <a href="../../pre-built-solutions/itassist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1953,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre-built-solutions/hrassist/" class="md-nav__link">
+      <a href="../../pre-built-solutions/hrassist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1974,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pre-built-solutions/recruitassist/" class="md-nav__link">
+      <a href="../../pre-built-solutions/recruitassist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2042,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../analytics/overview/" class="md-nav__link">
+      <a href="../../analytics/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2063,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../analytics/dashboard-view/" class="md-nav__link">
+      <a href="../../analytics/dashboard-view/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2084,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../analytics/data-view/" class="md-nav__link">
+      <a href="../../analytics/data-view/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2152,7 +1513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../admin-overview/" class="md-nav__link">
+      <a href="../../admin-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2213,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assistant-configuration/llm-configuration/" class="md-nav__link">
+      <a href="../../assistant-configuration/llm-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2234,7 +1595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assistant-configuration/business-rules/" class="md-nav__link">
+      <a href="../../assistant-configuration/business-rules/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2255,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assistant-configuration/email-template/" class="md-nav__link">
+      <a href="../../assistant-configuration/email-template/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2276,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assistant-configuration/rate-limit/" class="md-nav__link">
+      <a href="../../assistant-configuration/rate-limit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2345,7 +1706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-management/user-enrollments/" class="md-nav__link">
+      <a href="../../user-management/user-enrollments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2366,7 +1727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-management/managing%20your%20users/" class="md-nav__link">
+      <a href="../../user-management/managing%20your%20users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2387,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../user-management/managing-your-groups/" class="md-nav__link">
+      <a href="../../user-management/managing-your-groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2456,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../security/sso/" class="md-nav__link">
+      <a href="../../security/sso/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2477,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../security/ip-restriction/" class="md-nav__link">
+      <a href="../../security/ip-restriction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2498,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../security/domain-management/" class="md-nav__link">
+      <a href="../../security/domain-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2519,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../security/kore-connector/" class="md-nav__link">
+      <a href="../../security/kore-connector/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2540,7 +1901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../security/service-accounts/" class="md-nav__link">
+      <a href="../../security/service-accounts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2609,7 +1970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../APIs/authorization/" class="md-nav__link">
+      <a href="../../APIs/authorization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2630,7 +1991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../APIs/audit-log-api/" class="md-nav__link">
+      <a href="../../APIs/audit-log-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2678,6 +2039,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-sign-up-for-a-new-ai-for-work-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Sign Up for a New AI for Work Account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-configure-user-enrollments-sso-and-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Configure User Enrollments, SSO, and Service Accounts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-configure-llm-and-embedding-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Configure LLM and Embedding Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-configure-rate-limit-for-user-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Configure Rate Limit for User Queries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-configure-default-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Configure Default RAG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-publish-pre-built-agents-to-be-available-for-your-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Publish Pre-built Agents to be Available for your Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-configure-custom-agents-as-per-your-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Configure Custom Agents As Per your Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-invite-your-users-to-ai-for-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Invite your Users to AI for Work
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2688,6 +2131,125 @@
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="ai-for-work-setup-guide">AI for Work Setup Guide<a class="headerlink" href="#ai-for-work-setup-guide" title="Permanent link">&para;</a></h1>
+<p>This setup guide helps administrators quickly configure the AI for Work for their users. Learn how to sign up, set up, configure, and invite users to AI for Work.</p>
+<p>AI for Work setup consists of the following steps:</p>
+<ol>
+<li>
+<p><a href="#step-1-sign-up-for-a-new-ai-for-work-account">Sign up for a new AI for Work account</a></p>
+</li>
+<li>
+<p><a href="#step-2-configure-user-enrollments-sso-and-service-accounts">Configure User Enrollments, SSO, and Service Accounts</a></p>
+</li>
+<li>
+<p><a href="#step-3-configure-llm-and-embedding-models">Configure general-purpose LLM and Embedding models</a></p>
+</li>
+<li>
+<p><a href="#step-4-configure-rate-limit-for-user-queries">Configure rate limit for user queries</a></p>
+</li>
+<li>
+<p><a href="#step-5-configure-default-rag">Configure Default RAG</a></p>
+</li>
+<li>
+<p><a href="#step-6-publish-pre-built-agents-to-be-available-for-your-users">Publish pre-built agents to be available for your users</a></p>
+</li>
+<li>
+<p><a href="#step-7-configure-custom-agents-as-per-your-requirements">Configure custom agents as per your requirements</a></p>
+</li>
+<li>
+<p><a href="#step-8-invite-your-users-to-ai-for-work">Invite your users to AI for Work</a></p>
+</li>
+</ol>
+<h3 id="step-1-sign-up-for-a-new-ai-for-work-account">Step 1: Sign Up for a New AI for Work Account<a class="headerlink" href="#step-1-sign-up-for-a-new-ai-for-work-account" title="Permanent link">&para;</a></h3>
+<p>To sign up for a new account, contact the <a href="https://kore.ai/contact-us/">Kore.ai sales team</a>.</p>
+<h3 id="step-2-configure-user-enrollments-sso-and-service-accounts">Step 2: Configure User Enrollments, SSO, and Service Accounts<a class="headerlink" href="#step-2-configure-user-enrollments-sso-and-service-accounts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Configure user enrollments to manage account access and invitations.
+    <a href="https://docs.kore.ai/ai-for-work/user-management/user-enrollments/">Learn more</a>.</p>
+</li>
+<li>
+<p>Set up SSO for easy access using your identity provider.
+    <a href="https://docs.kore.ai/ai-for-work/security/sso/">Learn more</a>.</p>
+</li>
+<li>
+<p>Add service accounts (Google, Microsoft, LDAP) to get user profiles and distribution lists for inviting users.
+    <a href="https://docs.kore.ai/ai-for-work/security/service-accounts/">Learn more</a>.</p>
+</li>
+</ul>
+<h3 id="step-3-configure-llm-and-embedding-models">Step 3: Configure LLM and Embedding Models<a class="headerlink" href="#step-3-configure-llm-and-embedding-models" title="Permanent link">&para;</a></h3>
+<p>To use Generative AI features in AI for Work, configure integration with either a pre-built or custom Large Language Model (LLM). Pre-built integrations with platforms like Azure OpenAI, OpenAI, and Anthropic offer seamless setup, while the bring-your-own (BYO) framework supports external or self-hosted models for custom configurations. <a href="/docs/ai-for-work/assistant-configuration/llm-configuration/">Learn more</a>.</p>
+<h3 id="step-4-configure-rate-limit-for-user-queries">Step 4: Configure Rate Limit for User Queries<a class="headerlink" href="#step-4-configure-rate-limit-for-user-queries" title="Permanent link">&para;</a></h3>
+<p>Rate limits restrict user queries based on complexity and user category. Simple queries like small talk use 1 point each, while advanced queries involving knowledge integration or context use 3 points. There are two user categories: Moderate Users with default rate limits and Power Users with custom limits set by account administrators. <a href="/docs/ai-for-work/assistant-configuration/rate-limit/">Learn more</a>.</p>
+<h3 id="step-5-configure-default-rag">Step 5: Configure Default RAG<a class="headerlink" href="#step-5-configure-default-rag" title="Permanent link">&para;</a></h3>
+<p>The Default RAG is a pre-configured Search AI app available to all AI for Work accounts. It acts as a fallback, generating responses when no specific agents match the user's intent. It's also automatically available to users when no custom or specific agents are assigned to handle a user query.<a href="https://docs.kore.ai/ai-for-work/rag-agents/default-rag/#default-rag-configuration">Learn how to configure the default RAG</a>.</p>
+<h3 id="step-6-publish-pre-built-agents-to-be-available-for-your-users">Step 6: Publish Pre-built Agents to be Available for your Users<a class="headerlink" href="#step-6-publish-pre-built-agents-to-be-available-for-your-users" title="Permanent link">&para;</a></h3>
+<p>AI for Work provides a set of pre-built agents that perform specific tasks with minimal setup or customization. These agents are designed to automate processes such as summarizing content, drafting emails, translating text, etc. Administrators can configure and publish pre-built agents for user access through the Agent Store. <a href="/docs/ai-for-work/pre-built-agents/overview/">Learn more</a>.</p>
+<h3 id="step-7-configure-custom-agents-as-per-your-requirements">Step 7: Configure Custom Agents As Per your Requirements<a class="headerlink" href="#step-7-configure-custom-agents-as-per-your-requirements" title="Permanent link">&para;</a></h3>
+<p>Custom AI agents can be quickly set up to integrate with your workflows and systems. They can collect user input, retrieve data, connect to APIs, and execute complex tasks. <a href="/docs/ai-for-work/custom-agents/overview/">Learn more</a>.</p>
+<h3 id="step-8-invite-your-users-to-ai-for-work">Step 8: Invite your Users to AI for Work<a class="headerlink" href="#step-8-invite-your-users-to-ai-for-work" title="Permanent link">&para;</a></h3>
+<p>Now that you've set up AI for Work, <a href="https://docs.kore.ai/ai-for-work/user-management/user-enrollments/">invite or let your team know about AI for Work</a>. The AI for Work Assistant provides employees with a single access point to knowledge across systems and can automate routine tasks using published AI agents. <a href="https://docs.kore.ai/ai-for-work/getting-started/how-to-use/">Learn how to use AI for Work Assistant</a>.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
                 
               </article>
             </div>
@@ -2706,16 +2268,74 @@
         
       </main>
       
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../accessing-ai-for-work/" class="md-footer__link md-footer__link--next" aria-label="Next: Accessing AI for Work">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Accessing AI for Work
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 Kore.ai, Inc. – All trademarks are the property of their respective owners.
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
