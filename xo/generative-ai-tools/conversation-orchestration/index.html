@@ -2831,12 +2831,52 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1_4_5" id="__nav_3_3_1_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agent Node
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_3_1_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Agent Node
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GenAI Node
+    Agent Node v2
   </span>
   
 
@@ -2853,15 +2893,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GenAI Node v2
+    Agent Node v1
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2878,7 +2926,7 @@
         
   
   <span class="md-ellipsis">
-    GenAI Prompt
+    Prompt Node
   </span>
   
 
@@ -6551,16 +6599,106 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Extraction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Extraction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../searchai/content-extraction/etl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ETL Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../searchai/content-extraction/extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Extraction Strategy
+    Content Extraction
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../searchai/content-extraction/transformation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Content Transformation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -7430,6 +7568,27 @@
   
   <span class="md-ellipsis">
     Sensitive Data Masking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/configurations/advanced-settings/llm-streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Streaming
   </span>
   
 
@@ -8784,35 +8943,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../quality-management/configure/best-practices-for-auto-qa-configuration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Best Practices for Auto QA Configuration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
               
                 
   
@@ -8829,6 +8959,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -15992,11 +16130,11 @@ This flexible system gives developers complete control over conversation managem
 The XO Platform supports <strong>MPNet</strong>, <strong>BGE-M3</strong>, <strong>LaBSE</strong>, and <strong>E5 embedding</strong> models, with more options coming soon. You can adjust the Similarity Threshold and Proximity Threshold in the advanced settings. In most cases, the default settings work fine. The recommended model is BGE-M3</p>
 </li>
 <li>
-<p><strong>Conversation Management</strong>: 
-Currently, <strong>OpenAI GPT-4o</strong> and <strong>Azure OpenAI GPT-4o</strong> models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.<br />
-Support for the major commercial models will be available in the upcoming months. However, you can always bring your own model via the custom LLM integration route.  </p>
+<p><strong>Conversation Management</strong>: </p>
 </li>
 </ul>
+<p>Currently, <strong>OpenAI GPT-4o</strong>, <strong>OpenAI GPT-4o mini</strong>, and <strong>Azure OpenAI GPT-4o</strong> models are supported for user intent detection and execution plans. You can configure Temperature, Max Tokens, and Conversation History Length in advanced settings. In most cases, the default settings work fine.  </p>
+<p>Support for the major commercial models will be available in the upcoming months. However, you can always bring your own model via the custom LLM integration route.  </p>
 <p>To configure the model and settings, click <strong>Settings</strong>. Select the model, adjust the settings if necessary, and click <strong>Save</strong>.</p>
 <p><a class="glightbox" href="../images/gpt6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gpt6.png" alt="DialogGPT" title="" style="border: 1px solid gray; zoom:70%;"></a> </p>
 <h2 id="fulfillment">Fulfillment<a class="headerlink" href="#fulfillment" title="Permanent link">&para;</a></h2>

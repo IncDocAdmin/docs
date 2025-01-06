@@ -2831,12 +2831,52 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1_4_5" id="__nav_3_3_1_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agent Node
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_3_1_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Agent Node
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
+      <a href="../../../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GenAI Node
+    Agent Node v2
   </span>
   
 
@@ -2853,15 +2893,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+      <a href="../../../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GenAI Node v2
+    Agent Node v1
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2878,7 +2926,7 @@
         
   
   <span class="md-ellipsis">
-    GenAI Prompt
+    Prompt Node
   </span>
   
 
@@ -6551,16 +6599,106 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Extraction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Extraction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/content-extraction/etl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ETL Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../../../searchai/content-extraction/extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Extraction Strategy
+    Content Extraction
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/content-extraction/transformation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Content Transformation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -7441,6 +7579,27 @@
   
   <span class="md-ellipsis">
     Sensitive Data Masking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../configurations/advanced-settings/llm-streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Streaming
   </span>
   
 
@@ -8910,35 +9069,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../quality-management/configure/best-practices-for-auto-qa-configuration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Best Practices for Auto QA Configuration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
               
                 
   
@@ -8955,6 +9085,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -16041,7 +16179,7 @@
 </div>
 </li>
 <li>
-<p><strong>Advanced</strong>: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. All the published start flows are displayed irrespective of the number associated with it or not. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.<br />
+<p><strong>Advanced</strong>: This format is useful for two-way messaging (Inbound and Outbound) by linking to a start flow that contains dialog tasks. All the published start flows are displayed regardless of a number associated with them. This format can also be used to transfer to an agent using the attached flow. Select a start flow from the dropdown.<br />
     <a class="glightbox" href="../images/advanced-message.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/advanced-message.png" alt="Advanced Message" title="Advanced Message" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 </ul>

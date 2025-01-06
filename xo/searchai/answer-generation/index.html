@@ -2831,12 +2831,52 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1_4_5" id="__nav_3_3_1_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Agent Node
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_3_3_1_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Agent Node
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GenAI Node
+    Agent Node v2
   </span>
   
 
@@ -2853,15 +2893,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../../automation/use-cases/dialogs/node-types/genai-node-v2/" class="md-nav__link">
+      <a href="../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    GenAI Node v2
+    Agent Node v1
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2878,7 +2926,7 @@
         
   
   <span class="md-ellipsis">
-    GenAI Prompt
+    Prompt Node
   </span>
   
 
@@ -6565,16 +6613,106 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Extraction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Extraction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../content-extraction/etl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ETL Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../content-extraction/extraction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Extraction Strategy
+    Content Extraction
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../content-extraction/transformation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Content Transformation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -7462,6 +7600,27 @@
   
   <span class="md-ellipsis">
     Sensitive Data Masking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contactcenter/configurations/advanced-settings/llm-streaming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Streaming
   </span>
   
 
@@ -8816,35 +8975,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../quality-management/configure/best-practices-for-auto-qa-configuration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Best Practices for Auto QA Configuration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
               
                 
   
@@ -8861,6 +8991,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -15835,10 +15973,26 @@
 <li><strong>Response Length</strong>- This is the expected length of the answer, in tokens.</li>
 </ul>
 </li>
-<li><strong>Generative Answers</strong>: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. <a href="../../generative-ai-tools/models-library/">Integrate LLM</a> and <a href="../../generative-ai-tools/dynamic-conversations-features/">Enable Answer Generation</a> in the Generative AI Tools configuration. <ul>
-<li><strong>Chunk Order:</strong> This configuration sets the order of qualified chunks sent to the LLM in the Prompt. The order of data chunks can affect the context and thereby, the results of a user query. The decision to use a specific chunk order should align with the goals of the task and the nature of the data being processed.</li>
+<li>
+<p><strong>Generative Answers</strong>: The top chunks retrieved in response to the user query are sent to the configured LLM, which generates a paraphrased answer from the content in the chunks. <a href="../../generative-ai-tools/models-library/">Integrate LLM</a> and <a href="../../generative-ai-tools/dynamic-conversations-features/">Enable Answer Generation</a> in the Generative AI Tools configuration. </p>
+<ul>
+<li><strong>Chunk Order:</strong> This configuration sets the order of qualified chunks sent to the LLM in the Prompt. The order of data chunks can affect the context and thereby, the results of a user query. The decision to use a specific chunk order should align with the goals of the task and the nature of the data being processed.<ul>
 <li><strong>Most to Least Relevant:</strong> In this case, the chunks are added in descending order of relevance, i.e., highest relevance to the lowest, followed by the query. For instance, if the top five chunks are to be sent to the LLM, the most relevant chunk is added first, and the least relevant chunk is added at the end.</li>
 <li><strong>Least to Most Relevant:</strong> In this case, the chunks are added in ascending order of relevance. The least relevant chunk is added first, and the most relevant chunk is at the end, followed by the query.</li>
+</ul>
+</li>
+<li><strong>Max tokens for chunks</strong>: This parameter specifies the total number of tokens that can be included in the chunks sent to the LLM for processing. This allows users to fully utilize the LLM’s context-handling capabilities. This has a default value of 20,000 and can take a maximum value of 10,00,000. </li>
+</ul>
+<p>The context size of an LLM refers to the maximum number of tokens the model can process in a single interaction. This includes:</p>
+<div class="language-text highlight"><pre><span></span><code>* Tokens for the prompt, instructions and context information sent to the LLM.
+* Tokens for the Output, i.e. the response generated by the LLM.
+</code></pre></div>
+<p>To determine the maximum value of this parameter, subtract the tokens used for both the prompt and the output from the maximum context size of the language model (LLM). For instance, for a 4,096-token context, if the prompt uses 500 tokens and the response uses 500 tokens, the remaining 3096 tokens can be used for sending the chunks. This is the maximum value that this parameter can take. If each chunk is of 500 tokens, top 6 chunks are sent to LLM as context. If, however, a limited number of chunks are to be sent, lets say, top 3, set this field to 1500. </p>
+<ul>
+<li><strong>Select Generative Model</strong>: Select the model for generating answers. If multiple models are configured, all configured models will be listed.</li>
+<li><strong>Answer Prompt</strong>: Select the prompt to be sent to the model to generate answers.</li>
+<li><strong>Temperature</strong>: This parameter controls the randomness of the output. It affects how deterministic or creative the responses are, and tweaking the temperature can significantly change the generated answers. The lower the temperature, the lesser the randomness. </li>
+<li><strong>Response Length</strong>: This is the expected length of the answer, in tokens.</li>
 </ul>
 </li>
 </ol>
