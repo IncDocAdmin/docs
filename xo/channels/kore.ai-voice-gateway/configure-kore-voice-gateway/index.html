@@ -1771,9 +1771,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sip-numbers" class="md-nav__link">
+  <a href="#sip-trunk-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      SIP Numbers
+      SIP Trunk Setup
     </span>
   </a>
   
@@ -9861,6 +9861,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../agentai/integration/servicenow/chat-integration-with-servicenow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chat Integration with ServiceNow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -16292,9 +16313,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sip-numbers" class="md-nav__link">
+  <a href="#sip-trunk-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      SIP Numbers
+      SIP Trunk Setup
     </span>
   </a>
   
@@ -16494,7 +16515,7 @@
 <h1 id="kore-voice-gateway">Kore Voice Gateway<a class="headerlink" href="#kore-voice-gateway" title="Permanent link">&para;</a></h1>
 <p>Kore.ai Voice Gateway is a comprehensive voice automation solution that manages inbound call automation for Contact Center AI. It integrates with existing voice systems or uses Kore.ai's native voice processing capabilities, enabling seamless transitions between automated and human interactions within the XO Platform.</p>
 <h2 id="configure-kore-voice-gateway">Configure Kore Voice Gateway<a class="headerlink" href="#configure-kore-voice-gateway" title="Permanent link">&para;</a></h2>
-<p>You can configure the voice gateway by adding phone numbers, setting up SIP Transfer, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.</p>
+<p>You can configure the voice gateway by adding phone numbers, setting up SIP Trunk, and configuring the voice preferences to personalize the Automatic Speech Recognition (ASR) Engine and the voice that plays for your Text-to-Speech (TTS) conversions.</p>
 <p>Navigate to <strong>Automation AI</strong> &gt; <strong>Flows &amp; Channels</strong> &gt; <strong>Channels</strong> &gt; <strong>Kore.ai Voice Gateway</strong>.<br />
 <a class="glightbox" href="../images/kore-vg-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/kore-vg-page.png" alt="Kore Voice Gateway Page" title="Kore Voice Gateway Page" style="border: 1px solid gray; zoom:100%;"></a></p>
 <h3 id="phone-numbers">Phone Numbers<a class="headerlink" href="#phone-numbers" title="Permanent link">&para;</a></h3>
@@ -16582,56 +16603,68 @@
 <p>A success confirmation message is displayed once the phone number is deleted.</p>
 </li>
 </ol>
-<h3 id="sip-numbers">SIP Numbers<a class="headerlink" href="#sip-numbers" title="Permanent link">&para;</a></h3>
+<h3 id="sip-trunk-setup">SIP Trunk Setup<a class="headerlink" href="#sip-trunk-setup" title="Permanent link">&para;</a></h3>
 <p>This option is useful when transferring calls to Contact Center AI from a toll-free or local phone number using Session Initiation Protocol (SIP) in the IVR system.</p>
-<p>Under the SIP Transfer tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.</p>
-<p>Steps to configure SIP Transfer:</p>
+<p>Under the SIP Trunk tab, you can configure the network IPs and domains, DID number, SIP transport protocol, SIP credentials (optional), and Inbound/Outbound direction for phone numbers while the SIP URI is pre-configured.</p>
+<p>Steps to configure SIP Trunk:</p>
 <ol>
 <li>
-<p>Click <strong>Configure SIP Transfer</strong>.<br />
-    <a class="glightbox" href="../images/configure-sip-transfer.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-sip-transfer.png" alt="Configure SIP Transfer" title="Configure SIP Transfer" style="border: 1px solid gray; zoom:100%;"></a></p>
+<p>Click <strong>Configure SIP Trunk</strong>.<br />
+    <a class="glightbox" href="../images/configure-sip-trunk.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>On the <strong>Transfer from IVR</strong> page, configure the following:</p>
+<p>On the <strong>Configure SIP Trunk</strong> page, configure the following:</p>
 <ol>
+<li><strong>Product Selection</strong>: Select the product for which the SIP Trunk is being configured. You can select from the following options:<ul>
+<li>Contact Center AI</li>
+<li>Agent AI</li>
+</ul>
+</li>
 <li><strong>SIP URI</strong>: This is a pre-configured field.</li>
 <li>
 <p><strong>Network</strong>: To configure the Network, you can select one of the following:</p>
 <ol>
 <li>
 <p>Under <strong>List of IP Address</strong>, type the values for Incoming IP Address in the textbox.<br />
-    <a class="glightbox" href="../images/sip-transfer-setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sip-transfer-setup.png" alt="SIP Transfer Setup" title="SIP Transfer Setup" style="border: 1px solid gray; zoom:100%;"></a></p>
+    <a class="glightbox" href="../images/sip-trunk-setup.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sip-trunk-setup.png" alt="SIP Trunk Setup" title="SIP Trunk Setup" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Under <strong>Domain Name</strong>, provide the following:</p>
 <ol>
 <li><strong>Fully Qualified Domain Name</strong>: The domain name specifies all domain levels, including the top-level domain and the root zone.</li>
-<li><strong>DNS Resolve Method</strong> (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose A-record, SRV, NAPTR, or MS-SYNC.
-    <a class="glightbox" href="../images/dns-resolve-method.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:100%;"></a></li>
+<li><strong>DNS Resolve Method</strong> (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
+    <a class="glightbox" href="../images/dns-resolve-method.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ol>
 </li>
+<li>Under <strong>MS Teams</strong>, provide a Fully Qualified Domain Name (The domain name that specifies all domain levels, including the top-level domain and the root zone).<br />
+        <a class="glightbox" href="../images/ms-teams.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ol>
 </li>
 <li>
-<p>Under <strong>Direct Inward Dialing (DID) number</strong>, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.</p>
+<p>(Optional) The <strong>E.164 Syntax</strong> is selected by default. Selecting this option prepends a + before the DID number.<br />
+    <a class="glightbox" href="../images/e-164.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/e-164.png" alt="E-164 Syntax" title="E-164-Syntax" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
+<li>Under <strong>Direct Inward Dialing (DID) number</strong>, you can enable virtual phone numbers (SIP trunk numbers) from which calls will be routed to the existing telephone lines.</li>
+<li><strong>DTMF Type</strong>: (Optional) Select the DTMF type. RC2833 is the default selection.</li>
 <li>Select an option from the list for <strong>SIP Transport Type</strong>. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are <em>TCP</em>, <em>UDF</em>, and <em>TLS</em>.</li>
-<li>(Optional) Set the <strong>SIP Credentials</strong> (username and password) to access your SIP transfer setup account.</li>
+<li>(Optional) Set the <strong>SIP Credentials</strong> (username and password) to access your SIP trunk setup account.</li>
+<li>Under SIP Termination URI, enter the <strong>IP Address</strong>/<strong>Domain Name</strong>.</li>
+<li>Enter the <strong>SIP Headers</strong>.</li>
 <li>
 <p>Click <strong>Next</strong>.<br />
-    <a class="glightbox" href="../images/did-number.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:100%;"></a></p>
+    <a class="glightbox" href="../images/did-number.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>On the <strong>Forward to Phone Number</strong> window, reserve the phone numbers for <strong>Inbound Calls</strong>, <strong>Outbound Calls</strong>, or both by selecting the appropriate options.</p>
 </li>
 <li>
 <p>Click <strong>Save</strong>.<br />
-<a class="glightbox" href="../images/reserve-number.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:100%;"></a>  </p>
+<a class="glightbox" href="../images/reserve-number.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:80%;"></a>  </p>
 <p>Please wait for upto ten minutes after saving for the IPs to be whitelisted.<br />
 <a class="glightbox" href="../images/ip-whitelist-message.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>The selected information appears on the Channels page.<br />
+<p>The selected information appears on the SIP Numbers tab.<br />
     <a class="glightbox" href="../images/sip-numbers-added.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/sip-numbers-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:100%;"></a></p>
 </li>
 </ol>
