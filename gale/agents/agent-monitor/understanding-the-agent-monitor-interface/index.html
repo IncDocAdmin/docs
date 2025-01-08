@@ -1241,6 +1241,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../agents-flows/types-of-nodes/docsearch-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DocSearch Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../agents-flows/types-of-nodes/end-node/" class="md-nav__link">
         
   
@@ -1605,6 +1626,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#understanding-the-impact-of-timeouts-on-agent-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Impact of Timeouts on Agent Endpoints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#searching-and-filtering-information" class="md-nav__link">
     <span class="md-ellipsis">
       Searching and Filtering Information
@@ -1643,15 +1673,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-the-impact-of-timeouts-on-agent-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Understanding the Impact of Timeouts on Agent Endpoints
-    </span>
-  </a>
   
 </li>
       
@@ -2555,7 +2576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../models/open-source-models/open-source-summary.md" class="md-nav__link">
+      <a href="../../../models/open-source-models/open-source-summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3753,6 +3774,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#understanding-the-impact-of-timeouts-on-agent-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Impact of Timeouts on Agent Endpoints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#searching-and-filtering-information" class="md-nav__link">
     <span class="md-ellipsis">
       Searching and Filtering Information
@@ -3791,15 +3821,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-the-impact-of-timeouts-on-agent-endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Understanding the Impact of Timeouts on Agent Endpoints
-    </span>
-  </a>
   
 </li>
       
@@ -3916,6 +3937,30 @@
 <p><a class="glightbox" href="../images/agent_monitor_viewing_run_information_detailed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_viewing_run_information_detailed.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 </ul>
+<h2 id="understanding-the-impact-of-timeouts-on-agent-endpoints">Understanding the Impact of Timeouts on Agent Endpoints<a class="headerlink" href="#understanding-the-impact-of-timeouts-on-agent-endpoints" title="Permanent link">&para;</a></h2>
+<p>The impact of timeouts on agent endpoints depends on whether the process is synchronous (Sync) or asynchronous (Async). <strong>Sync</strong> requests are handled and fulfilled immediately, while <strong>Async</strong> requests may pause and show a ‘Waiting’ status until a response is received. If the response time is longer or the timeout is set to infinite, the system will wait indefinitely until the external system responds.</p>
+<p>Below are the four scenarios showing how timeouts affect the agent endpoint, along with the corresponding status on the Agent monitoring page:</p>
+<p><strong>Agent 'Sync' &amp; API node 'Sync'</strong>:</p>
+<ul>
+<li>Request immediately fulfilled, no specific message to the endpoint.</li>
+<li>'In-progress' status while running.</li>
+</ul>
+<p><strong>Agent 'Sync' &amp; API node 'Async' (API node timeout &lt; Agent Sync timeout)</strong>:</p>
+<ul>
+<li>Agent API retrieves data, flow executes as 'In-progress' status, and the response is sent.</li>
+<li>External requests: Agent execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when agent execution resumes.</li>
+</ul>
+<p><strong>Agent 'Async' &amp; API node 'Sync'</strong>:</p>
+<ul>
+<li>Agent executes, and the response is sent to the callback URL.</li>
+<li>'In-progress' status while flow is running.</li>
+</ul>
+<p><strong>Agent 'Async' &amp; API node 'Async' (API node timeout &lt; Agent Async timeout OR both are set to infinite)</strong>:</p>
+<ul>
+<li>External requests: Agent execution is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when agent execution resumes.</li>
+<li>If the external system tries the same callback URL again, it will be notified that the request has already been fulfilled.</li>
+</ul>
+<p>The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see <a href="https://docs.kore.ai/gale/agents/configure-an-agent/">Configure an Agent</a> and <a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/">API Node</a>.</p>
 <h2 id="searching-and-filtering-information">Searching and Filtering Information<a class="headerlink" href="#searching-and-filtering-information" title="Permanent link">&para;</a></h2>
 <h3 id="manual-search">Manual Search<a class="headerlink" href="#manual-search" title="Permanent link">&para;</a></h3>
 <p>Use the search box in the top right corner of the Agent monitor page to find specific runs or calls based on keywords.</p>
@@ -3953,30 +3998,6 @@
 <p>Click <strong>Apply</strong>.</p>
 </li>
 </ol>
-<h2 id="understanding-the-impact-of-timeouts-on-agent-endpoints">Understanding the Impact of Timeouts on Agent Endpoints<a class="headerlink" href="#understanding-the-impact-of-timeouts-on-agent-endpoints" title="Permanent link">&para;</a></h2>
-<p>The impact of timeouts on agent endpoints depends on whether the process is synchronous (Sync) or asynchronous (Async). <strong>Sync</strong> requests are handled and fulfilled immediately, while <strong>Async</strong> requests may pause and show a ‘Waiting’ status until a response is received. If the response time is longer or the timeout is set to infinite, the system will wait indefinitely until the external system responds.</p>
-<p>Below are the four scenarios showing how timeouts affect the agent endpoint, along with the corresponding status on the Agent monitoring page:</p>
-<p><strong>Agent 'Sync' &amp; API node 'Sync'</strong>:</p>
-<ul>
-<li>Immediately fulfilled, no specific endpoint message.</li>
-<li>'In-progress' status while running.</li>
-</ul>
-<p><strong>Agent 'Sync' &amp; API node 'Async' (API node timeout &lt; Agent Sync timeout)</strong>:</p>
-<ul>
-<li>API retrieves data, flow executes as 'In-progress' status, and the response is sent.</li>
-<li>External requests: Flow is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when response returns.</li>
-</ul>
-<p><strong>Agent 'Async' &amp; API node 'Sync'</strong>:</p>
-<ul>
-<li>Flow executes, and the response is sent to the callback URL.</li>
-<li>'In-progress' status while flow is running.</li>
-</ul>
-<p><strong>Agent 'Async' &amp; API node 'Async' (API node timeout &lt; Agent Async timeout OR both are set to infinite)</strong>:</p>
-<ul>
-<li>External requests: Flow is paused awaiting external’s systems response with 'Waiting' status, resumes to 'In-progress' when response returns.</li>
-<li>Informs if the request has already been fulfilled on retry.</li>
-</ul>
-<p>The timeout settings affect how long the system waits for responses and how it handles retries, ensuring proper status updates and communication with external systems. For more information on configuring timeouts, see <a href="https://docs.kore.ai/gale/agents/configure-an-agent/">Configure an Agent</a> and <a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/">API Node</a>.</p>
 
 
 
