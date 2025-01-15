@@ -6194,11 +6194,53 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/freshdesk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Freshdesk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../searchai/content-sources/connectors/freshservice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Freshservice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/front/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Front
   </span>
   
 
@@ -7349,7 +7391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/" class="md-nav__link">
+      <a href="../minimum-system-and-browser-requirements.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -16308,13 +16350,13 @@
   <tr>
    <td>Chrome
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
   <tr>
@@ -16322,23 +16364,23 @@
    </td>
    <td>Supported  
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
   <tr>
    <td>Safari
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
-   <td>Supported 
+   <td>Supported
    </td>
   </tr>
 </table>
@@ -16348,23 +16390,25 @@
 <li>Chrome — Requires a current major release or one previous version.</li>
 <li>Microsoft Edge Chromium — Requires current release.</li>
 </ul>
-<p>Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well. \
+<p>Version recommendations are made based on the outcomes of Kore’s internal testing. The software may work without issues on older browser versions as well.<br />
 Still, the customer will be required to update browser versions if an issue is identified due to browser version mismatches.</p>
-<div class="language-text highlight"><pre><span></span><code>!!! Notes
-
-    * The latest version of Chrome, Safari, or Edge.
-    * JavaScript and cookies must be enabled.
-    * Grant permissions and allow access to the camera and microphone when prompted by the browser.
-    * Turn off the pop-up blocker, and allow a separate WebRTC window to open.
-    * Grant permissions and allow users to share their screen, a specific window, or the entire desktop when prompted.
-    * Allow Transport Layer Security (TLS) v.1.2 protocol (Kore.AI doesn’t support TLS versions 1.0, 1.1, and 1.3).
-    * Do not minimize the active call tab or window. If you minimize the active window, then the client stops working properly. \
-    For example, you may experience a delay when you answer a call or are unable to answer a call. Restore the minimized window for the client to function properly.
-    * Chrome updates automatically. Versions of Chrome are only an issue if the customer’s IT department restricts automatic updates.
-    * Running Microsoft Edge in IE compatibility mode is not supported.
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The latest version of Chrome, Safari, or Edge.</li>
+<li>JavaScript and cookies must be enabled.</li>
+<li>Grant permissions and allow access to the camera and microphone when prompted by the browser.</li>
+<li>Turn off the pop-up blocker, and allow a separate WebRTC window to open.</li>
+<li>Grant permissions and allow users to share their screen, a specific window, or the entire desktop when prompted.</li>
+<li>Allow Transport Layer Security (TLS) v.1.2 protocol (Kore.AI doesn’t support TLS versions 1.0, 1.1, and 1.3).</li>
+<li>Do not minimize the active call tab or window. If you minimize the active window, then the client stops working properly.<br />
+For example, you may experience a delay when you answer a call or are unable to answer a call. Restore the minimized window for the client to function properly.</li>
+<li>Chrome updates automatically. Versions of Chrome are only an issue if the customer’s IT department restricts automatic updates.</li>
+<li>Running Microsoft Edge in IE compatibility mode is not supported.</li>
+</ul>
+</div>
 <h3 id="disable-your-browsers-sleep-mode-setting">Disable Your Browser’s Sleep Mode Setting<a class="headerlink" href="#disable-your-browsers-sleep-mode-setting" title="Permanent link">&para;</a></h3>
-<p>When using the SmartAssist/XOCC console in a browser with multiple tabs open, you may experience connection issues when the console isn’t the active tab. To prevent this from happening, you might want to consider disabling your browser’s sleep mode setting. For more information, see below.</p>
+<p>When using the Contact Center AI console in a browser with multiple tabs open, you may experience connection issues when the console isn’t the active tab. To prevent this from happening, you might want to consider disabling your browser’s sleep mode setting. For more information, see below.</p>
 <h4 id="microsoft-edge">Microsoft Edge<a class="headerlink" href="#microsoft-edge" title="Permanent link">&para;</a></h4>
 <p>In Microsoft Edge, you can disable sleep mode for specific sites.</p>
 <ol>
@@ -16388,7 +16432,7 @@ Still, the customer will be required to update browser versions if an issue is i
 <li>Type your region domain in the Site box. For example, <strong>platform.kore.ai</strong>.</li>
 <li>Click <strong>Add</strong>.</li>
 </ol>
-<h2 id="firewall-requirements"><strong>Firewall Requirements</strong><a class="headerlink" href="#firewall-requirements" title="Permanent link">&para;</a></h2>
+<h2 id="firewall-requirements">Firewall Requirements<a class="headerlink" href="#firewall-requirements" title="Permanent link">&para;</a></h2>
 <p>Allow traffic and whitelist the ports listed below in their respective firewalls based on the Session Border Controller (SBC) they connect to.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">REGION – USA</label><label for="__tabbed_1_2">REGION – Japan (JP)</label><label for="__tabbed_1_3">Region - Germany (DE)</label></div>
 <div class="tabbed-content">
