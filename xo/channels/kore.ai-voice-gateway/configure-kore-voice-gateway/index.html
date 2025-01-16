@@ -3182,7 +3182,7 @@
         
   
   <span class="md-ellipsis">
-    Agent Node v2
+    Overview
   </span>
   
 
@@ -3199,11 +3199,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../automation/use-cases/dialogs/node-types/genai-node/" class="md-nav__link">
+      <a href="../../../automation/use-cases/dialogs/node-types/agent-node-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Agent Node v1
+    Configure the Node
   </span>
   
 
@@ -6847,6 +6847,27 @@
   
   <span class="md-ellipsis">
     SharePoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/slack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slack
   </span>
   
 
@@ -16876,11 +16897,13 @@
 <ol>
 <li><strong>Fully Qualified Domain Name</strong>: The domain name specifies all domain levels, including the top-level domain and the root zone.</li>
 <li><strong>DNS Resolve Method</strong> (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
-    <a class="glightbox" href="../images/dns-resolve-method.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;"></a></li>
+    <a class="glightbox" href="../images/dns-resolve-method.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;"></a>  </li>
 </ol>
 </li>
-<li>Under <strong>MS Teams</strong>, provide a Fully Qualified Domain Name (The domain name that specifies all domain levels, including the top-level domain and the root zone).<br />
-        <a class="glightbox" href="../images/ms-teams.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li>
+<p>Under <strong>MS Teams</strong>, provide a Fully Qualified Domain Name (The domain name that specifies all domain levels, including the top-level domain and the root zone).<br />
+        <a class="glightbox" href="../images/ms-teams.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
 </ol>
 </li>
 <li>
@@ -16892,7 +16915,20 @@
 <li>Select an option from the list for <strong>SIP Transport Type</strong>. This field will set a protocol to route SIP traffic to servers and other endpoints. The available options are <em>TCP</em>, <em>UDF</em>, and <em>TLS</em>.</li>
 <li>(Optional) Set the <strong>SIP Credentials</strong> (username and password) to access your SIP trunk setup account.</li>
 <li>Under SIP Termination URI, enter the <strong>IP Address</strong>/<strong>Domain Name</strong>.</li>
-<li>Enter the <strong>SIP Headers</strong>.</li>
+<li>
+<p>Enter the <strong>SIP Headers</strong>. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:</p>
+<ul>
+<li>X-AgentName: {{agentName}}</li>
+<li>X-AgentPhoneNumber: {{agentPhoneNumber}}</li>
+<li>X-AgentEmailID:  {{agentEmailId}}</li>
+<li>X-AgentGroup: {{agentGroup}}</li>
+<li>X-AgentCustomID: {{agentCustomId}}</li>
+<li>X-AgentNickName: {{agentNickName}}</li>
+<li>X-QueueName:  {{agentQueue}}</li>
+<li>X-AgentFirstName: {{agentFirstName}}</li>
+<li>X-AgentLastName: {{agentLastName}}</li>
+</ul>
+</li>
 <li>
 <p>Click <strong>Next</strong>.<br />
     <a class="glightbox" href="../images/did-number.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:80%;"></a></p>
