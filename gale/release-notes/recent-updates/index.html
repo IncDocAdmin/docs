@@ -835,6 +835,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v108-january-10-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.0.8 January 10, 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v107-december-25-2024" class="md-nav__link">
     <span class="md-ellipsis">
       v1.0.7 December 25, 2024
@@ -3711,6 +3720,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v108-january-10-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.0.8 January 10, 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v107-december-25-2024" class="md-nav__link">
     <span class="md-ellipsis">
       v1.0.7 December 25, 2024
@@ -3793,6 +3811,38 @@
 
 <h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h1>
 <p>This document provides information on the feature updates and enhancements introduced in the recent GALE releases.</p>
+<h2 id="v108-january-10-2025">v1.0.8 January 10, 2025<a class="headerlink" href="#v108-january-10-2025" title="Permanent link">&para;</a></h2>
+<p><u> Minor Release </u></p>
+<p>This update includes new features, enhancements, security fixes, and bug fixes summarized below.</p>
+<p><strong>New Features</strong></p>
+<ul>
+<li><strong>Evaluation Studio</strong>: GALE’s new Evaluation Studio serves as a comprehensive tool for assessing LLM performance. The platform offers users the flexibility to either select from a variety of pre-existing evaluators or design their own to measure model effectiveness. Users can upload and organize datasets, which include inputs and outputs, into designated projects. The evaluation process accommodates adjustable thresholds and scoring metrics, allowing customization based on specific evaluator needs.</li>
+<li><strong>Public API Support</strong>: Users can now generate and manage API keys with customizable expiration dates and scopes (e.g., deploying models or agents). The API endpoints enables users to deploy, undeploy, import, and export GALE agents, models, and guardrails with the appropriate permissions.</li>
+</ul>
+<p><strong>Feature Enhancements</strong></p>
+<ul>
+<li><strong>Function Calling:</strong><ul>
+<li>Tool traceability and enhanced debugger in Gen AI nodes: Users can now trace tool calls (both sequential and parallel) in the Gen AI node. Each tool call is logged, with input and output data displayed in the debug panel, with a dedicated tool trace view.</li>
+<li>Agent and model analytics also include relevant metrics for tool calls, such as latency and token calculations.</li>
+<li>Change log and permissions: Tool-related events are now captured in the flow change log of the GenAI node. User permissions determine if they can add tools to the builder.</li>
+<li>Tool output variables: At least one output variable is now required for every end node in the agent flow. If not added, an error message will appear, the debug run will fail, and new flow versions cannot be deployed.</li>
+</ul>
+</li>
+<li><strong>Improved Model Deployment and Fine-tuning:</strong> Specific folders in AWS S3 buckets are now mounted directly to fine-tuning and deployment pods in K8s cluster, reducing the need to download files. This improves deployment and fine-tuning service start times, especially in autoscaling scenarios.</li>
+<li><strong>Improved Test Automation with data-id Attributes</strong>: Added data-id attributes to all actionable elements on the frontend to improve test automation stability despite ongoing UI changes.</li>
+</ul>
+<p><strong>Security Enhancements</strong></p>
+<ul>
+<li>The Python version is upgraded to 3.10.15 in the following ML services: ml-training, ml-ray, ml-inference, and ml-guardrail.</li>
+<li>Analyzed and fixed security vulnerabilities in ML services.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Fixed an issue where the DocSearch response appeared blank in agent monitoring when executing an agent with a DocSearch node.</li>
+<li>Resolved the issue where users were unable to view the flow when importing an agent into a shared workspace.</li>
+</ul>
+<hr>
+
 <h2 id="v107-december-25-2024">v1.0.7 December 25, 2024<a class="headerlink" href="#v107-december-25-2024" title="Permanent link">&para;</a></h2>
 <p><u> Minor Release </u></p>
 <p>This update includes new features, feature enhancements, and security enhancements, summarized below.</p>
