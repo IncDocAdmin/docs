@@ -16872,10 +16872,6 @@
 </li>
 </ul>
 <h4 id="pre-processor-script">Pre-Processor Script<a class="headerlink" href="#pre-processor-script" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The pre-processor script does not apply to the custom prompt.</p>
-</div>
 <p>This property helps execute a script as the first step when the Agent Node is reached. Use the script to manipulate data and incorporate it into rules or exit scenarios as required. The Pre-processor Script has the same properties as the Script Node. <a href="../working-with-the-script-node/#configure-the-node" target="_blank">Learn more</a>.</p>
 <p>To define a pre-processor script, click <strong>Define Script</strong>, add the script you want to execute, and click <strong>Save</strong>. Enable <strong>Auto Save</strong> to save your work automatically after one second of inactivity. It must be re-enabled each time you open the editor.</p>
 <p><a class="glightbox" href="../images/pre_prosessor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/pre_prosessor.png" alt="Pre prosessor Script" title="Pre prosessor Script" style="border: 1px solid gray; zoom:70%;"></a></p>
@@ -16889,7 +16885,7 @@
 <p>Tools allow the Agent Node to interact with external services, fetching or posting data as needed. When called, they let language models perform tasks or obtain information by executing actions linked to Script, Service, or Search AI nodes. Users can add a maximum of 5 tools to each node.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Tool calling is supported only with custom prompts (Javascript) without streaming.</p>
+<p>The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.</p>
 </div>
 <p>Click <strong>+ Add</strong> to open the <strong>New Tool</strong> creation window.  </p>
 <p><a class="glightbox" href="../images/genai-node(18).png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/genai-node(18).png" alt="Tools" title="Tools" style="border: 1px solid gray; zoom:70%;"></a></p>
@@ -16930,10 +16926,6 @@
 <p>There is a 250-character limit to the Scenarios field, and you can add a maximum of 5 scenarios.</p>
 <p><a class="glightbox" href="../images/exitv2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/exitv2.png" alt="Exit Scenarios" title="Exit Scenarios" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h4 id="post-processor-script">Post-Processor Script<a class="headerlink" href="#post-processor-script" title="Permanent link">&para;</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The post-processor script does not apply to the custom prompt.</p>
-</div>
 <p>This property initiates the post-processor script after processing every user input as part of the Agent Node. Use the script to manipulate the response captured in the context variables just before exiting the Agent Node for both the success and exit scenarios. The Post-processor Script has the same properties as the Script Node. <a href="../working-with-the-script-node/#configure-the-node" target="_blank">Learn more</a>.</p>
 <p><strong>Important Considerations</strong></p>
 <p>If the Agent Node requires multiple user inputs, the post-processor is executed for every user input received.</p>
@@ -16997,6 +16989,16 @@ You can define transitions using the context variables.</p>
 <h2 id="custom-prompt-for-agent-node">Custom Prompt for Agent Node<a class="headerlink" href="#custom-prompt-for-agent-node" title="Permanent link">&para;</a></h2>
 <p>Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
 The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.</p>
+<p>Agent Node with custom prompt supports configuring pre and post-processor scripts at both node and prompt levels. This enables platform users to reuse the same custom prompt across multiple nodes while customizing the processing logic, input variables, and output keys for each specific use case. </p>
+<p>When you configure pre and post-processor scripts at both node and prompt levels, the execution order is: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Configuring pre and post-processor scripts at both node and prompt levels may increase latency.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Node-level pre and post-processor scripts support <a href="../../../../../app-settings/dev-tools/reusing-bot-functions-custom-script-file/">App Functions</a> in addition to content, context, and environment variables.</p>
+</div>
 <p>Let’s review a sample prompt written in Javascript and follow the step-by-step instructions to create a custom prompt. </p>
 <p>Sample JavaScript</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>let payloadFields = {
@@ -17093,14 +17095,14 @@ The custom prompt feature enables users to process the prompt and variables to g
 <a class="glightbox" href="../images/toolcall1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/toolcall1.png" alt="Start from Scratch" title="Start from Scratch" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>Ensure the Stream Response is disabled, as the Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.</p>
+<p>Ensure the Stream Response is disabled, as the Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.</p>
 </li>
 <li>
 <p>Click <strong>JavaScript</strong>. The Switch Mode pop-up is displayed. Click <strong>Continue</strong>.<br />
 <a class="glightbox" href="../images/switch.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/switch.png" alt="ISwitch Mode" title="Switch Mode" style="border: 1px solid gray; zoom:70%;"></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Agent Node with the Tool Calling functionality is compatible only with the non-streaming custom JavaScript prompt.</p>
+<p>The Agent Node supports tool-calling with custom JavaScript prompts in non-streaming mode.</p>
 </div>
 </li>
 <li>

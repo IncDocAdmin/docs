@@ -2115,6 +2115,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#managing-multiple-prompts-in-ivr-voice-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Multiple Prompts in IVR Voice Channel
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -16519,6 +16528,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#managing-multiple-prompts-in-ivr-voice-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Multiple Prompts in IVR Voice Channel
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -16760,11 +16778,7 @@ button, which becomes visible upon hovering over the IVR icon under the <strong>
    </td>
    <td>Select any document to be the application root document
 
-
-
 <pre class="prettyprint">Note: The application root contains the file path, which is an entry point for the application.</pre>
-
-
    </td>
   </tr>
   <tr>
@@ -16858,6 +16872,10 @@ button, which becomes visible upon hovering over the IVR icon under the <strong>
 <p class="admonition-title">Note</p>
 <p>The information is available for the existing and new virtual assistants whose IVR channel is enabled.</p>
 </div>
+<h3 id="managing-multiple-prompts-in-ivr-voice-channel">Managing Multiple Prompts in IVR Voice Channel<a class="headerlink" href="#managing-multiple-prompts-in-ivr-voice-channel" title="Permanent link">&para;</a></h3>
+<p>In the IVR experience flow, multiple prompts can be consolidated into a single message before being handed over to the Virtual Assistant through the Automation Node. This ensures effective capture of user inputs, minimizes the risk of call disconnections and provides seamless functionality across IVR voice and IVR channels.</p>
+<p>When the IVR is active, prompts defined within the flow are combined and delivered as a single message to the Virtual Assistant. Additionally, the system uses a "Prompt: True" flag to indicate it is awaiting user input, ensuring the interaction flow remains responsive and user inputs are accurately processed.</p>
+<p>The flow transitions smoothly from the Welcome Voice Flow to the Automation Node without losing user input, maintaining a seamless user experience. The platform captures and processes user input effectively during the initial interaction, ensuring uninterrupted communication.</p>
 
 
 
