@@ -2993,9 +2993,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-features-of-evaluation-studio" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features of Evaluation Studio
+      Key Features
     </span>
   </a>
   
@@ -3011,9 +3011,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#evaluation-studio-user-experience-overview" class="md-nav__link">
+  <a href="#user-experience-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Evaluation Studio: User Experience Overview
+      User Experience Overview
     </span>
   </a>
   
@@ -3861,9 +3861,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-features-of-evaluation-studio" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features of Evaluation Studio
+      Key Features
     </span>
   </a>
   
@@ -3879,9 +3879,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#evaluation-studio-user-experience-overview" class="md-nav__link">
+  <a href="#user-experience-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Evaluation Studio: User Experience Overview
+      User Experience Overview
     </span>
   </a>
   
@@ -3907,7 +3907,7 @@
 
 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
 <p>Evaluation Studio is a comprehensive tool in GALE for assessing LLM performance. It offers users the flexibility to select from a variety of pre-existing evaluators to measure model effectiveness. Users can upload and organize datasets (including inputs and outputs) into designated projects for evaluation, with adjustable thresholds and scoring metrics for customization based on specific needs. With Evaluation Studio, users can assess datasets against models, analyze results, and gain insights through a streamlined, user-friendly interface tailored to their selected criteria.</p>
-<h2 id="key-features-of-evaluation-studio">Key Features of Evaluation Studio<a class="headerlink" href="#key-features-of-evaluation-studio" title="Permanent link">&para;</a></h2>
+<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Project-based Organization:</strong> Projects serve as folders for evaluations. Users can create multiple evaluations under a project, and each evaluation contains a dataset. Users can create, rename, and delete projects.</li>
 <li><strong>Flexible Dataset Handling and Import:</strong> Evaluation Studio supports importing data through CSV files (with input-output pairs or input data).</li>
@@ -3926,61 +3926,25 @@
 <li><strong>Customizability:</strong> Users can define evaluation criteria that suit their specific needs. The platform adapts to different evaluation scenarios, from simple to complex use cases.</li>
 <li><strong>Continuous Improvement:</strong> Regular evaluations allow users to track model performance over time, ensuring that models are updated or fine-tuned as needed for ongoing optimization.</li>
 </ol>
-<h2 id="evaluation-studio-user-experience-overview">Evaluation Studio: User Experience Overview<a class="headerlink" href="#evaluation-studio-user-experience-overview" title="Permanent link">&para;</a></h2>
-<p>The following table outlines the key actions at each stage of the Evaluation Studio user journey. It serves as a quick reference, guiding users through the process.</p>
-<table>
-  <tr>
-   <td><strong>Step</strong>
-   </td>
-   <td><strong>Action</strong>
-   </td>
-   <td><strong>Link to procedure </strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>1. Create a Project</strong>
-   </td>
-   <td>Log in to GALE, go to Evaluation Studio, and
-    create a project.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/create-project/"> Creating a Project</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>2. Create an Evaluation</strong>
-   </td>
-   <td>Create an evaluation for your project.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/create-evaluation/"> Creating an Evaluation</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>3. Import a Dataset</strong>
-   </td>
-   <td>Upload your dataset (e.g., CSV) for evaluation.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/import-dataset/"> Importing a dataset</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>4. Configure Evaluators</strong>
-   </td>
-   <td>Choose Quality or Safety evaluators such as Coherence,  
-    Toxicity, or Bias Detection. Link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/configure-evaluator/"> Adding an Evaluator</a>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>5. Run the Evaluation</strong>
-   </td>
-   <td>Trigger the evaluation based on your dataset  
-    and selected evaluators.
-   </td>
-   <td><a href="https://docs.kore.ai/gale/evaluation/run-evaluation/"> Run an evaluation</a>
-   </td>
-  </tr>
- </table>
+<h2 id="user-experience-overview">User Experience Overview<a class="headerlink" href="#user-experience-overview" title="Permanent link">&para;</a></h2>
+<p>The following outlines the key actions at each stage of the Evaluation Studio user journey:</p>
+<ol>
+<li>
+<p><a href="../create-project/"><strong>Create a project</strong></a>: Log in to GALE, go to Evaluation Studio, and create a project.</p>
+</li>
+<li>
+<p><a href="../create-evaluation/"><strong>Create an evaluation</strong></a>: Create an evaluation for your project.</p>
+</li>
+<li>
+<p><a href="../import-dataset/"><strong>Import a dataset</strong></a>: Upload your dataset (e.g., CSV) for evaluation.</p>
+</li>
+<li>
+<p><a href="../configure-evaluator/"><strong>Configuring an evaluator</strong></a>: Choose Quality or Safety evaluators such as Coherence, Toxicity, or Bias Detection. Then, link the evaluator’s prompt variables (e.g., {{input}}, {{output}}) to the dataset columns.</p>
+</li>
+<li>
+<p><a href="../run-evaluation/"><strong>Run an evaluation</strong></a>: Trigger the evaluation based on your dataset and selected evaluators.</p>
+</li>
+</ol>
 
 
 
