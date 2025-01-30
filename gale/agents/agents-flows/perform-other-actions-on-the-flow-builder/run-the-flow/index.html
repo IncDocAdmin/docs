@@ -1002,6 +1002,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-calling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Tool Calling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1019,10 +1040,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1033,8 +1054,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_4_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4_3">
             <span class="md-nav__icon md-icon"></span>
             Manage Flows
           </label>
@@ -1241,10 +1262,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1255,8 +1276,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_4">
             <span class="md-nav__icon md-icon"></span>
             Types of Nodes
           </label>
@@ -4007,10 +4028,11 @@
 <p>The debug log lets you monitor the flow’s execution and track output results, helping you troubleshoot performance issues. It captures detailed information about each step in a flow, including inputs, execution status, errors, and timing.</p>
 <p>The debug log shows the following key details:</p>
 <ul>
-<li><strong>Flow input values</strong>: View the values you entered for the input variables when setting up the flow, which are used to run the agent.</li>
+<li><strong>Flow input values</strong>: View the values you entered for the input variables when setting up the flow. </li>
 <li><strong>Flow-level log details</strong>: Get an overview of logs at the flow level, including initiation and progress.</li>
 <li><strong>Node-level information</strong>: For each flow initiation, detailed logs are provided for each node, which include the success or failure status.</li>
-<li><strong>Node success/failure Links</strong>: Links to additional details if a node succeeds or fails.</li>
+<li><strong>Node success/failure links</strong>: Links to additional details if a node succeeds or fails.</li>
+<li><strong>Tool calling details</strong>: Provides detailed logs of any tools called during the agent flow's execution (available only for Gen AI nodes). It records when tools are triggered, the inputs passed to them (JSON), responses or results received, and any errors that occurred during tool calling. A separate panel shows detailed tool traces, including step-by-step logs of each tool’s execution. This helps track the performance and usage of the tools in the flow.</li>
 <li><strong>Node metrics</strong>: For each node, the following metrics are available:<ul>
 <li><strong>Initiated On</strong>: The timestamp for when the node was triggered.</li>
 <li><strong>Executed On</strong>: The timestamp for when the node execution was completed.</li>

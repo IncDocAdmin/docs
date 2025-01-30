@@ -1824,41 +1824,17 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Voice Preferences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#text-to-speech-engine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Text-to-Speech Engine
-    </span>
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#automated-speech-recognition-engine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Automated Speech Recognition Engine
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated Speech Recognition Engine">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#list-of-supported-dialects" class="md-nav__link">
     <span class="md-ellipsis">
       List of Supported Dialects
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="List of Supported Dialects">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#voice-call-properties" class="md-nav__link">
@@ -16714,41 +16690,17 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Voice Preferences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#text-to-speech-engine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Text-to-Speech Engine
-    </span>
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#automated-speech-recognition-engine" class="md-nav__link">
-    <span class="md-ellipsis">
-      Automated Speech Recognition Engine
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated Speech Recognition Engine">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#list-of-supported-dialects" class="md-nav__link">
     <span class="md-ellipsis">
       List of Supported Dialects
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="List of Supported Dialects">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#voice-call-properties" class="md-nav__link">
@@ -17086,74 +17038,116 @@
 <h2 id="voice-preferences">Voice Preferences<a class="headerlink" href="#voice-preferences" title="Permanent link">&para;</a></h2>
 <p>You can configure the voice preferences to personalize the ASR Engine and the voice that plays for your TTS conversions by going to the Voice Preferences tab and clicking <strong>Manage</strong>.<br />
     <a class="glightbox" href="../images/voice-preferences.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/voice-preferences.png" alt="Voice Preferences" title="Voice Preferences" style="border: 1px solid gray; zoom:80%;"></a></p>
-<h3 id="text-to-speech-engine">Text-to-Speech Engine<a class="headerlink" href="#text-to-speech-engine" title="Permanent link">&para;</a></h3>
-<p>Steps to configure the TTS engine:</p>
+<p>Steps to configure Voice Preferences:</p>
 <ol>
-<li>In the Voice Preferences window, select a text-to-speech engine. <a href="../call-control-parameters/#supported-speech-engines">Learn more</a>.</li>
-<li>Enter <strong>Sample Text</strong> to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (<strong>⋮</strong>) button reveals options to change the <strong>Playback Speed</strong> and <strong>Download</strong> the voice preview.</li>
-<li>Click the <strong>Play</strong> button next to any available voice to preview it. Voices are available for all TTS engines, but each has its voice options.</li>
-<li>Select a different Voice Language if required.<br />
-    <a class="glightbox" href="../images/tts-engine.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/tts-engine.gif" alt="TTS Engine" title="TTS Engine" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li>Select the following on the Voice Preferences window:<ol>
+<li>Language</li>
+<li>Automatic Speech Recognition Engine (ASR)<ol>
+<li>ASR
+    You can choose between<ul>
+<li>Microsoft Azure Speech Services,</li>
+<li>Google Cloud Speech-to-Text,</li>
+<li>Amazon Transcribe.</li>
+</ul>
+</li>
+<li>Dialect</li>
+<li>Primary ASR Configuration (Advanced Setting)</li>
+<li>Fallback ASR Configuration (Advanced Setting)</li>
 </ol>
-<h3 id="automated-speech-recognition-engine">Automated Speech Recognition Engine<a class="headerlink" href="#automated-speech-recognition-engine" title="Permanent link">&para;</a></h3>
-<p>Steps to configure the ASR Engine:</p>
-<ol>
-<li>Select an <strong>Automated Speech Recognition Engine</strong>. <a href="../call-control-parameters/#supported-speech-engines">Learn more</a>.</li>
-<li>
-<p>Select the Dialect and click <strong>Done</strong> once you have completed configuring your voice preferences.<br />
-    <a class="glightbox" href="../images/asr-engine.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/asr-engine.png" alt="ASR Engine" title="ASR Engine" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The set voice, language, and dialect apply to automated customer responses that use text-to-speech.</p>
+</li>
+<li>Text to Speech Engine (TTS)<ol>
+<li>TTS
+    You can choose between<ul>
+<li>Microsoft Azure Speech Services,</li>
+<li>Google Cloud Text-to-Speech,</li>
+<li>AWS Amazon Polly,</li>
+<li>ElevenLabs,</li>
+<li>Whisper,</li>
+<li>PlayHT,</li>
+<li>Deepgram Text-to-speech.</li>
+</ul>
+</li>
+<li>Voice</li>
+</ol>
+</li>
+<li>Voice Preview<ol>
+<li>Sample Text: Enter Sample Text to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Clicking the More Options (<strong>⋮</strong>) button reveals options to adjust Playback Speed. Click the Play button next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its voice options. Select a different Voice Language if required.</li>
+<li>Primary TTS Configuration (Advanced Setting)</li>
+<li>Fallback TTS Configuration (Advanced Setting)</li>
+</ol>
 </li>
 </ol>
-<h4 id="list-of-supported-dialects">List of Supported Dialects<a class="headerlink" href="#list-of-supported-dialects" title="Permanent link">&para;</a></h4>
+</li>
+<li>
+<p>Click <strong>Done</strong> once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.  </p>
+<p><a class="glightbox" href="../images/voice-preferences-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ol>
+<h2 id="list-of-supported-dialects">List of Supported Dialects<a class="headerlink" href="#list-of-supported-dialects" title="Permanent link">&para;</a></h2>
 <p>The following dialects are supported:</p>
 <table>
   <tr>
-   <td>English (Australia)
-   </td>
-   <td>English (Nigeria)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Canada)
-   </td>
-   <td>English (Pakistan)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Ghana)
-   </td>
-   <td>English (Philippines)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Hong Kong)
-   </td>
-   <td>English (Singapore)
-   </td>
-  </tr>
-  <tr>
-   <td>English (India)
-   </td>
-   <td>English (South Africa)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Ireland)
-   </td>
-   <td>English (Tanzania)
-   </td>
-  </tr>
-  <tr>
-   <td>English (Kenya)
-   </td>
-   <td>English (United Kingdom)
-   </td>
-  </tr>
-  <tr>
-   <td>English (New Zealand)
+   <td>
+    English (Australia)
    </td>
    <td>
+    English (Nigeria)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Canada)
+   </td>
+   <td>
+    English (Pakistan)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Ghana)
+   </td>
+   <td>
+    English (Philippines)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Hong Kong)
+   </td>
+   <td>
+    English (Singapore)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (India)
+   </td>
+   <td>
+    English (South Africa)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Ireland)
+   </td>
+   <td>
+    English (Tanzania)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (Kenya)
+   </td>
+   <td>
+    English (United Kingdom)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    English (New Zealand)
+   </td>
+   <td>
+    English (United States)
    </td>
   </tr>
 </table>
