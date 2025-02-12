@@ -14,7 +14,7 @@
         <link rel="prev" href="../configure-evaluator/">
       
       
-        <link rel="next" href="../../settings/settings-overview/">
+        <link rel="next" href="../view-evaluation-insight/">
       
       
       <link rel="icon" href="../../images/gale_favicon.svg">
@@ -3080,6 +3080,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Run Evaluations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -3090,6 +3101,66 @@
 
       </a>
       
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#starting-an-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting an Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopping-an-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stopping an Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view-evaluation-insight/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    View Results
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -3816,6 +3887,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#starting-an-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting an Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopping-an-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stopping an Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3833,10 +3930,29 @@
 
 
 <h1 id="run-evaluations">Run Evaluations<a class="headerlink" href="#run-evaluations" title="Permanent link">&para;</a></h1>
-<p>After setting up the evaluators and mapping the variables, you can begin the evaluation process to assess your model’s performance against the defined criteria.</p>
-<p>To start an evaluation, click <strong>Run</strong> on the Evaluation page. The system will then assess the model’s output based on the provided input with the configured evaluators, displaying a 'Running evaluation' message as it works.</p>
+<p>After setting up the evaluators and mapping the variables, you can begin the evaluation process to assess your model’s performance against the defined criteria. You also have the flexibility to stop an evaluation at any point, depending on your needs.</p>
+<h2 id="starting-an-evaluation">Starting an Evaluation<a class="headerlink" href="#starting-an-evaluation" title="Permanent link">&para;</a></h2>
+<p>To start an evaluation, click <strong>Run</strong> on the Evaluation page. The system will then assess the model’s output based on the provided input with the configured evaluators.</p>
 <p>Once the evaluation is complete, the evaluator columns will be populated with scores, giving you a clear overview of the model’s performance.</p>
 <p><a class="glightbox" href="../images/results.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/results.png" alt="Results" title="Results" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>The evaluator tiles for each evaluator you've set up will also appear at the top in the Evaluation Insights section. This layout provides an easy, visual way to assess model performance against the defined thresholds.</p>
+<h2 id="stopping-an-evaluation">Stopping an Evaluation<a class="headerlink" href="#stopping-an-evaluation" title="Permanent link">&para;</a></h2>
+<p>If you decide to stop an evaluation midway, before it completes—perhaps because you're working with a large dataset and no longer wish to continue—you can stop the process to avoid unnecessary token consumption.</p>
+<p><strong>To stop the evaluation while it's running:</strong></p>
+<ol>
+<li>Click the <strong>Stop</strong> button at the top of the page.</li>
+<li>A confirmation message asks if you're sure you want to stop. Click 'Continue' to confirm. The evaluation will keep running in the background until you click 'Continue'.</li>
+<li>
+<p>Once you click 'Continue', the evaluation will be fully stopped, and all evaluators and rows will be halted.</p>
+<p><a class="glightbox" href="../images/stop_button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/stop_button.png" alt="Stopping evaluation" title="Stopping evaluation" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ol>
+<p><strong>If you stop the evaluation before it’s finished, keep in mind:</strong></p>
+<ul>
+<li>The number of generations processed up until the stop point will be calculated and displayed in the evaluation table.</li>
+<li>The data shown in Evaluation Insights will reflect the results generated up until the stop point.</li>
+<li>Tokens will be consumed for all generations processed up until the stop, even if the evaluation is not completed.</li>
+</ul>
 
 
 
@@ -3933,13 +4049,13 @@
         
         
           
-          <a href="../../settings/settings-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+          <a href="../view-evaluation-insight/" class="md-footer__link md-footer__link--next" aria-label="Next: View Results">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Overview
+                View Results
               </div>
             </div>
             <div class="md-footer__button md-icon">

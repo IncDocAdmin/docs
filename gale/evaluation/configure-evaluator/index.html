@@ -3184,6 +3184,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view-evaluation-insight/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    View Results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4118,7 +4139,7 @@
 <p>Steps to add an evaluator:</p>
 <ol>
 <li>
-<p>On the Evaluation Insights page, click the <strong>+</strong> button, and select the <strong>Add evaluator</strong> option.</p>
+<p>On the Evaluations page, click the <strong>+</strong> button, and select the <strong>Add evaluator</strong> option.</p>
 <p><a class="glightbox" href="../images/import_dataset_options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import_dataset_options.png" alt="Configure evaluator" title="Configure evaluator" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
@@ -4159,6 +4180,18 @@
 <li><strong>Safety Evaluators</strong>: For safety evaluators like Bias Detection or Toxicity, you may need to configure additional key-value pairs. These evaluators often provide binary (pass/fail) results, so map the relevant columns accordingly.</li>
 </ol>
 <p>By correctly mapping the variables, you ensure the evaluator receives the right data and produces accurate results.</p>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li>
+<p>Evaluators are used to assess model performance by comparing its outputs against predefined criteria.</p>
+</li>
+<li>
+<p>System evaluators are pre-built and cannot be modified, offering ready-to-use options for evaluating common aspects of model performance, such as quality and safety metrics.</p>
+</li>
+<li>
+<p>Variable mapping is crucial when adding evaluators, as users must link the variables in the evaluator's prompt to the appropriate dataset columns to ensure accurate evaluation results.</p>
+</li>
+</ul>
 
 
 

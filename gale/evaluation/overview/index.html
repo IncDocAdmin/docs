@@ -3154,6 +3154,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view-evaluation-insight/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    View Results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3931,12 +3952,12 @@
 <h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Project-based Organization:</strong> Projects serve as folders for evaluations. Users can create multiple evaluations under a project, and each evaluation contains a dataset. Users can create, rename, and delete projects.</li>
-<li><strong>Flexible Dataset Handling and Import:</strong> Evaluation Studio supports importing data through CSV files (with input-output pairs or input data).</li>
+<li><strong>Flexible Dataset Handling and Import:</strong> Evaluation Studio supports importing data through CSV files (with input-output pairs or input data) and production data from deployed model traces.</li>
 <li><strong>Streamlined Evaluation Process</strong>: Evaluate model performance based on out-of-the-box evaluators such as groundness, coherence, toxicity, etc. Users can run evaluations on datasets, with results helping identify areas for model improvement.</li>
 <li><strong>Flexibility for Different Data Scenarios</strong>: Evaluation Studio supports various evaluation scenarios:<ol>
 <li><strong>One Input, One Output</strong>: Simple, straightforward evaluations.</li>
 <li><strong>One Input, Multiple Outputs</strong>: Assess multiple outputs from a single input.</li>
-<li><strong>Input Only</strong>: Generate outputs when only input data is available.</li>
+<li><strong>Input Only</strong>: Generate outputs  with your production model when only input data is available.</li>
 </ol>
 </li>
 </ol>
@@ -3946,6 +3967,7 @@
 <li><strong>Streamlined Workflow:</strong> Evaluation Studio captures the model evaluation through datasets with various pre-built evaluators. Users can manage projects, upload data, perform evaluations, and track results, all in one place.</li>
 <li><strong>Customizability:</strong> Users can define evaluation criteria that suit their specific needs. The platform adapts to different evaluation scenarios, from simple to complex use cases.</li>
 <li><strong>Continuous Improvement:</strong> Regular evaluations allow users to track model performance over time, ensuring that models are updated or fine-tuned as needed for ongoing optimization.</li>
+<li><strong>Seamless Integration</strong>: Evaluation Studio is designed to integrate with production models seamlessly. It supports importing data from deployed models and exporting custom trace data in the studio to be further analyzed.</li>
 </ol>
 <h2 id="user-experience-overview">User Experience Overview<a class="headerlink" href="#user-experience-overview" title="Permanent link">&para;</a></h2>
 <p>The following outlines the key actions at each stage of the Evaluation Studio user journey:</p>
@@ -3964,6 +3986,9 @@
 </li>
 <li>
 <p><a href="../run-evaluation/"><strong>Run an evaluation</strong></a>: Trigger the evaluation based on your dataset and selected evaluators.</p>
+</li>
+<li>
+<p><a href="../view-evaluation-insight/"><strong>View evaluation results</strong></a>: Review the evaluator tiles in the Evaluation Insights section, where results are shown visually with color-coded indicators (e.g., green/red). Assess model performance by examining visual cues and scores.</p>
 </li>
 </ol>
 
