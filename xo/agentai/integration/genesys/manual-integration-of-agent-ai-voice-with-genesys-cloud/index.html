@@ -17211,8 +17211,16 @@
 <a class="glightbox" href="../images/open-interaction-widget-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/open-interaction-widget-7.png" alt="open-interaction-widget" title="open-interaction-widget" style="border: 1px solid gray; zoom:80%;"></a> </li>
 <li>Go to the <strong>Configuration</strong> tab of the Interaction Widget.
 <a class="glightbox" href="../images/interaction-widget-configuration-tab-8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/interaction-widget-configuration-tab-8.png" alt="interaction-widget-configuration-tab" title="interaction-widget-configuration-tab" style="border: 1px solid gray; zoom:80%;"></a> </li>
-<li>In the <strong>Application URL</strong> field, enter the following structure; use the <strong>OAuth ID</strong> from <a href="#step-1-oauth-credential">Step 1</a>: <a href="https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&amp;lang=%7B%7BgcLangTag%7D%7D&amp;environment=%7B%7BgcHostOrigin%7D%7D&amp;genesysid=">https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&amp;lang={{gcLangTag}}&amp;environment={{gcHostOrigin}}&amp;genesysid=</a>&lt;genesys-oauth-Id&gt;</li>
+<li>
+<p>In the <strong>Application URL</strong> field, enter the following structure; use the <strong>OAuth ID</strong> from <a href="#step-1-oauth-credential">Step 1</a>: <a href="https://agentassist.kore.ai/koreaiaa-genesys/?conversationid=%7B%7BgcConversationId%7D%7D&amp;lang=%7B%7BgcLangTag%7D%7D&amp;environment=%7B%7BgcHostOrigin%7D%7D&amp;genesysid=">https://platform.kore.ai/koreaiaa-genesys/?conversationid={{gcConversationId}}&amp;lang={{gcLangTag}}&amp;environment={{gcHostOrigin}}&amp;genesysid=</a>&lt;genesys-oauth-Id&gt;&amp;x_passthru_metadata=<customData> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The “x_passthru_metadata” is an optional query parameter that is necessary to pass custom data to Agent AI. The <customData> value can be a JWT token, JWE token, base64 encoded string or a URL-encoded JSON value. For more information on how to access and use custom data in the Agent AI bot, refer to <a href="https://docs.kore.ai/agentassist/set-up-agentassist/access-custom-data-in-agent-ai-bot/" target="_blank">Access Custom Data</a> in Agent AI Bot. </p>
+</div>
+<ol>
 <li>Allow all permissions in <strong>iFrame Sandbox Options</strong> and <strong>iFrame Feature/Permission Policy</strong>.</li>
+</ol>
+</li>
 </ol>
 <p><strong>iFrame Sandbox Options</strong>:
 allow-forms,allow-modals,allow-popups,allow-presentation,allow-same-origin,allow-scripts,allow-downloads.</p>

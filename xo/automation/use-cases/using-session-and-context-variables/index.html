@@ -17219,13 +17219,18 @@
 <p>The following types of session variables are available on the XO Platform:</p>
 <ul>
 <li>
-<p><strong>EnterpriseContext</strong> – A key/value pair available to all assistants and all users in an enterprise. For example, with the GitHub bot, a user will need to access one or more enterprise repositories. You can persist the repository data as <strong>Gitrepository (Enterprise Context)</strong> with the following JavaScript code: </p>
+<p><strong>EnterpriseContext</strong> – It is a namespace within the overall context object where platform users can store key-value pairs that are available to all assistants, sessions, and users within a workspace. It ensures consistent data availability for enterprise-wide use cases.  </p>
+<p>For example, with a GitHub bot, a user may need to access one or more enterprise repositories. The repository data can be persisted in the EnterpriseContext using the <strong>Gitrepository</strong> key with the following JavaScript code:</p>
 <div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">userRepository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">_labels_</span><span class="p">[</span><span class="nx">repository</span><span class="p">],</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="w"> </span><span class="nx">repository</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">};</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nx">EnterpriseContext</span><span class="p">.</span><span class="nx">put</span><span class="p">(</span><span class="s1">&#39;Gitrepository&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">userRepository</span><span class="p">,</span><span class="w"> </span><span class="mf">200000</span><span class="p">);</span>
 </span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Platform users must carefully assess what information should be stored in this namespace to avoid unnecessary data exposure.</p>
+</div>
 </li>
 <li>
 <p><strong>BotContext</strong> – A key/value pair available to all users of this specific bot. For example, you may want to set up a default currency for financial transactions for a session based on a user’s location. You can persist the default currency data as <strong>currency (Bot Context)</strong> with the following JavaScript code:</p>

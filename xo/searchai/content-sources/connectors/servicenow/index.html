@@ -6658,10 +6658,18 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Configure the ServiceNow connector in Search AI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Filters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#racl-support" class="md-nav__link">
     <span class="md-ellipsis">
       RACL Support
@@ -6672,32 +6680,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#understanding-user-permissions-in-servicenow" class="md-nav__link">
+  <a href="#knowledge-articles" class="md-nav__link">
     <span class="md-ellipsis">
-      Understanding User Permissions in ServiceNow
+      Knowledge Articles
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#handling-user-permissions-in-searchai" class="md-nav__link">
+  <a href="#incidents" class="md-nav__link">
     <span class="md-ellipsis">
-      Handling User Permissions in SearchAI
+      Incidents
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#advanced-filters" class="md-nav__link">
+  <a href="#catalog-items" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Filters
+      Catalog Items
     </span>
   </a>
   
@@ -17076,10 +17079,18 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Configure the ServiceNow connector in Search AI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Filters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#racl-support" class="md-nav__link">
     <span class="md-ellipsis">
       RACL Support
@@ -17090,32 +17101,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#understanding-user-permissions-in-servicenow" class="md-nav__link">
+  <a href="#knowledge-articles" class="md-nav__link">
     <span class="md-ellipsis">
-      Understanding User Permissions in ServiceNow
+      Knowledge Articles
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#handling-user-permissions-in-searchai" class="md-nav__link">
+  <a href="#incidents" class="md-nav__link">
     <span class="md-ellipsis">
-      Handling User Permissions in SearchAI
+      Incidents
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#advanced-filters" class="md-nav__link">
+  <a href="#catalog-items" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced Filters
+      Catalog Items
     </span>
   </a>
   
@@ -17146,7 +17152,7 @@
 
 <h1 id="servicenow-connector">ServiceNow Connector<a class="headerlink" href="#servicenow-connector" title="Permanent link">&para;</a></h1>
 <p>You can connect to the ServiceNow application to enable users to fetch query results using the knowledge articles managed by ServiceNow.</p>
-<p><span style="text-decoration:underline;">Specifications</span></p>
+<p><strong><span style="text-decoration:underline;">Connector Specifications</span></strong></p>
 <table>
   <tr>
    <td>Type of Repository 
@@ -17157,13 +17163,24 @@
   <tr>
    <td>Answer Support
    </td>
-   <td>knowledge articles managed by ServiceNow.
+   <td>
+    <ul>
+      <li>Knowledge Articles</li>
+      <li>Incidents</li>
+      <li>Catalog Items</li>
+    </ul>
    </td>
   </tr>
    <tr>
    <td>RACL Support
    </td>
    <td>Yes.
+   </td>
+  </tr>
+   <tr>
+   <td>Content Filtering
+   </td>
+   <td>Yes
    </td>
   </tr>
   </table>
@@ -17193,43 +17210,8 @@
 </li>
 </ul>
 <p>Click the <strong>Connect</strong> button to initiate authorization with the application. After the connection is established, go to the <strong>Configurations</strong> tab and click <strong>Sync Now</strong> to ingest content to the application.</p>
-<h3 id="racl-support">RACL Support<a class="headerlink" href="#racl-support" title="Permanent link">&para;</a></h3>
-<p>SearchAI offers access control for content ingested from ServiceNow Knowledgebases. Currently, <strong>SearchAI enforces access control at the knowledge base level.</strong></p>
-<p>To learn the basics of RACL in SearchAI, refer to this. </p>
-<h4 id="understanding-user-permissions-in-servicenow"><strong>Understanding User Permissions in ServiceNow</strong><a class="headerlink" href="#understanding-user-permissions-in-servicenow" title="Permanent link">&para;</a></h4>
-<p>In ServiceNow, user access to knowledge base articles can be defined in three ways:</p>
-<ol>
-<li>Owners of the Knowledgebase</li>
-<li>Managers of the Knowledgebase</li>
-<li>User Criteria with specific access permissions (Can Read and Can Contribute) \</li>
-</ol>
-<p><a class="glightbox" href="../images/servicenow/racl/user-criteria.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User criteria" src="../images/servicenow/racl/user-criteria.png" title="User criteria" /></a></p>
-<p>User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc. \
-<a class="glightbox" href="../images/servicenow/racl/users-in-user-criteria.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Individual Users" src="../images/servicenow/racl/users-in-user-criteria.png" title="Individual Users" /></a></p>
-<h4 id="handling-user-permissions-in-searchai"><strong>Handling User Permissions in SearchAI</strong><a class="headerlink" href="#handling-user-permissions-in-searchai" title="Permanent link">&para;</a></h4>
-<p>By default, SearchAI grants access to the following:</p>
-<div class="language-text highlight"><pre><span></span><code>* **Owners **of the Knowledgebase – This list of owners will be added directly in racl field(sourceACL) in the indexed content.
-* **Managers **of the Knowledgebase – This list of managers will be added directly in racl field of the indexed content.
-* **Individual users** listed under each **User Criteria** with Can Read and Can Contribute permissions.
-</code></pre></div>
-<p><a class="glightbox" href="../images/servicenow/racl/individual-users.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Individual Users" src="../images/servicenow/racl/individual-users.png" title="Individual Users" /></a></p>
-<p>Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default.  Users associated with other conditions (e.g., department or role) are not automatically included. Therefore, these users cannot access articles unless they are explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledgebase is <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#74;&#111;&#104;&#110;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#74;&#111;&#104;&#110;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a> and the knowledgebase can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. <code>"sourceAcl": [</code></p>
-<div class="language-text highlight"><pre><span></span><code>```
- &quot;25431493ff4221009b20ffffffffffe0&quot;,
- &quot;John@example.com&quot;
-],
-```
-
-
-
-    The alphanumeric field “25431493ff4221009b20ffffffffffe0” in the indexed content refers to the Permission Entity corresponding to the user criteria for the article.
-
-
-    ` \
-</code></pre></div>
-<p>`If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the <a href="https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/">Permission Entity API</a> to associate them with the permission entity.</p>
-<h3 id="advanced-filters">Advanced Filters<a class="headerlink" href="#advanced-filters" title="Permanent link">&para;</a></h3>
-<p>Search AI allows setting up advanced filters to select the content for ingestion. Selective content ingestion can be done using the content properties like status, type, number, knowledge base, source, etc. To set up advanced filtering, go to the <strong>Configuration</strong> tab, select <strong>Sync Specific Content,</strong> and click the <strong>Configure</strong> link.  </p>
+<h2 id="advanced-filters">Advanced Filters<a class="headerlink" href="#advanced-filters" title="Permanent link">&para;</a></h2>
+<p>Search AI enables users to set up advanced filters for content ingestion. Currently, filtering is supported exclusively for Knowledge Articles. You can selectively ingest content by using various properties of knowledge articles, such as status, type, number, knowledge base, and source. To set up advanced filtering, go to the <strong>Configuration</strong> tab, select <strong>Sync Specific Content,</strong> and click the <strong>Configure</strong> link.  </p>
 <p><a class="glightbox" href="../images/servicenow/config-tab.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configuration" src="../images/servicenow/config-tab.png" title="Configuration" /></a></p>
 <p>Use the Parameter, Operator, and Value fields to add a filter. The commonly used parameters are listed in the drop-down menu. You can also add other parameters. Refer to <a href="https://developer.servicenow.com/dev.do#!/reference">this </a>for the complete list of parameters. 
 For instance, to ingest articles with a given sys ID, use the filter as shown below. </p>
@@ -17244,6 +17226,160 @@ For instance, to ingest articles with a given sys ID, use the filter as shown be
 <li>Every rule can have one or more conditions. The conditions in a rule are linked with a logical AND which suggests that specific content is selected for ingestion when all the conditions in the rule are satisfied.  For instance, the following filter can be used to select published articles with a given Sys Id.</li>
 </ul>
 <p><a class="glightbox" href="../images/servicenow/example3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Example" src="../images/servicenow/example3.png" title="Example" /></a></p>
+<h2 id="racl-support">RACL Support<a class="headerlink" href="#racl-support" title="Permanent link">&para;</a></h2>
+<h3 id="knowledge-articles">Knowledge Articles<a class="headerlink" href="#knowledge-articles" title="Permanent link">&para;</a></h3>
+<p>SearchAI offers access control for content ingested from ServiceNow Knowledgebases. Currently, <strong>SearchAI enforces access control at the knowledge base level.</strong></p>
+<p>To learn the basics of RACL in SearchAI, refer to this. </p>
+<p><strong>Understanding User Permissions in ServiceNow</strong></p>
+<p>In ServiceNow, user access to knowledge base articles can be defined in three ways:</p>
+<ol>
+<li>Owners of the Knowledgebase</li>
+<li>Managers of the Knowledgebase</li>
+<li>User Criteria with specific access permissions (Can Read and Can Contribute) \</li>
+</ol>
+<p><a class="glightbox" href="../images/servicenow/racl/user-criteria.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User criteria" src="../images/servicenow/racl/user-criteria.png" title="User criteria" /></a></p>
+<p>User Criteria in ServiceNow is a method to group users based on specific conditions. Users can be added directly or included based on conditions such as department, role, etc. \
+<a class="glightbox" href="../images/servicenow/racl/users-in-user-criteria.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Individual Users" src="../images/servicenow/racl/users-in-user-criteria.png" title="Individual Users" /></a></p>
+<p><strong>Handling User Permissions in SearchAI</strong></p>
+<p>By default, SearchAI grants access to the following:</p>
+<ul>
+<li><strong>Owners</strong> of the Knowledgebase – This list of owners will be added directly in the racl field in the indexed content.</li>
+<li>**Managers**of the Knowledgebase – This list of managers will be added directly in the racl field of the indexed content.</li>
+<li><strong>Individual users</strong> listed under each <strong>User Criteria</strong> with Can Read and Can Contribute permissions.  </li>
+</ul>
+<p><a class="glightbox" href="../images/servicenow/racl/individual-users.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Individual Users" src="../images/servicenow/racl/individual-users.png" title="Individual Users" /></a></p>
+<p>Each User Criteria is retrieved as a Permission Entity. The permission entity ID is added and is visible in the racl fields of the indexed content. Only users directly listed in the criteria are retrieved as part of the Permission Entity by default.  Users associated with other conditions (e.g., department or role) are not automatically included. Therefore, these users cannot access articles unless they are explicitly added to the permission entity using the Permission Entity APIs. For instance, if the owner of a knowledgebase is <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#74;&#111;&#104;&#110;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;">&#74;&#111;&#104;&#110;&#64;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#99;&#111;&#109;</a> and the knowledgebase can be accessed by users who fulfil a given user criteria, the indexed content will look something like this. </p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&quot;sourceAcl&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">`</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">     </span><span class="s2">&quot;25431493ff4221009b20ffffffffffe0&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">     </span><span class="s2">&quot;John@example.com&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">],</span>
+</span></code></pre></div>
+<p>The alphanumeric field “25431493ff4221009b20ffffffffffe0” in the indexed content refers to the Permission Entity corresponding to the user criteria for the article.</p>
+<p>If there are any identities directly added as Users inside the user criteria, those users will be automatically added to the permission entity. To grant access to all others within the user criteria, those added through other conditions, use the <a href="https://docs.kore.ai/searchassist/public-apis/permission-entity-apis/">Permission Entity API</a> to associate them with the permission entity.</p>
+<h3 id="incidents">Incidents<a class="headerlink" href="#incidents" title="Permanent link">&para;</a></h3>
+<p>For each incident in ServiceNow, <strong>Search AI</strong> enforces access control based on the following criteria:</p>
+<p><strong>1. Role-Based Access</strong></p>
+<ul>
+<li>Users who are part of <strong>Base System Roles</strong> in ServiceNow, such as <code>itil</code> and <code>itil_admin</code>, and have access to incidents.</li>
+<li>For each role, a <strong>permission entity</strong> is created.</li>
+<li>Users can be associated with the corresponding permission entity using the <strong>Permission Entity APIs</strong>.</li>
+</ul>
+<p><strong>2. ACL-Based Access</strong></p>
+<ul>
+<li>Users who have access to the <strong>Incident Table (<code>incident</code> table)</strong> through <strong>Access Control List (ACL) configuration</strong>.</li>
+<li>For each ACL rule, a <strong>permission entity</strong> is created to associate users with the rule.</li>
+</ul>
+<p><strong>3. Assignment Group-Based Access</strong></p>
+<ul>
+<li>Users who are part of the <strong>assignment group</strong> for an incident can automatically access it.</li>
+<li>For each group, a <strong>permission entity</strong> is created using the <strong>group ID</strong>.</li>
+</ul>
+<p><strong>4. Incident Field-Based Access</strong></p>
+<ul>
+<li>Users associated with the incident through specific incident fields, such as: Creator, Caller, Watch List Users.</li>
+<li>These users are added to the sys_racl field using their email ID.</li>
+</ul>
+<p><strong>Summary – <code>sys_racl</code> Contents for an Incident Record</strong></p>
+<p>To summarize, the <strong>sys_racl</strong> field for an incident record contains:</p>
+<table>
+  <tr>
+   <td><strong>Access category</strong>
+   </td>
+   <td><strong>Stored As</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Assigned User</strong>
+   </td>
+   <td>Email ID
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Caller (Requestor)</strong>
+   </td>
+   <td>Email ID
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Opened by User (Creator)</strong>
+   </td>
+   <td>Email ID
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Closed by User</strong>
+   </td>
+   <td>Email ID
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Resolved by User</strong>
+   </td>
+   <td>Email ID
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Watch List Users</strong>
+   </td>
+   <td>Email IDs of all users in the watch list
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Assignment Group</strong>
+   </td>
+   <td>Group ID (Permission Entity)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>System or Custom Roles with Incident Access</strong>
+   </td>
+   <td>Role ID (Permission Entity)
+   </td>
+  </tr>
+</table>
+
+<h3 id="catalog-items">Catalog Items<a class="headerlink" href="#catalog-items" title="Permanent link">&para;</a></h3>
+<p>Catalog items in ServiceNow can be accessed based on the following configurations:</p>
+<ol>
+<li><strong>Role-Based Access</strong><ul>
+<li>Roles assigned to a catalog item determine access. Users with the assigned role(s) will have access to the catalog item.</li>
+<li>A <strong>permission entity</strong> is created using the <strong>role ID</strong> for each role associated with the catalog item.</li>
+</ul>
+</li>
+<li><strong>ACL based Access</strong><ul>
+<li>Users who have access to the <strong>Catalog Items Table **through **Access Control List (ACL) configuration</strong>.</li>
+<li>For each ACL rule, a <strong>permission entity</strong> is created to associate users with the rule.</li>
+</ul>
+</li>
+<li><strong>User Criteria</strong><ul>
+<li>User criteria defined for a catalog item specify which users or groups can access it.</li>
+<li>A <strong>permission entity</strong> is created using the <strong>user criteria ID</strong> to control access based on these criteria.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Summary – <code>sys_racl</code> Field for a Catalog Item</strong></p>
+<p>The <strong>sys_racl</strong> field for a catalog item includes the following:</p>
+<table>
+  <tr>
+   <td><strong>Access category</strong>
+   </td>
+   <td><strong>Stored As</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>System or Custom Roles with Catalog Items Access</strong>
+   </td>
+   <td>Role ID (Permission Entity)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>User Criterion with Catalog Item Access</strong>
+   </td>
+   <td>UserCriteriaID (Permission Entity)
+   </td>
+  </tr>
+</table>
 
 
 
