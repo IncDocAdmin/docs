@@ -1324,6 +1324,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-agentic-apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2300,97 +2321,83 @@
 
 
 <h1 id="notify-api">Notify API<a class="headerlink" href="#notify-api" title="Permanent link">&para;</a></h1>
-<p>The Notify API enables developers to send interactive notifications to AI for Work users. These notifications can include customizable response options and action buttons.</p>
+<p>The Notify API enables developers to send interactive notifications to AI for Work users. These notifications can include customizable response options and action buttons. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Applicable only for Bot Agents.</p>
+</div>
 <table>
-  <tr>
-   <td><strong>Method</strong>
-   </td>
-   <td>Post
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Endpoint</strong>
-   </td>
-   <td>https://{{host}}/api/public/agents/{agentId}/notify
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Content type</strong>
-   </td>
-   <td>application/json
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Authorization</strong>
-   </td>
-   <td>authorization: &lt;authToken>
-<p>
-<strong><em>Note</em></strong>: The value of <strong>authorization </strong>will be the access token from the Bot agent settings page.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>API Scope</strong>
-   </td>
-   <td>Notification
-   </td>
-  </tr>
+<thead>
+<tr>
+<th>Method<br></th>
+<th>Post<br></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endpoint<br></td>
+<td>https://{{host}}/api/public/agents/{agentId}/notify<br></td>
+</tr>
+<tr>
+<td>Content type<br></td>
+<td>application/json<br></td>
+</tr>
+<tr>
+<td>Authorization<br></td>
+<td>authorization: &lt;authToken&gt;<br><br><strong>Note</strong>: The access token obtained from the Bot agent settings page will serve as the authorization token. See <a href="../bot-agent/#step-2-add-bot">Bot Agent</a>  <a class="glightbox" href="../images/Auth_Token.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Auth_Token.png" alt="AuthToken" title="AuthToken" style="border: 1px solid gray; zoom:70%;"></a></td>
+</tr>
+<tr>
+<td>API Scope<br></td>
+<td>Notification<br></td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="path-parameter">Path Parameter<a class="headerlink" href="#path-parameter" title="Permanent link">&para;</a></h2>
 <table>
-  <tr>
-   <td>Parameter
-   </td>
-   <td>Required/Optional
-   </td>
-   <td>Description
-   </td>
-  </tr>
-  <tr>
-   <td>host
-   </td>
-   <td>Required
-   </td>
-   <td>Environment URL, for example, https://AI-for-Work.kore.ai
-   </td>
-  </tr>
-  <tr>
-   <td>agent ID
-   </td>
-   <td>Required
-   </td>
-   <td>This portion of the URL is a placeholder for the unique identifier of the specific agent.
-<p>
-When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.
-   </td>
-  </tr>
+<thead>
+<tr>
+<th>Parameter<br></th>
+<th>Required/Optional<br></th>
+<th>Description<br></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>host<br></td>
+<td>Required<br></td>
+<td>Environment URL, for example, <a href="https://work.kore.ai">https://work.kore.ai</a><br></td>
+</tr>
+<tr>
+<td>agent ID<br></td>
+<td>Required<br></td>
+<td>This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> <strong>Note</strong>: Obtain the agent ID from the Post URL field while creating a bot agent. See <a href="../bot-agent/#step-2-add-bot">Bot Agent</a> <a class="glightbox" href="../images/Agent_ID.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Agent_ID.png" alt="AgentID" title="AgentID" style="border: 1px solid gray; zoom:70%;"></a></td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="sample-request">Sample Request<a class="headerlink" href="#sample-request" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://{{host}}/api/1.1/public/agents/{agentId}/notify&#39; \
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJ1LTcyODBkODUwLWIzODktNTYwYy1iYzZkLWQ5ZWQ0N2YwODc4YyIsImFjY291bnRJZCI6ImFjLWExNmI4NjAzLTRjNGQtNTdiNy1hNmUyLWRkZjUzZmVlNGVmYiIsInR5cGUiOiJwZXJzb25hbCIsImlhdCI6MTcxMzc4ODkyMX0.1yArs2BMX83EPh8a1JAvBQkxVhhSU8g2nACUuSnIRdU&#39; \
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl --location --request POST &#39;https://work.kore.ai/api/1.1/public/agents/ag-4405269f-4510-5ae2-bcea-6d356yvsu01/notify&#39; \
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--header &#39;authorization: EypCddcFH6sgaJJkWj6k-Wbz6meimT09RXbTYDnYB3FA8$&#39; \
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--header &#39;Content-Type: application/json&#39; \
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--data-raw &#39;{
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;to&quot;: &quot;user@example.com&quot;,   
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;to&quot;: &quot;john.doe@kore.com&quot;,
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;message&quot;: {
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        &quot;title&quot;: &quot;Agent Update&quot;,
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;body&quot;: &quot;body text&quot;
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;body&quot;: &quot;Notification description&quot;
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    },
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    &quot;category&quot;: &quot;agent&quot;,
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    &quot;icon&quot;: &quot;https://{{host}}/kora/icons/integrations/r/32/default.png&quot;,
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    &quot;actions&quot;: [
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        {
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            &quot;title&quot;: &quot;LaptopRequest&quot;,
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            &quot;type&quot;: &quot;postback&quot;,
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            &quot;utterance&quot;: &quot;submit action 1&quot;,
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>            &quot;payload&quot;: {
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                &quot;transactionId&quot;: &quot;tx-qwe2qxxx&quot;,
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                &quot;sessionId&quot;: &quot;s-rerexxxrt&quot;,
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                &quot;event&quot;: &quot;laptopRequest&quot;
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            }
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        }
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    ]
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>}&#39;
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    &quot;actions&quot;: [
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        {
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            &quot;title&quot;: &quot;LaptopRequest&quot;,
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            &quot;type&quot;: &quot;postback&quot;,
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            &quot;utterance&quot;: &quot;submit action 1&quot;,
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            &quot;payload&quot;: {
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                &quot;transactionId&quot;: &quot;tx-qwe2cd11&quot;,
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                &quot;sessionId&quot;: &quot;s-reryt21rt&quot;,
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                &quot;event&quot;: &quot;laptopRequest&quot;
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            }
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        }
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    ]
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>}&#39;
 </span></code></pre></div>
 <h3 id="request-body-parameters">Request Body Parameters<a class="headerlink" href="#request-body-parameters" title="Permanent link">&para;</a></h3>
 <table>
@@ -2432,16 +2439,6 @@ When making an actual API request, you must replace {agentId} with the actual ID
    <td>Required
    </td>
    <td>Category of the notification (e.g., "agent")
-   </td>
-  </tr>
-  <tr>
-   <td>icon 
-   </td>
-   <td>string 
-   </td>
-   <td>Required
-   </td>
-   <td>URL of the notification icon
    </td>
   </tr>
   <tr>
@@ -2518,26 +2515,8 @@ When making an actual API request, you must replace {agentId} with the actual ID
 
 <h2 id="sample-response">Sample Response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &quot;to&quot;: &quot;user@example.com&quot;,
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  &quot;message&quot;: {
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;title&quot;: &quot;Network Issue Troubleshooting&quot;,
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &quot;body&quot;: &quot;Could you please describe the network issue you&#39;re experiencing and mention which device or service it&#39;s affecting?&quot;
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  },
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  &quot;category&quot;: &quot;agent&quot;,
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  &quot;icon&quot;: &quot;https://{{host}}//icons/integrations/r/32/default.png&quot;,
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  &quot;actions&quot;: [
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    {
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>      &quot;title&quot;: &quot;Laptop&quot;,
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>      &quot;type&quot;: &quot;postback&quot;,
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>      &quot;utterance&quot;: &quot;Provide troubleshooting steps for network issue in Laptop&quot;,
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>      &quot;payload&quot;: {
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>        &quot;transactionId&quot;: &quot;tx-adaxxxxx&quot;,
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        &quot;sessionId&quot;: &quot;s-da1313xxx&quot;,
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>        &quot;event&quot;: &quot;laptopRequest&quot;
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>      }
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    }
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ]
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>}
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &quot;notify&quot;: &quot;success&quot;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}
 </span></code></pre></div>
 <h2 id="key-points">Key Points<a class="headerlink" href="#key-points" title="Permanent link">&para;</a></h2>
 <ul>
