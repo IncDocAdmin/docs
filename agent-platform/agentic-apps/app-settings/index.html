@@ -554,7 +554,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../playground/about-prompt-studio/" class="md-tabs__link">
+        <a href="../../prompts/about-prompt-studio/" class="md-tabs__link">
           
   
   Prompts
@@ -971,6 +971,21 @@
       Sharing and Permissions
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Sharing and Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invite-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invite Users
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2979,7 +2994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../playground/about-prompt-studio/" class="md-nav__link">
+      <a href="../../prompts/about-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3000,7 +3015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../playground/accessing-prompt-studio/" class="md-nav__link">
+      <a href="../../prompts/accessing-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3021,7 +3036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../playground/using-prompt-studio/" class="md-nav__link">
+      <a href="../../prompts/using-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3042,7 +3057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../playground/advanced-features/" class="md-nav__link">
+      <a href="../../prompts/advanced-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3063,7 +3078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../playground/options-prompt-canvas/" class="md-nav__link">
+      <a href="../../prompts/options-prompt-canvas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3804,7 +3819,7 @@
         
   
   <span class="md-ellipsis">
-    Agents Analytics Dashboard
+    Tools Analytics Dashboard
   </span>
   
 
@@ -4082,6 +4097,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Sharing and Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invite-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invite Users
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4118,55 +4148,60 @@
 <p>You can add scanners for both <strong>input</strong> and <strong>output</strong>. Refer to this to learn more about Guardrails and how to add scanners. </p>
 <h2 id="sharing-and-permissions">Sharing and Permissions<a class="headerlink" href="#sharing-and-permissions" title="Permanent link">&para;</a></h2>
 <p>The <strong>Sharing and Permissions</strong> page allows administrators to manage user roles and access levels within the application. It enables assigning permissions based on roles, ensuring secure and controlled access to the application and data. Users can be granted, modified, or revoked access based on their responsibilities. This ensures compliance, security, and efficient collaboration across teams.</p>
-<p>There are four types of user roles in an Agentic App. Depending on the roles, the users get access and permission to view or update agents in the application. </p>
-<tr>
+<p>There are four types of user roles in an Agentic AI app. Depending on the roles, the users get access and permission to view or update agents in the application. </p>
+<table>
+  <tr>
    <td>Role 
-
    </td>
    <td>Permissions
-
    </td>
-   <td>Key responsibilities
-
+   <td>Key Responsibilities
    </td>
   </tr>
-<tr>
-   <td>Agent Viewer
-
+  <tr>
+   <td>App Owner
    </td>
    <td>
    </td>
    <td>
    </td>
   </tr>
-<tr>
-   <td>Agent Editor
-
+  <tr>
+   <td>App Admin
+   </td>
+   <td>Complete control  over the core functionalities of apps, such as deployment, configuration, sharing, deletion, monitoring, managing users etc.
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>App Developer
    </td>
    <td>
    </td>
    <td>
    </td>
   </tr>
-<tr>
-   <td>Agent Manager
-
+  <tr>
+   <td>App Tester
    </td>
    <td>
    </td>
    <td>
    </td>
   </tr>
-<tr>
-   <td>Agent Admin
-
+  <tr>
+   <td>App Viewer
    </td>
    <td>
    </td>
    <td>
    </td>
   </tr>
+</table>
 
+<h3 id="invite-users">Invite Users<a class="headerlink" href="#invite-users" title="Permanent link">&para;</a></h3>
+<p>To share the app with users, click the <strong>Invite</strong> button. Add the email ID of the user or the group. Select an appropriate role for the user and send the invite. </p>
 <h2 id="configurations">Configurations<a class="headerlink" href="#configurations" title="Permanent link">&para;</a></h2>
 <p><strong>Orchestration</strong>:  Orchestration refers to the coordination of multiple AI agents to efficiently handle user requests, execute complex workflows, and manage decision-making across the application. </p>
 <p>The apps currently utilize the <strong>Supervisor</strong> pattern. This model involves a supervisor agent who oversees and coordinates the activities of multiple agents to ensure that the overall goal is achieved both efficiently and optimally. This orchestration pattern is particularly effective for managing multi-step workflows with various agents, as it optimizes system performance through strategic task allocation and adaptive management.</p>

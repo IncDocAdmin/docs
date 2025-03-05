@@ -552,7 +552,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../playground/about-prompt-studio/" class="md-tabs__link">
+        <a href="../../../prompts/about-prompt-studio/" class="md-tabs__link">
           
   
   Prompts
@@ -2905,7 +2905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/about-prompt-studio/" class="md-nav__link">
+      <a href="../../../prompts/about-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2926,7 +2926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/accessing-prompt-studio/" class="md-nav__link">
+      <a href="../../../prompts/accessing-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2947,7 +2947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/using-prompt-studio/" class="md-nav__link">
+      <a href="../../../prompts/using-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2968,7 +2968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/advanced-features/" class="md-nav__link">
+      <a href="../../../prompts/advanced-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2989,7 +2989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/options-prompt-canvas/" class="md-nav__link">
+      <a href="../../../prompts/options-prompt-canvas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3522,13 +3522,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#account-and-agent-level-features" class="md-nav__link">
+  <a href="#roles-and-modules" class="md-nav__link">
     <span class="md-ellipsis">
-      Account and Agent Level Features
+      Roles and Modules
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Account and Agent Level Features">
+    <nav class="md-nav" aria-label="Roles and Modules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4025,7 +4025,7 @@
         
   
   <span class="md-ellipsis">
-    Agents Analytics Dashboard
+    Tools Analytics Dashboard
   </span>
   
 
@@ -4294,13 +4294,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#account-and-agent-level-features" class="md-nav__link">
+  <a href="#roles-and-modules" class="md-nav__link">
     <span class="md-ellipsis">
-      Account and Agent Level Features
+      Roles and Modules
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Account and Agent Level Features">
+    <nav class="md-nav" aria-label="Roles and Modules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -4549,11 +4549,14 @@
 
 
 <h1 id="role-management">Role Management<a class="headerlink" href="#role-management" title="Permanent link">&para;</a></h1>
-<p>GALE’s <strong>Role Management</strong> feature in the <strong>Settings</strong> console helps implement Role-based Access Control (RBAC) for both account and agent features on the platform. </p>
-<p>Thus, the roles can be classified based on role types. <a href="./#role-types" target="_blank">Learn more</a>.</p>
-<p>When you <a href="../../../getting-started/sign-up-sign-in/#invite-a-user-to-your-account" target="_blank">invite</a>/add a user to your account, you must assign a <a href="./#system-defined-roles" target="_blank">default role</a> to them to define their <a href="./#module-wise-permissions-and-access-levels" target="_blank">module-wise permissions and access levels</a>. You can later <a href="./#reassign-an-alternative-role-to-active-users" target="_blank">reassign a different role</a> to the user, including a <a href="./#system-defined-roles" target="_blank">default/system-defined</a> or <a href="./#custom-roles" target="_blank">custom</a> role. <a href="../overview/" target="_blank">Learn more</a> about <strong>Users Management</strong>.</p>
+<p>Agent Platform’s <strong>Role Management</strong> feature in the <strong>Settings</strong> console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. </p>
+<p>Thus, the roles can be classified based on the role types. <a href="./#role-types" target="_blank">Learn more</a>.</p>
+<p>When you <a href="../../../getting-started/sign-up-sign-in/" target="_blank">invite</a>/add a user to your account, you must assign a <a href="./#system-defined-roles" target="_blank">default role</a> to them to define their <a href="./#module-wise-permissions-and-access-levels" target="_blank">module-wise permissions and access levels</a>. You can later <a href="./#reassign-an-alternative-role-to-active-users" target="_blank">reassign a different role</a> to the user, including a <a href="./#system-defined-roles" target="_blank">default/system-defined</a> or <a href="./#custom-roles" target="_blank">custom</a> role. <a href="../overview/" target="_blank">Learn more</a> about <strong>Users Management</strong>.</p>
 <p><strong>Key Points</strong></p>
 <ol>
+<li>
+<p><strong>App Owner</strong>: When you create an Agentic App, you automatically become the app owner and are assigned this role which provides administrative access on all features and configurations across the Platform.</p>
+</li>
 <li>
 <p><strong>Master Admin Role</strong></p>
 <ul>
@@ -4576,7 +4579,7 @@
 <ul>
 <li>Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. <a href="./#module-wise-permissions-and-access-levels" target="_blank">Learn more</a>. </li>
 </ul>
-<p>GALE supports the following roles in the <strong>Settings</strong> console:</p>
+<p>Agent Platform supports the following roles in the <strong>Settings</strong> console:</p>
 <ul>
 <li>
 <p><strong>Default Role</strong>: A system-generated role with internally defined set of permissions and access levels. <a href="./#system-defined-roles" target="_blank">Learn more</a>.</p>
@@ -4595,43 +4598,33 @@
 </ul>
 </li>
 </ol>
-<h2 id="account-and-agent-level-features">Account and Agent Level Features<a class="headerlink" href="#account-and-agent-level-features" title="Permanent link">&para;</a></h2>
-<p>The features for which permissions and access levels are defined for a role include the following:</p>
-<p><strong>Account Level</strong></p>
+<h2 id="roles-and-modules">Roles and Modules<a class="headerlink" href="#roles-and-modules" title="Permanent link">&para;</a></h2>
+<p>The modules for which permissions and access levels can be defined for a role include the following:</p>
 <ul>
-<li>Agents</li>
+<li>Agentic Apps</li>
+<li>Tools</li>
 <li>Models</li>
 <li>Prompts</li>
+<li>Data</li>
+<li>Evaluations/Evaluators</li>
 <li>Settings including Integrations, User Management, Security and Control, Monitoring, Guardrails, and Billing.</li>
 </ul>
-<p><strong>Agent Level</strong></p>
-<ul>
-<li>Create an agent version</li>
-<li>Share/unshare agents/assign agent roles</li>
-<li>Delete agent</li>
-<li>Export Agent</li>
-<li>Monitor Trace of an Agent</li>
-<li>Edit Agent Workflow</li>
-<li>Manage Agent Configuration</li>
-<li>Manage deployment - deploy/undeploy</li>
-<li>Manage guardrails configuration</li>
-<li>Create/Delete an API key</li>
-<li>Monitor Audit logs</li>
-</ul>
+<p><strong>Tool Level</strong></p>
 <p>To learn more about permissions and access levels around features, click <a href="./#module-wise-permissions-and-access-levels" target="_blank">here</a>.</p>
-<p>Access to account or agent-level permissions can either be disabled (no access) or enabled with <strong>Full</strong>, <strong>Custom</strong>, or <strong>View</strong> privileges. <a href="./#access-levels" target="_blank">Learn more</a>.</p>
+<p>Access to module-level permissions can either be disabled (no access) or enabled with <strong>Full</strong>, <strong>Custom</strong>, or <strong>View</strong> privileges. <a href="./#access-levels" target="_blank">Learn more</a>.</p>
 <h3 id="roles">Roles<a class="headerlink" href="#roles" title="Permanent link">&para;</a></h3>
 <p>A Role groups users according to their job functions, streamlining permission management. </p>
 <p><em>Example</em></p>
-<p>A <strong>Master Admin</strong> has complete control over the account's core functionalities such as models, agents, integrations, users, etc.</p>
-<p>An <strong>Agent Admin</strong> has complete control over the core functionalities of agents, such as deployment, configuration, sharing, deletion, monitoring, etc.</p>
-<p>GALE supports the following roles:</p>
+<p>A <strong>Master Admin</strong> has complete control over the account's core functionalities such as models, tools, integrations, users, etc.</p>
+<p>A <strong>Tool Admin</strong> has complete control over the core functionalities of tools, such as deployment, configuration, sharing, deletion, monitoring, etc.</p>
+<p>An <strong>App Admin</strong> has full access to almost all the core Platform features relating to Agentic Apps.</p>
+<p>Agent Platform supports the following roles:</p>
 <h4 id="system-defined-roles">System-defined Roles<a class="headerlink" href="#system-defined-roles" title="Permanent link">&para;</a></h4>
-<p>Also called <strong>Default</strong> roles, these are inbuilt n the system at the account and agent levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and <strong>cannot be modified</strong> in the application. Also, system roles cannot be deleted.</p>
-<p>To modify a user's scope and permissions, you must add a <a href="./#custom-roles" target="_blank">custom</a> account/agent-type role. <a href="./#add-a-role" target="_blank">Learn more</a>.</p>
+<p>Also called <strong>Default</strong> roles, these are inbuilt in the system at the agentic app, account and tool levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and <strong>cannot be modified</strong> in the application. Also, system roles cannot be deleted.</p>
+<p>To modify a user's scope and permissions, you must add a <a href="./#custom-roles" target="_blank">custom</a> agentic app/account/tool-type role. <a href="./#add-a-role" target="_blank">Learn more</a>.</p>
 <p>System-defined, system-generated, or default roles provide baseline control over the core features and functionalities and streamline the user management process for administrators. </p>
-<p>For example, The <strong>Admin</strong> role typically has full access to all agent/account features and functionalities within the system. Administrators have the highest privileges and can manage other users, configure settings, and perform administrative tasks.</p>
-<p>The following table summarizes the scope for different system roles supported for Account and Agent type:</p>
+<p>For example, The <strong>Admin</strong> role typically has full access to all tool/account features and functionalities within the system. Administrators have the highest privileges and can manage other users, configure settings, and perform administrative tasks.</p>
+<p>The following table summarizes the scope for different system roles supported for Account, Tool, and Agentic App types:</p>
 <table>
   <tr>
    <td colspan="2" ><strong>Account</strong>
@@ -4646,7 +4639,7 @@
   <tr>
    <td><strong>Master Admin</strong>
    </td>
-   <td>Users have complete control over agent and model management, user administration, integrations, security settings, and access to all core features and functionalities.
+   <td>Users have complete control over tool and model management, user administration, integrations, security settings, and access to all core features and functionalities.
    </td>
   </tr>
   <tr>
@@ -4658,7 +4651,7 @@
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create agents, add external models, and modify only S3 integration.
+   <td>Users can create tools, add external models, and modify only S3 integration.
    </td>
   </tr>
   <tr>
@@ -4671,7 +4664,7 @@
 
 <table>
   <tr>
-   <td colspan="2" ><strong>Agent</strong>
+   <td colspan="2" ><strong>Tool</strong>
    </td>
   </tr>
   <tr>
@@ -4681,35 +4674,74 @@
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Admin</strong>
+   <td><strong>Tool Admin</strong>
    </td>
-   <td>Users have complete control over agent management, versioning, sharing, deployment, deletion, configuration, monitoring, and API key creation.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Agent Manager</strong>
-   </td>
-   <td>Users have access to all the permissions except for agent deletion.
+   <td>Users have complete control over tool management, versioning, sharing, deployment, deletion, configuration, monitoring, and API key creation.
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Editor</strong>
+   <td><strong>Tool Manager</strong>
    </td>
-   <td>Users can create new versions and deploy, monitor, and export agents.
+   <td>Users have access to all the permissions except for tool deletion.
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Viewer</strong>
+   <td><strong>Tool Editor</strong>
    </td>
-   <td>Users can only view the node details and generate output in the agent.
+   <td>Users can create new versions and deploy, monitor, and export tools.
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Tool Viewer</strong>
+   </td>
+   <td>Users can only view the node details and generate output in the tool.
+   </td>
+  </tr>
+    <tr>
+   <td colspan="2" ><strong>Agentic App</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Role</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>App Owner</strong>
+   </td>
+   <td>Users have complete administrative access across all Platform features and configurations.
+   </td>
+  </tr>
+    <tr>
+   <td><strong>App Admin</strong>
+   </td>
+   <td>Users have full administrative access across most system features of Agentic Apps.</td>
+  </tr>
+  <tr>
+   <td><strong>App Developer</strong>
+   </td>
+   <td>Users have full access to core development features of Agentic Apps including configurations, tools, guardrails, and data.
+   </td>
+  </tr>
+    <tr>
+   <td><strong>App Viewer</strong>
+   </td>
+   <td>Users have basic view-only access to essential features of Agentic Apps including configurations, tools, guardrails, and simulation capabilities.
+   </td>
+  </tr>
+      <tr>
+   <td><strong>App Tester</strong>
+   </td>
+   <td>Users have view-only access to most system features of Agentic Apps allowinng them to observe and test the functionalities.
    </td>
   </tr>
 </table>
 
 <h4 id="custom-roles">Custom Roles<a class="headerlink" href="#custom-roles" title="Permanent link">&para;</a></h4>
-<p>The admin can add these roles at the account/agent level. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and agent levels.</p>
+<p>The admin can assign only <strong>Account</strong> and <strong>Tool</strong> role types to custom roles. The scopes, permissions, and access levels can be custom-configured. Custom user roles allow for more fine-grained control over what actions different users can perform for at the account and tool levels.</p>
 <p>Organizations can tailor access levels to their specific needs and organizational structure. This customization helps assign only the required permissions to specific users and improve security through role-based access. </p>
-<p>For example, a custom role, “<em>Banking Agent Conversation Moderator</em>,” can be customized for full access to agent guardrail configuration permission and no access to create and deploy an agent.</p>
+<p>For example, a custom role, “<em>Banking Tool Conversation Moderator</em>,” can be customized for full access to a tool guardrail configuration permission and no access to create and deploy a tool.</p>
 <h4 id="key-considerations">Key Considerations<a class="headerlink" href="#key-considerations" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
@@ -4723,26 +4755,42 @@
 </ul>
 <p>To proceed, you must first unassign the role or assign an alternative role to these users, and then you can delete the custom role.</p>
 <h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<p>A <strong>Permission</strong> is a specific action or a set of actions the user can perform for the assigned role on either agent or account types. Examples include creating an agent, adding an external model, adding a user, and assigning a role.</p>
+<p>A <strong>Permission</strong> is a specific action or a set of actions the user can perform for a module i.e., <strong>Admin</strong>, <strong>Tool</strong>, or <strong>Evaluation</strong> based on the defined access level (<em>Full</em>, <em>Edit</em>, or <em>View</em>), assigned role type (<em>Account</em>, <em>Tools</em>, or <em>Agentic Apps</em>) and role category (<em>Admin</em>, or <em>Tools</em>). An example includes the system providing <em>full</em> access to <em>create a tool version</em> to the <em>Tool Admin</em> role of the <em>tool</em> role type.</p>
 <h3 id="access-levels">Access Levels<a class="headerlink" href="#access-levels" title="Permanent link">&para;</a></h3>
-<p>The Settings console supports two types of access: “<em>Yes</em>” indicates the user role has access to a module’s permission, and “<em>No</em>” means the user has no access. When the system/custom user role has access, the extent/level of access at the account or agent level is defined by the following presets: </p>
+<p>The <strong>Settings</strong> console supports two types of access: “<em>Yes</em>” indicates the user role has access to a module’s permission, and “<em>No</em>” means the user has no access. When the system/custom user role has access, the extent/level of access at the account or tool level is defined by the following presets: </p>
 <ul>
-<li><strong>View</strong>: The user can view the account and agent level but cannot edit or delete it.</li>
-<li><strong>Custom</strong>: The user can view, add, and edit account and agent data but not delete it.</li>
-<li><strong>Full</strong>: The user can view, add, edit, and delete account and agent data. </li>
-<li><strong>No Access</strong>: The user cannot access the feature.</li>
+<li><strong>View</strong>: The user can only view the module feature but does not have the permission to edit or delete it.</li>
+<li><strong>Custom</strong>: The user can view, add, and edit the module data, but not delete it.</li>
+<li><strong>Full</strong>: The user can view, add, edit, and delete the module data. </li>
+<li><strong>No Access</strong>: The user cannot access the module's features.</li>
 </ul>
 <p><a href="./#module-wise-permissions-and-access-levels" target="_blank">Learn more</a> about Module-wise permissions and access levels.</p>
 <h3 id="role-types">Role Types<a class="headerlink" href="#role-types" title="Permanent link">&para;</a></h3>
 <p>A <strong>Role Type</strong> defines the module-wise scope and access level for the defined permissions and associated actions.</p>
-<p>The following Role Types are defined on GALE:</p>
+<p>Roles are auto-assigned by the system based on the following Role Types. Please refer to <a href="./#system-defined-roles" target="_blank">this</a> table for more information on the roles.</p>
 <ul>
-<li><strong>Account</strong>:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to features at the account level like models, agents, other users, integrations, and security permissions.</li>
-<li><strong>Agent</strong>:  When a user is invited to an agent, they receive an Agent role. The role type manages access to features at the agent level like agent creation, deployment, versioning, deletion, monitoring, API integration, experimentation, export, etc.</li>
+<li><strong>Account</strong>:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.</li>
+<li><strong>Tool</strong>:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.</li>
+<li><strong>Agentic App</strong>: When a user is invited to the Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features and configurations of autonomous AI applications that handle specialized business tasks and processes.</li>
 </ul>
-<p>A user can have an Account role within the account and one or more Agent roles within different agents. Agent roles are determined at the agent level, and you can assign these roles to users who are invited to your agent.</p>
+<p><strong>Account Role</strong></p>
+<ul>
+<li>The user who creates an Agent Platform account is assigned the <em>Master Admin</em> role by default.</li>
+<li>The <em>Master Admin</em> can assign other account roles to users added to their account.</li>
+</ul>
+<p><strong>Tool Role</strong></p>
+<ul>
+<li>The user who creates a tool is assigned the <em>Tool Admin</em> role by default.</li>
+<li>The <em>Tool Admin</em> can assign other tool roles to users they invite to their tool.</li>
+</ul>
+<p><strong>Agentic App Role</strong></p>
+<ul>
+<li>The user who creates an agentic app is assigned the <em>App Owner</em> role by default.</li>
+<li>The <em>App Owner</em> can assign other Agentic App roles to users who have access to their agentic apps.</li>
+</ul>
 <h3 id="module-wise-permissions-and-access-levels">Module-wise Permissions and Access Levels<a class="headerlink" href="#module-wise-permissions-and-access-levels" title="Permanent link">&para;</a></h3>
-<p>The following table summarizes the module-wise permissions and access levels for default admin, and agent roles.</p>
+<p>The following table summarizes the module-wise permissions and access levels for default admin, tool, and evaluation roles.</p>
+<p><b>Admin Role</b></p>
 <table>
   <tr bgcolor="#ECECEC">
    <td rowspan="3" ><strong>Module</strong>
@@ -4767,11 +4815,29 @@
    </td>
   </tr>
   <tr>
-   <td><strong>Agents</strong>
+   <td rowspan="2"><strong>Tools</strong>
 <p>
 <strong> </strong>
    </td>
-   <td>Create an Agent
+   <td>Create a Tool
+   </td>
+   <td>Yes
+<p>
+
+   </td>
+   <td>Yes
+<p>
+
+   </td>
+   <td>Yes
+<p>
+
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+     <td>Tool Import
    </td>
    <td>Yes
 <p>
@@ -4899,7 +4965,7 @@
    </td>
   </tr>
   <tr>
-   <td rowspan="6" ><strong>Prompts</strong>
+   <td rowspan="5" ><strong>Prompts</strong>
    </td>
    <td>Access to a Prompt
    </td>
@@ -4950,19 +5016,7 @@
    <td>Yes
    </td>
   </tr>
-  <tr>
-   <td>Deploy/ Undeploy a guardrail (for all agents)
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
+    <tr>
    <td><strong>Access to Integrations</strong> (“Full” is the default access)
    </td>
    <td>Full
@@ -5111,7 +5165,7 @@
    </td>
   </tr>
   <tr>
-   <td>Manage Agent Roles (Create and edit Custom roles), assign/revoke users
+   <td>Manage Tool Roles (Create and edit Custom roles), assign/revoke users
    </td>
    <td>Yes
    </td>
@@ -5146,19 +5200,7 @@
    <td>No
    </td>
   </tr>
-  <tr>
-   <td>Preferences
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
+    <tr>
    <td><strong>Manage User Settings (profile fields): </strong>Users with the permissions to manage user settings can bulk change permissions.
    </td>
    <td>Yes
@@ -5171,23 +5213,9 @@
    </td>
   </tr>
   <tr>
-   <td rowspan="4" ><strong>Security and Control Settings</strong>
+   <td><strong>Security and Control Settings</strong>
    </td>
-   <td>View and update the Security and Control Settings for your account
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-<p>
-
-   </td>
-  </tr>
-  <tr>
-   <td>Monitoring
+   <td>Create Management API Key.
    </td>
    <td>Yes
    </td>
@@ -5197,164 +5225,127 @@
    </td>
    <td>No
 <p>
+    </td>
+  </tr>
+  <tr>
+   <td><b>Monitoring</b>
+   </td>
+   <td>All actions</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+<p>
+   </td>
+  </tr>
+  <tr>
+   <td><b>Billing: Plans, invoice, subscribe & unsubscribe, token usage</b>
+   </td>
+   <td>All actions</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td><b>Tool Management</b>
+   </td>
+   <td>All actions</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="5"><strong>Evaluations</strong>
+   </td>
+   <td>Access</td>
+   <td>Full
+   </td>
+   <td>Custom
+   </td>
+   <td>Custom
+   </td>
+   <td>View
+   </td>
+  </tr>
+  <tr>
+   <td>Create projects
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create Global Evaluators.</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Delete Global Evaluators
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Edit Global Evaluators</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  </table>
 
-   </td>
-  </tr>
-  <tr>
-   <td>Billing: Plans, invoice, subscribe & unsubscribe, token usage
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Agent Management
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" ><strong>Guardrails</strong>
-   </td>
-   <td><strong>Access to guardrails at the account level</strong>
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-  </tr>
-  <tr>
-   <td>Deploy/ Undeploy a guardrail (for all agents)
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="7" ><strong>Other Permissions</strong>
-   </td>
-   <td>Approve & publish agent deployment requests
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Configure and manage Single Sign On
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Initiate, enable & disable Kore.ai connector
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>API Scopes for users, roles, and agents in your account.
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Manage Apps and Model Deployment requests approvals and publishing
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Allow users to integrate
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Monitor agents and models on the GALE level
-   </td>
-   <td>Yes
-   </td>
-   <td>Yes
-   </td>
-   <td>No
-   </td>
-   <td>No
-   </td>
-  </tr>
-</table>
-
+<p><b>Tool Role</b></p>
 <table>
   <tr bgcolor="#ECECEC">
    <td rowspan="3" ><strong>Module</strong>
    </td>
    <td rowspan="3" ><strong>Permission</strong>
    </td>
-   <td colspan="4" ><strong>Default Agent Role</strong>
+   <td colspan="4" ><strong>Default Tool Role</strong>
    </td>
   </tr>
   <tr>
-   <td><strong>Agent Admin</strong>
+   <td><strong>Tool Admin</strong>
    </td>
-   <td><strong>Agent Manager</strong>
+   <td><strong>Tool Manager</strong>
    </td>
-   <td><strong>Agent Editor</strong>
+   <td><strong>Tool Editor</strong>
    </td>
-   <td><strong>Agent Viewer</strong>
+   <td><strong>Tool Viewer</strong>
    </td>
   </tr>
   <tr bgcolor="#ECECEC">
@@ -5362,9 +5353,9 @@
    </td>
   </tr>
   <tr>
-   <td rowspan="9" ><strong>Agents</strong>
+   <td rowspan="10" ><strong>Tools</strong>
    </td>
-   <td><strong>Access to Agent </strong>(“Custom” is the default access for a custom role)
+   <td><strong>Access to Tool </strong>(“Custom” is the default access for a custom role)
    </td>
    <td>Full
    </td>
@@ -5376,7 +5367,7 @@
    </td>
   </tr>
   <tr>
-   <td>Create an Agent Version
+   <td>Create a Tool Version
    </td>
    <td>Yes
    </td>
@@ -5388,7 +5379,7 @@
    </td>
   </tr>
   <tr>
-   <td>Share Agents/ Unshare Agents/ Assign Agent Roles/ Remove users
+   <td>Import as a Version
    </td>
    <td>Yes
    </td>
@@ -5400,7 +5391,19 @@
    </td>
   </tr>
   <tr>
-   <td>Delete Agent
+   <td>Share Tools/ Unshare Tools/ Assign Tool Roles/ Remove users
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Delete Tool
    </td>
    <td>Yes
    </td>
@@ -5412,7 +5415,7 @@
    </td>
   </tr>
   <tr>
-   <td>Export Agent
+   <td>Export Tool
    </td>
    <td>Yes
    </td>
@@ -5424,7 +5427,7 @@
    </td>
   </tr>
   <tr>
-   <td>Monitoring Trace of an Agent
+   <td>Monitoring Trace of an Tool
    </td>
    <td>Yes
    </td>
@@ -5436,7 +5439,7 @@
    </td>
   </tr>
   <tr>
-   <td>Editing Agent Workflow
+   <td>Editing Tool Workflow
    </td>
    <td>Yes
    </td>
@@ -5448,7 +5451,7 @@
    </td>
   </tr>
   <tr>
-   <td>Agent configurations
+   <td>Tool configurations
    </td>
    <td>Yes
    </td>
@@ -5515,11 +5518,187 @@
   </tr>
 </table>
 
+<p><b>Evaluation Role</b></p>
+<table>
+  <tr bgcolor="#ECECEC">
+   <td><strong>Permission</strong>
+   </td>
+   <td><strong>Full</strong>
+   </td>
+      <td><strong>Edit</strong>
+   </td>
+      <td><strong>View</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Edit a project.</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Share a project.</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>User management - invite/delete users from project</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Delete a project.</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create/delete custom evaluators</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create/rename evaluations</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+      <tr>
+   <td>Delete Evaluations</td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Run an Evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Add, edit and delete evaluator columns and run evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+  <tr>
+   <td>Create a custom evaluator</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Save as a global evaluator</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Export evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Automate evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Import rows</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Add, edit and delete evaluator columns and run evaluation</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Add production data(model traces)</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Run a prompt</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>No
+   </td>
+  </tr>
+    <tr>
+   <td>Table options(user specific)</td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+   <td>Yes
+   </td>
+  </tr>
+  </table>
+
 <h3 id="role-management-dashboard">Role Management Dashboard<a class="headerlink" href="#role-management-dashboard" title="Permanent link">&para;</a></h3>
-<p>The <strong>Role Management Dashboard</strong> on the Settings console displays key information.</p>
+<p>The <strong>Role Management</strong> Dashboard displays key information related to system and custom roles and their permissions available on the Agent Platform.</p>
 <p>To access the dashboard, follow the steps below:</p>
 <ol>
-<li><a href="../../../getting-started/sign-up-sign-in/#sign-in-to-gale" target="_blank">Log in</a> to GALE and click <strong>Settings</strong> on the top menu.</li>
+<li><a href="../../../getting-started/sign-up-sign-in/#sign-in-to-gale" target="_blank">Log in</a> to Agent Platform and click <strong>Settings</strong> on the top menu.</li>
 <li>Click <strong>Users Management</strong> &gt; <strong>Role Management</strong> on the left menu.
 <a class="glightbox" href="../images/access-role-management.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/access-role-management.png" alt="access role management" title="access role management" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ol>
@@ -5538,7 +5717,7 @@
 <p>A Table view of the following system and custom role details:</p>
 <ul>
 <li><strong>Role</strong>: The name of the system-generated role or the custom role you have created.</li>
-<li><strong>Role Type</strong>: The role type defines its scope, including <strong>Account</strong> or <strong>Agent</strong>.</li>
+<li><strong>Role Type</strong>: The role type defines its scope, including <strong>Account</strong>, <strong>Tool</strong>, and <strong>Agentic App</strong>.</li>
 <li><strong>Description</strong>: This is the description of the role. System roles are predefined, while you must provide custom role descriptions. Hover over the description text to view the entire description.</li>
 <li>
 <p><strong>Created by</strong>: For system-generated roles, <em>System</em> is displayed. For custom roles, the name of the user who created the role is displayed, as shown in the image below. This user can be the account owner or another user in the admin’s account.
@@ -5578,11 +5757,9 @@
 <p>The following information is displayed:</p>
 <ul>
 <li>Role Title along with Role Type.</li>
-<li>Summary information on the role.</li>
 <li>Role Name</li>
 <li>Role Description</li>
-<li><a href="./#role-types" target="_blank">Role Type</a></li>
-<li>Configuration panel to enable/disable access and set access levels for the listed permissions at the agent/account level. Click <a href="./#module-wise-permissions-and-access-levels" target="_blank">here</a> to see the module-wise permissions and access levels for different roles.
+<li>Configuration panel to enable/disable access and set access levels for the listed permissions at the account/tool level. Click <a href="./#module-wise-permissions-and-access-levels" target="_blank">here</a> to see the module-wise permissions and access levels for different roles.
 <a class="glightbox" href="../images/module-wise-permissions-new.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/module-wise-permissions-new.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ul>
 <h4 id="duplicate-system-role">Duplicate System Role<a class="headerlink" href="#duplicate-system-role" title="Permanent link">&para;</a></h4>
@@ -5616,29 +5793,54 @@
 <li>
 <p>Follow the steps below in the <strong>New Role</strong> window:</p>
 <ul>
-<li>Enter <strong>Role Name</strong> &amp; <strong>Role Description</strong>.
+<li>Enter <strong>Role Name</strong> (should be unique) &amp; <strong>Role Description</strong>.
 <a class="glightbox" href="../images/enter-role-name-and-description.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-role-name-and-description.png" alt="enter role name and description" title="enter role name and description" style="border: 1px solid gray; zoom:80%;"></a></li>
 <li>Select the <strong>Role Type</strong> from the dropdown.
 <a class="glightbox" href="../images/select-role-type.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-role-type.png" alt="select role type" title="select role type" style="border: 1px solid gray; zoom:80%;"></a></li>
 <li>
 <p>Follow the steps below if you select <strong>Role Type</strong> as <strong><em>Account</em></strong>.</p>
 <ul>
-<li>Enable/select the access level for module-wise permissions in the <strong>Enable/Disable agent access</strong> section. <a href="./#module-wise-permissions-and-access-levels" target="_blank">Learn more</a> about module-wise permissions and access levels you can configure for a custom role.</li>
+<li>Enable/select the access level for module-wise permissions in the <strong>Enable/Disable tool access</strong> section. <a href="./#module-wise-permissions-and-access-levels" target="_blank">Learn more</a> about module-wise permissions and access levels you can configure for a custom role.</li>
 <li>
-<p>Select the checkbox to enable the permissions (set to <em>Yes</em>) or unselect to disable (set to <em>No</em>) for the following:</p>
+<p>If you select <em>Custom</em>, Select the checkbox to enable the permissions (set to <em>Yes</em>) or unselect to disable (set to <em>No</em>) for the following:</p>
+<ul>
+<li>Create and Import Tool</li>
+<li>Models<ul>
+<li>Add External models</li>
+<li>Fine-tune a model</li>
+<li>Delete a model</li>
+<li>Manage Deployment - deploy/undeploy</li>
+<li>Create an API key for a model</li>
+<li>Export model</li>
+</ul>
 </li>
-<li>
-<p>Create Agents</p>
-</li>
-<li>Models </li>
 <li>Prompts</li>
+<li>Settings<ul>
 <li>Integrations</li>
-<li>User Management</li>
+<li>Weights and Biases</li>
+<li>Hugging Face</li>
+<li>S3 Bucket</li>
+</ul>
+</li>
+<li>User Management<ul>
+<li>Invite user</li>
+<li>Bulk import users</li>
+<li>Assign roles to users</li>
+<li>Directory Sync</li>
+<li>Manage admin roles</li>
+<li>Manage tool roles</li>
+<li>Remove users</li>
+<li>Manage user settings</li>
+</ul>
+</li>
 <li>Security and Control Settings</li>
 <li>Manage Guardrail Models</li>
-<li>Billing
-  <a class="glightbox" href="../images/enable-permissions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;"></a>       </li>
+<li>Monitoring</li>
+<li>Billing</li>
 </ul>
+</li>
+</ul>
+<p><a class="glightbox" href="../images/enable-permissions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-permissions.png" alt="enable permissions" title="enable permissions" style="border: 1px solid gray; zoom:80%;"></a>       </p>
 </li>
 <li>
 <p>Select the access level for <strong>Models</strong>, <strong>Settings</strong>, <strong>Integrations</strong>, and <strong>User Management</strong> from the following options:</p>
@@ -5646,8 +5848,7 @@
 <li><strong>Full</strong>: The users can access all the module permissions (view &amp; edit).</li>
 <li><strong>Custom</strong>: The users can select only the required permissions for the module to customize the role.</li>
 <li><strong>View</strong>: The users can only view the configured module permissions.</li>
-<li><strong>No Access</strong>: The user cannot view/customize the module permissions.
-<a class="glightbox" href="../images/select-access-for-modules.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-access-for-modules.png" alt="select access for modules" title="select access for modules" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li><strong>No Access</strong>: The user cannot view/customize the module permissions.</li>
 </ul>
 </li>
 </ul>
@@ -5682,10 +5883,14 @@
 <li>User Management</li>
 <li>Security and Control Settings</li>
 <li>Manage Guardrail Models</li>
-<li>Billing
-<a class="glightbox" href="../images/full-select-for-all-permissions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/full-select-for-all-permissions.png" alt="full access" title="full access" style="border: 1px solid gray; zoom:80%;"></a></li>
-<li>Selecting <strong><em>No Access</em></strong> for <strong>Settings</strong> automatically sets the access levels of <strong>Integrations</strong> to <strong><em>View</em></strong> and <strong>User Management</strong> to <strong><em>No Access</em></strong>.
-<a class="glightbox" href="../images/select-no-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-no-access.png" alt="no access" title="no access" style="border: 1px solid gray; zoom:80%;"></a></li>
+<li>Monitoring</li>
+<li>
+<p>Billing</p>
+</li>
+<li>
+<p>Selecting <strong><em>No Access</em></strong> for <strong>Settings</strong> automatically sets the access levels of <strong>Integrations</strong> to <strong><em>View</em></strong> and <strong>User Management</strong> to <strong><em>No Access</em></strong>.
+<a class="glightbox" href="../images/select-no-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-no-access.png" alt="no access" title="no access" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
 </ul>
 <p>Additionally, it disables all the permissions for the following modules:</p>
 <ul>
@@ -5693,41 +5898,32 @@
 <li>User Management</li>
 <li>Security and Control Settings</li>
 <li>Manage Guardrail Models</li>
+<li>Monitoring</li>
 <li>Billing</li>
 </ul>
-<p><a class="glightbox" href="../images/disable-permissions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/disable-permissions.png" alt="disable permissions" title="disable permissions" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>Selecting <strong><em>Custom</em></strong> for <strong>Settings</strong> automatically sets the Integrations and User Management access levels to <strong><em>Custom</em></strong>.
-<a class="glightbox" href="../images/select-custom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-custom.png" alt="select custom" title="select custom" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>You can enable the required permissions for the following modules:</p>
+<p>Selecting <strong><em>Custom</em></strong> for <strong>Settings</strong> automatically sets the <strong>Integrations</strong> and <strong>User Management</strong> access levels to <strong><em>Custom</em></strong> where you can select or unselect the listed permissions based on your requirement for the following modules:</p>
 <ul>
 <li>Integrations</li>
 <li>User Management</li>
 <li>Security and Control Settings</li>
 <li>Manage Guardrail Models</li>
+<li>Monitoring</li>
 <li>Billing</li>
 </ul>
-<p><a class="glightbox" href="../images/enable-access-level.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-access-level.png" alt="enable access level" title="enable access level" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>You can change <strong><em>Custom</em></strong> to <strong><em>Full</em></strong> or <strong><em>View</em></strong> for <strong>Integrations</strong> and <strong><em>Full</em></strong> or <strong><em>No Access</em></strong> for <strong>User Management</strong>.
-<a class="glightbox" href="../images/change-access-level.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/change-access-level.png" alt="change access level" title="change access level" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>If you select <strong>Role Type</strong> as <strong><em>Agent</em></strong>, follow the steps below:</p>
+<p><a class="glightbox" href="../images/select-custom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-custom.png" alt="select custom" title="select custom" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>You can change <strong><em>Custom</em></strong> to <strong><em>Full</em></strong> or <strong><em>View</em></strong> for <strong>Integrations</strong> and <strong><em>Full</em></strong> or <strong><em>No Access</em></strong> for <strong>User Management</strong>.</p>
+<p>If you select <strong>Role Type</strong> as <strong><em>Tool</em></strong>, follow the steps below:</p>
 <ul>
 <li>Select <strong><em>Custom</em></strong>, <strong><em>View</em></strong>, or <strong><em>Full</em></strong> for <strong>Access</strong>. <a href="./#access-levels" target="_blank">Learn more</a>. </li>
 </ul>
-<p><strong><em>View</em></strong> is the default selection.
+<p><strong><em>Custom</em></strong> is the default selection.
 <a class="glightbox" href="../images/access-options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/access-options.png" alt="access options" title="access options" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ul>
-<li>Set up the agent permissions as follows in the <strong>Enable/Disable agent access</strong> section:</li>
+<li>Set up the tool permissions as follows in the <strong>Enable/Disable tool access</strong> section:</li>
+<li>If you select <strong><em>View</em></strong> for <strong>Access</strong>, all the permissions are automatically disabled.</li>
+<li>If you select <strong><em>Full</em></strong> for <strong>Access</strong>, all the permissions are automatically enabled.</li>
 <li>
-<p>If you select <strong><em>View</em></strong> for <strong>Access</strong>, permissions selection is automatically disabled.
-<a class="glightbox" href="../images/view-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/view-access.png" alt="view access" title="view access" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>If you select <strong><em>Full</em></strong> for <strong>Access</strong>, all the permissions are automatically enabled.
-<a class="glightbox" href="../images/full-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/full-access.png" alt="full access" title="full access" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>If you select <strong><em>Custom</em></strong> for <strong>Access</strong>, you can enable the required agent permissions and customize the role.               <br />
-<a class="glightbox" href="../images/custom-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-access.png" alt="custom access" title="custom access" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>If you select <strong><em>Custom</em></strong> for <strong>Access</strong>, you can select the required tool permissions to enable them and customize the role.                 </p>
 </li>
 <li>
 <p>Click <strong>Create</strong>.</p>
@@ -5736,7 +5932,7 @@
 <p>The new custom role is created and listed on the <strong>Role Management</strong> dashboard.</p>
 <p><a class="glightbox" href="../images/list-new-custom-role.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/list-new-custom-role.png" alt="list new custom role" title="list new custom role" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h4 id="edit-a-custom-role">Edit a Custom Role<a class="headerlink" href="#edit-a-custom-role" title="Permanent link">&para;</a></h4>
-<p>You can modify the role name, description, and access levels for account type or agent type roles’ permissions on the Settings console.</p>
+<p>You can modify the role name, description, and access levels for account type or tool type roles’ permissions on the Settings console.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The system does not allow changing the <b>Role Type</b> once it is set. You must create a new custom role to assign a different role type.</li>
@@ -5756,16 +5952,15 @@
 <ul>
 <li>Role Name</li>
 <li>Role Description</li>
+<li>Access: Select either <em>Custom</em>, <em>Full</em>, or <em>View</em>.</li>
 </ul>
 </li>
 </ol>
-<p>Reset the access levels for module-wise Permissions in the <strong>Enable/disable agent access</strong> section based on the role’s requirements.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <b>Role Type</b> field is disabled for editing.</p>
+<p>You cannot reset the access levels for module-wise Permissions in the <b>Enable/disable tool access</b> section.</p>
 </div>
 
-<p><a class="glightbox" href="../images/role-type-field-disabled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/role-type-field-disabled.png" alt="role type disabled" title="role type disabled" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ol start="5"><li>Click <b>Update</b>.</li>
 <a class="glightbox" href="../images/update-role-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/update-role-window.png" alt="update role window" title="update role window" style="border: 1px solid gray; zoom:80%;"></a></ol>
 
@@ -5824,7 +6019,7 @@
 <a class="glightbox" href="../images/duplicate-custom-role.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/duplicate-custom-role.png" alt="duplicate custom role" title="duplicate custom role" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h2 id="related-information">Related Information<a class="headerlink" href="#related-information" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Settings Console</strong> - <a href="../../settings-overview.md" target="_blank">Learn more</a> about other GALE admin features.</li>
+<li><strong>Settings Console</strong> - <a href="../../settings-overview.md" target="_blank">Learn more</a> about other Agent Platform admin features.</li>
 <li><strong>Users Management</strong> - <a href="../users/" target="_blank">Learn more</a> about managing users in your account.</li>
 <li><strong>Monitoring: Audit Logs</strong> - <a href="../../monitoring/audit-logs/" target="_blank">Learn more</a> about tracking events and user activity in your account.</li>
 </ul>

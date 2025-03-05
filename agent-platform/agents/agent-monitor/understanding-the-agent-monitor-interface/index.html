@@ -554,7 +554,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../playground/about-prompt-studio/" class="md-tabs__link">
+        <a href="../../../prompts/about-prompt-studio/" class="md-tabs__link">
           
   
   Prompts
@@ -3089,7 +3089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/about-prompt-studio/" class="md-nav__link">
+      <a href="../../../prompts/about-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3110,7 +3110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/accessing-prompt-studio/" class="md-nav__link">
+      <a href="../../../prompts/accessing-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3131,7 +3131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/using-prompt-studio/" class="md-nav__link">
+      <a href="../../../prompts/using-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3152,7 +3152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/advanced-features/" class="md-nav__link">
+      <a href="../../../prompts/advanced-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3173,7 +3173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../playground/options-prompt-canvas/" class="md-nav__link">
+      <a href="../../../prompts/options-prompt-canvas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3914,7 +3914,7 @@
         
   
   <span class="md-ellipsis">
-    Agents Analytics Dashboard
+    Tools Analytics Dashboard
   </span>
   
 
@@ -4316,8 +4316,8 @@
 </li>
 </ul>
 <p>Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.</p>
+<p><a class="glightbox" href="../images/new_agent_monitor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/new_agent_monitor.png" alt="All runs and Model runs tabs" title="All runs and Model runs tabs" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h2 id="all-runs">All Runs<a class="headerlink" href="#all-runs" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../images/agent_monitor_allruns_new.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_allruns_new.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The All runs tab provides the following information for each tool run:</p>
 <ul>
 <li><strong>Run ID</strong>: The unique identifier for the flow.</li>
@@ -4348,7 +4348,6 @@
 <h2 id="model-runs">Model Runs<a class="headerlink" href="#model-runs" title="Permanent link">&para;</a></h2>
 <p>Each GenAI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three GenAI nodes are used in a tool, three separate requests for each of the three GenAI nodes are displayed.</p>
 <p>If your tool currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.</p>
-<p><a class="glightbox" href="../images/agent_monitor_model_runs.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_model_runs.png" alt="Model runs" title="Model runs tab" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The Model runs tab provides the following information for each Gen AI node call:</p>
 <ul>
 <li><strong>Request ID</strong>: The unique identifier of the GenAI node request.</li>
@@ -4433,11 +4432,9 @@
 <ol>
 <li>
 <p>Click the calendar button in the top right corner of the Tool monitor page.</p>
-<p><a class="glightbox" href="../images/agent_monitor_calendar_selection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_calendar_selection.png" alt="calendar" title="Calendar" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Select a predefined time range or set custom dates.</p>
-<p><a class="glightbox" href="../images/agent_monitor_calendar_selection_new.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_calendar_selection_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click <strong>Apply</strong> to update the results.</p>
@@ -4449,22 +4446,13 @@
 <p>Steps to use the filters:</p>
 <ol>
 <li>Click the Filter icon.</li>
-<li>
-<p>Click <strong>+ Add filter</strong>.</p>
-<p><a class="glightbox" href="../images/agent_monitor_filtericon_new.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_filtericon_new.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Select options for Column, Operator, and Value.</p>
-<p><a class="glightbox" href="../images/agent_monitor_filter_options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Click <strong>Apply</strong>.</p>
-</li>
+<li>Click <strong>+ Add filter</strong>.</li>
+<li>Select options for Column, Operator, and Value.</li>
+<li>Click <strong>Apply</strong>.</li>
 </ol>
 <h2 id="tool-run-errors">Tool Run Errors<a class="headerlink" href="#tool-run-errors" title="Permanent link">&para;</a></h2>
 <p>In the <strong>All runs</strong> section, any error that occurs via the endpoint during an tool run is displayed in a separate window for the specified <em>Run ID</em>.</p>
 <p>To view detailed error information, click on the corresponding tool run entry in the <strong>Tool Monitor</strong> dashboard.</p>
-<p><a class="glightbox" href="../images/agent-run-errors.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent-run-errors.png" alt="agent run errors" title="agent run errors" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>An error message includes the following information:</p>
 <ul>
 <li>HTTP status code returned by the web server as a response.</li>
