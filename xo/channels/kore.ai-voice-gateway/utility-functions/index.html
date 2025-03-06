@@ -6325,6 +6325,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/clickup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ClickUp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/coda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../searchai/content-sources/connectors/confluence-cloud/" class="md-nav__link">
         
   
@@ -7107,6 +7149,27 @@
   
   <span class="md-ellipsis">
     Zulip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../searchai/content-sources/connectors/zoom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zoom
   </span>
   
 
@@ -11096,6 +11159,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../generative-ai-tools/xogpt-feedback-submission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XO GPT Feedback Submission
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -11164,6 +11248,27 @@
   
   <span class="md-ellipsis">
     Add Custom Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../generative-ai-tools/streaming-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Streaming Responses
   </span>
   
 
@@ -17589,8 +17694,14 @@ Use this method when you need to <strong>transfer the call directly to an extern
 <p><strong>General Syntax</strong> - <code>print(utility function)</code></p>
 <h3 id="hangup">Hangup<a class="headerlink" href="#hangup" title="Permanent link">&para;</a></h3>
 <p><strong>Use Cases</strong>:</p>
-<p>(a) If you need to forcibly hang up the call from the bot during the flow or call.</p>
-<p>(b) This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.</p>
+<ol>
+<li>
+<p>If you need to forcibly hang up the call from the bot during the flow or call.</p>
+</li>
+<li>
+<p>This function can also be used to dynamically send headers in a BYE message, similar to SIP BYE, using Run Automation.</p>
+</li>
+</ol>
 <p><strong>Syntax</strong>: <code>print(voiceUtils.hangup(message,headers,queueCommand))</code></p>
 <p>The message, headers, and queueCommand are optional parameters.</p>
 <p><strong>Header syntax</strong>:</p>
@@ -17723,7 +17834,7 @@ Default:True
 </table>
 
 <p><strong>Example</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1) Using all the options
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1 Using all the options
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>var message = &quot;Transferring Call to xxxx number&quot;;
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>var ReferTo = &quot;+91xxxxxxxxxx&quot;;   // or sipUrl 
@@ -17734,12 +17845,12 @@ Default:True
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>print(voiceUtils.refer(message,ExternalPhoneNumber,headers))
 </span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>2) without Message and headers 
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>2 without Message and headers 
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>var message = &quot;&quot;;
 </span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>print(voiceUtils.refer(message,ReferTo));
 </span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>3) With QueueCommand
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>3 With QueueCommand
 </span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>  var message = &quot;&quot; , headers = {}, referTo = &quot;sip:test@5060&quot;
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>print(voiceUtils.refer(message,ReferTo,headers,false));
 </span></code></pre></div>
@@ -17984,9 +18095,17 @@ An array of strings - Both audio URL and Message.
 </span></code></pre></div>
 <h3 id="voicemails">Voicemails<a class="headerlink" href="#voicemails" title="Permanent link">&para;</a></h3>
 <p><strong>Use Cases</strong>: </p>
-<p>(a) When you need to configure voicemail settings and notifications for customer calls. </p>
-<p>(b) When you need to receive transcriptions of voicemail messages. </p>
-<p>&copy; When you need to collect and process customer voicemail content with metadata.</p>
+<ol>
+<li>
+<p>When you need to configure voicemail settings and notifications for customer calls. </p>
+</li>
+<li>
+<p>When you need to receive transcriptions of voicemail messages. </p>
+</li>
+<li>
+<p>When you need to collect and process customer voicemail content with metadata.</p>
+</li>
+</ol>
 <p><strong>Syntax</strong>: <code>print(voiceUtils.voicemail(message, beepRequired, transcriptionRequired, notifyUrl, metaInfo))</code></p>
 <p><strong>Header Syntax</strong>:</p>
 <table>

@@ -6376,6 +6376,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../searchai/content-sources/connectors/clickup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ClickUp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/content-sources/connectors/coda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../searchai/content-sources/connectors/confluence-cloud/" class="md-nav__link">
         
   
@@ -7158,6 +7200,27 @@
   
   <span class="md-ellipsis">
     Zulip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/content-sources/connectors/zoom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zoom
   </span>
   
 
@@ -11147,6 +11210,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../generative-ai-tools/xogpt-feedback-submission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XO GPT Feedback Submission
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -11215,6 +11299,27 @@
   
   <span class="md-ellipsis">
     Add Custom Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../generative-ai-tools/streaming-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Streaming Responses
   </span>
   
 
@@ -17823,7 +17928,21 @@
 </ul>
 </div>
 <p>To set up node connection conditions, please follow the steps outlined in <a href="../../node-connections/nodes-conditions" target="_blank">Adding IF-Else Conditions to Node Connections. </a></p>
-<p><a class="glightbox" href="../images/service-node-img9-connection-properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/service-node-img9-connection-properties.png" alt="Service node - Connection properties" title="Service node - Connection properties" style="border:1px solid gray;zoom:70%;"></a></p>
+<p>The Connection Path property offers three default variants:</p>
+<ol>
+<li>Not Connected - No specific next node is defined</li>
+<li>End of Dialog - Explicitly ends the current dialog</li>
+<li>Return to Flow - Terminates the Dialog Task and returns control to the Flow Builder. The Flow Builder resumes from the next node.<ul>
+<li>Enable the <strong>Deflect to Chat</strong> option to create conversation flows that transition from voice to chat-based interactions within the same context.
+It has two deflection types - ‘ Automation’ and ‘Agent Transfer’.<br />
+<a class="glightbox" href="../images/deflect-to-chat1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deflect-to-chat1.png" alt="Deflect to Chat" title="Deflect to Chat" style="border:1px solid gray;zoom:70%;"></a></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).</p>
+</div>
 <p>The Connection Path property offers three default variants:</p>
 <ol>
 <li>Not Connected - No specific next node is defined</li>

@@ -6441,6 +6441,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../../searchai/content-sources/connectors/clickup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ClickUp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/content-sources/connectors/coda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../../searchai/content-sources/connectors/confluence-cloud/" class="md-nav__link">
         
   
@@ -7223,6 +7265,27 @@
   
   <span class="md-ellipsis">
     Zulip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../searchai/content-sources/connectors/zoom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zoom
   </span>
   
 
@@ -11212,6 +11275,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../generative-ai-tools/xogpt-feedback-submission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XO GPT Feedback Submission
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -11280,6 +11364,27 @@
   
   <span class="md-ellipsis">
     Add Custom Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../generative-ai-tools/streaming-responses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Streaming Responses
   </span>
   
 
@@ -17900,7 +18005,21 @@
 <p>If the node is at the bottom of the sequence, then only the connection property is visible.</p>
 </div>
 <p>Define the transition conditions from this node. These conditions apply only to this instance and will not affect this node’s use in any other dialog. For a detailed setup guide, See <a href="../../node-connections/nodes-conditions" target="_blank">Adding IF-Else Conditions to Node Connections</a> for a detailed setup guide.</p>
-<p><a class="glightbox" href="../images/connectionsv2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/connectionsv2.png" alt="Connections Properties" title="Connections Properties" style="border: 1px solid gray; zoom:70%;"></a></p>
+<p>The Connection Path property offers three default variants:</p>
+<ol>
+<li>Not Connected - No specific next node is defined</li>
+<li>End of Dialog - Explicitly ends the current dialog</li>
+<li>Return to Flow - Terminates the Dialog Task and returns control to the Flow Builder. The Flow Builder resumes from the next node.<ul>
+<li>Enable the <strong>Deflect to Chat</strong> option to create conversation flows that transition from voice to chat-based interactions within the same context.
+It has two deflection types - ‘ Automation’ and ‘Agent Transfer’.<br />
+<a class="glightbox" href="../images/deflect-to-chat1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deflect-to-chat1.png" alt="Deflect to Chat" title="Deflect to Chat" style="border:1px solid gray;zoom:70%;"></a></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Deflect to Chat works only with Kore Voice Gateway Channels (Phone number or SIP Transfer).</p>
+</div>
 <h2 id="custom-prompt-for-agent-node">Custom Prompt for Agent Node<a class="headerlink" href="#custom-prompt-for-agent-node" title="Permanent link">&para;</a></h2>
 <p>Custom prompts are required to work with the Agent Node for tool-calling functionality. Platform users can create custom prompts using JavaScript to tailor the AI model's behavior and generate outputs aligned with their specific use case. By leveraging the Prompts and Requests Library, the users can access, modify, and reuse prompts across different Agent Nodes.
 The custom prompt feature enables users to process the prompt and variables to generate a JSON object, which is then sent to the configured language model. Users can preview and validate the generated JSON object to ensure the desired structure is achieved.</p>
