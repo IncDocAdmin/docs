@@ -1273,7 +1273,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Connect Search AI">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#access-associated-apps" class="md-nav__link">
@@ -1288,13 +1289,18 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#enablingdisabling-enterprise-knowledge" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#connect-agentic-app" class="md-nav__link">
     <span class="md-ellipsis">
-      Enabling/Disabling Enterprise Knowledge
+      Connect Agentic App
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2362,7 +2368,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Connect Search AI">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#access-associated-apps" class="md-nav__link">
@@ -2377,13 +2384,18 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#enablingdisabling-enterprise-knowledge" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#connect-agentic-app" class="md-nav__link">
     <span class="md-ellipsis">
-      Enabling/Disabling Enterprise Knowledge
+      Connect Agentic App
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2406,14 +2418,12 @@
 
 
 <h1 id="enterprise-knowledge">Enterprise Knowledge<a class="headerlink" href="#enterprise-knowledge" title="Permanent link">&para;</a></h1>
-<p>The <strong>Enterprise Knowledge</strong> refers to a pre-configured <strong>Retrieval-Augmented
-Generation</strong> (RAG) based <strong>Search AI</strong> app that is provisioned for every AI for Work account. It serves as a fallback mechanism, ensuring a response can still be generated when no specific agents align with the user’s intent. Its role is to enhance the accuracy and relevance of responses by retrieving content from
+<p>The <strong>Enterprise Knowledge</strong> refers to <strong>Search AI</strong> app and <strong>Agentic App</strong> that is provisioned for every AI for Work account. It serves as a fallback mechanism, ensuring a response can still be generated when no specific agents align with the user’s intent. Its role is to enhance the accuracy and relevance of responses by retrieving content from
 various sources and then generating a response based on that information. It is automatically available to users when no custom or specific agents are assigned to handle a user query.</p>
-<p>Unlike other specialized RAG agents that may be configured for specific tasks or intents, the <strong>Enterprise Knowledge</strong> provides generalized search and response capabilities, making it a handle for fallback queries. No specific intent or purpose is associated with the Enterprise Knowledge.</p>
 <h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>Fallback Mechanism</strong>: It activates when no specific RAG agent matches the
+<p><strong>Fallback Mechanism</strong>: It activates when no specific agent matches the
     user’s query, ensuring the system can still provide useful responses.</p>
 </li>
 <li>
@@ -2445,20 +2455,37 @@ various sources and then generating a response based on that information. It is 
 </li>
 </ul>
 <h2 id="enterprise-knowledge-configuration">Enterprise Knowledge Configuration<a class="headerlink" href="#enterprise-knowledge-configuration" title="Permanent link">&para;</a></h2>
+<p>Set up enterprise knowledge sources to be used when no agent is triggered. Configure and manage sources between either <strong>Search AI</strong> app or <strong>Agentic App</strong>.</p>
+<ul>
+<li>Configure Search AI</li>
+<li>Configure Agentic App</li>
+</ul>
 <h3 id="connect-search-ai">Connect Search AI<a class="headerlink" href="#connect-search-ai" title="Permanent link">&para;</a></h3>
+<p>The Search AI configuration establishes a connection to a dedicated search application that indexes your content and retrieves relevant information based on user queries. This approach excels at finding specific information across large document repositories and structured data sources.</p>
+<p>To connect Search AI complete the following instructions:</p>
 <ol>
 <li>Navigate to <strong>Enterprise Knowledge</strong> on the left pane.</li>
-<li>Click <strong>Connect Search AI</strong>.
-<a class="glightbox" href="../images/Default_RAG_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Default_RAG_1.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;"></a></li>
+<li>Click <strong>Configure</strong> and then <strong>Create New</strong>.</li>
+<li>Select <strong>Search AI</strong>.</li>
 <li>The next step is to configure the Search AI app, which has the indexed content used for answer generation. Provide the following details for the connection. These details are available in the <strong>Search AI app</strong> on the <strong>Credentials</strong> page under the <strong>Manage</strong> tab, click <strong>Dev Tools</strong> and choose <strong>Web/Mobile SDK</strong> tab. Refer to <a href="https://docs.kore.ai/xo/app-settings/dev-tools/kore-ai-web-sdk/">this</a> for more details.<ul>
+<li><strong>Source name</strong>: Create a unique and descriptive name for this knowledge source to easily identify it in your Enterprise Knowledge configuration.</li>
+<li><strong>Description</strong>:  Provide a brief explanation of what this source contains and its purpose within your knowledge ecosystem.</li>
+<li><strong>URL</strong>: Enter the endpoint URL for the Search AI service where API requests will be sent. This is typically provided in your Search AI documentation.</li>
 <li><strong>App ID</strong>: Application ID of the Search AI app.</li>
 <li><strong>Client ID</strong>: Client credentials generated in Search AI for interaction with the RAG Agent.</li>
 <li><strong>Client Secret ID</strong>: A secret key generated for secure interaction.</li>
 <li><strong>Search ID</strong>: Unique identifier of the client generated in Search AI.
-<a class="glightbox" href="../images/Default_RAG_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Default_RAG_2.png" alt="Details and Purpose" title="Details and Purpose" style="border: 1px solid gray; zoom:70%;"></a></li>
+<a class="glightbox" href="../images/Add_Search_APP_EK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Add_Search_APP_EK.png" alt="Details and Purpose" title="Search AI" style="border: 1px solid gray; zoom:70%;"></a></li>
 </ul>
 </li>
 </ol>
+<p>You need to associate four <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/">API Scope</a> in your XO platforms App's channel:</p>
+<ul>
+<li>Answer Generation</li>
+<li>Permission Entity Management</li>
+<li>Document Management</li>
+<li>Facets</li>
+</ul>
 <p>You need to associate four <a href="https://docs.kore.ai/xo/apis/automation/api-introduction/">API Scope</a> in your XO platforms App's channel:</p>
 <ul>
 <li>Answer Generation</li>
@@ -2470,7 +2497,7 @@ various sources and then generating a response based on that information. It is 
 <p class="admonition-title">Note</p>
 <p>These details are available in the <strong>Search AI app</strong> on the <strong>Credentials</strong> page under the <strong>Manage</strong> tab. Refer to <a href="https://docs.kore.ai/xo/searchai/about-search-ai/" target="_blank">this</a> for more details.</p>
 </div>
-<h3 id="access-associated-apps">Access associated Apps<a class="headerlink" href="#access-associated-apps" title="Permanent link">&para;</a></h3>
+<h4 id="access-associated-apps">Access associated Apps<a class="headerlink" href="#access-associated-apps" title="Permanent link">&para;</a></h4>
 <p>Under the <strong>AI search</strong> agents, go to <strong>Enterprise Knowledge</strong>. Then, use the <strong>Go to
 Search AI</strong> option to access <strong>the associated Search AI</strong> app.</p>
 <ul>
@@ -2493,9 +2520,51 @@ indexed webpages, third-party content sources, etc. Each source's associated
 content or connection status is also indicated. For the third-party connectors,
 it also indicates the last sync time.</p>
 <p><a class="glightbox" href="../images/default_rag.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/default_rag.png" /></a></p>
-<h2 id="enablingdisabling-enterprise-knowledge">Enabling/Disabling Enterprise Knowledge<a class="headerlink" href="#enablingdisabling-enterprise-knowledge" title="Permanent link">&para;</a></h2>
-<p>Enterprise Knowledge can be enabled using the toggle button on the top right.</p>
-<p><a class="glightbox" href="../images/enable-rag.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/enable-rag.png" /></a></p>
+<h3 id="connect-agentic-app">Connect Agentic App<a class="headerlink" href="#connect-agentic-app" title="Permanent link">&para;</a></h3>
+<p>The Agentic App configuration connects your system to more specialized, action-oriented services that can perform complex operations in response to user needs. These connections allow your AI system to not just retrieve information but also potentially take appropriate actions on behalf of users.</p>
+<p>To connect Agentic App complete the following instructions:</p>
+<ol>
+<li>Navigate to <strong>Enterprise Knowledge</strong> on the left pane.</li>
+<li>Click <strong>Configure</strong> and then <strong>Create New</strong>.</li>
+<li>Select <strong>Agentic App</strong>.</li>
+<li>
+<p>The next step is to configure the Agentic app, which has the indexed content used for answer generation. Provide the following details for the connection by defining API fields as per the details below:</p>
+<ul>
+<li>
+<p><strong>URL</strong>: Enter the endpoint URL of the app obtained from the Agentic Platform.</p>
+</li>
+<li>
+<p><strong>Method</strong>: Enter the type of request you want to make.</p>
+</li>
+<li>
+<p><strong>Headers</strong>: Specify the information that helps to customize your API request. These are like special instructions that come with your request, such as authentication tokens or specifying the type of data you're sending. You can add multiple headers as needed.</p>
+</li>
+<li>
+<p><strong>Query String</strong>: Specify additional information attached to the end of your URL to filter or customize your request.</p>
+</li>
+<li>
+<p><strong>Body Type</strong>: Enter the format of the data you are sending with your request. Common types include JSON, or Raw. This tells the API how to interpret the information you're sending.</p>
+</li>
+<li>
+<p><strong>Content Type</strong>: Enter a specific label that tells the API what kind of data you are sending.</p>
+</li>
+<li>
+<p><strong>Request content</strong>: Enter the actual data payload you want to send with your request. This contains the specific information or parameters the API needs to process your request.
+ <a class="glightbox" href="../images/Add_Agentic_App_EK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Add_Agentic_App_EK.png" alt="Details and Purpose" title="Agentic App" style="border: 1px solid gray; zoom:70%;"></a></p>
+</li>
+</ul>
+<p>Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration:</p>
+<ol>
+<li>Click <strong>Curl Import</strong> to open the import interface.</li>
+<li>Paste your CURL command into the text box.</li>
+<li>Click <strong>Import</strong> to extract API details.
+ <a class="glightbox" href="../images/Advance_Agentic_App_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Advance_Agentic_App_2.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;"></a></li>
+</ol>
+</li>
+<li>
+<p>Click <strong>Save</strong> and now you can find the agentic app listed. </p>
+</li>
+</ol>
 
 
 

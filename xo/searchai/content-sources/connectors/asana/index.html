@@ -6118,6 +6118,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#authorization-support" class="md-nav__link">
     <span class="md-ellipsis">
       Authorization Support
@@ -7069,11 +7078,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../zulip/" class="md-nav__link">
+      <a href="../zoom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Zulip
+    Zoom
   </span>
   
 
@@ -7090,11 +7099,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../zoom/" class="md-nav__link">
+      <a href="../zulip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Zoom
+    Zulip
   </span>
   
 
@@ -11381,7 +11390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/conversation-orchestration/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-conversation-orchestration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11402,7 +11411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/dialog-gpt-faq/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11423,7 +11432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/dialog-gpt-upcoming-features/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-upcoming-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -17448,6 +17457,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#authorization-support" class="md-nav__link">
     <span class="md-ellipsis">
       Authorization Support
@@ -17553,6 +17571,10 @@ Note that sub-tasks and attachments are not supported.
   </tr>
 </table>
 
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Admin account with access to the required projects and tasks. </li>
+</ul>
 <h2 id="authorization-support">Authorization Support<a class="headerlink" href="#authorization-support" title="Permanent link">&para;</a></h2>
 <p>Search AI supports the <strong>OAuth 2.0 authorization code grant type</strong> to access the content on Asana. </p>
 <h2 id="asana-oauth-client-set-up">Asana OAuth Client Set Up<a class="headerlink" href="#asana-oauth-client-set-up" title="Permanent link">&para;</a></h2>
@@ -17563,7 +17585,7 @@ Note that sub-tasks and attachments are not supported.
 <li>Go to the OAuth page and enter the Redirect URL. Depending upon your region or the deployment, you can use one of the following URLs as the Redirect URL.</li>
 <li>JP Region Callback URL: <a href="https://jp-bots-idp.kore.ai/workflows/callback">https://jp-bots-idp.kore.ai/workflows/callback</a></li>
 <li>DE Region Callback URL: <a href="https://de-bots-idp.kore.ai/workflows/callback">https://de-bots-idp.kore.ai/workflows/callback</a></li>
-<li>Prod Region Callback URL: <a href="https://idp.kore.com/workflows/callback">https://idp.kore.com/workflows/callback</a></li>
+<li>Prod Callback URL: <a href="https://idp.kore.com/workflows/callback">https://idp.kore.com/workflows/callback</a></li>
 <li>Copy the client credentials for the app. These credentials are used to configure the Asana connector in Search AI.</li>
 <li>Go to the Manage Distribution page and set the distribution method to ‘Any Workspace’. </li>
 <li>Save Changes. </li>
@@ -17584,13 +17606,13 @@ Note that sub-tasks and attachments are not supported.
 <h2 id="ingested-content-format">Ingested Content Format<a class="headerlink" href="#ingested-content-format" title="Permanent link">&para;</a></h2>
 <p>Asana Connector currently ingests only <strong>Projects</strong> and the <strong>Tasks</strong> associated with the projects into the Search AI application. </p>
 <ul>
-<li>For Projects, the following fields are fetched and added to the **content **field of the ingested content. <ul>
+<li>For Projects, the following fields are fetched and added to the <strong>content</strong> field of the ingested content. <ul>
 <li>Project Description</li>
 <li>Project Owner</li>
 <li>Completed</li>
 </ul>
 </li>
-<li>For Tasks, the following fields are provided in the **content **field of the ingested content.<ul>
+<li>For Tasks, the following fields are provided in the <strong>content</strong> field of the ingested content.<ul>
 <li>Task Description</li>
 <li>Project</li>
 <li>Completed</li>

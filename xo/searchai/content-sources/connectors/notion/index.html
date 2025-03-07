@@ -7042,11 +7042,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../zulip/" class="md-nav__link">
+      <a href="../zoom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Zulip
+    Zoom
   </span>
   
 
@@ -7063,11 +7063,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../zoom/" class="md-nav__link">
+      <a href="../zulip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Zoom
+    Zulip
   </span>
   
 
@@ -11354,7 +11354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/conversation-orchestration/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-conversation-orchestration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11375,7 +11375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/dialog-gpt-faq/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11396,7 +11396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/dialog-gpt-upcoming-features/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-upcoming-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -17508,8 +17508,12 @@
 <p>Generate the client credentials and an access token for this integration.  </p>
 </li>
 <li>
-<p><strong>Internal Integration</strong>: This method uses an internal integration token to establish a direct connection. While creating an internal integration, ensure that the following capabilities are enabled. 
-<a class="glightbox" href="../images/notion/capabilities.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Capabilities" src="../images/notion/capabilities.png" title="Capabilities" /></a></p>
+<p><strong>Internal Integration</strong>: This method uses an internal integration token to establish a direct connection. </p>
+<ul>
+<li>Create your integration in the <a href="https://www.notion.so/profile/integrations">integration’s settings page</a>.</li>
+<li>While creating an internal integration, ensure that the following capabilities are enabled under the Configuration tab of the integration. <a class="glightbox" href="../images/notion/capabilities.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Capabilities" src="../images/notion/capabilities.png" title="Capabilities" /></a></li>
+<li>Retrieve the integration token from this tab. This will be used for authentication of the API requests.</li>
+</ul>
 </li>
 </ul>
 <div class="admonition note">

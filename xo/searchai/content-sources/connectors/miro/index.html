@@ -7060,11 +7060,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../zulip/" class="md-nav__link">
+      <a href="../zoom/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Zulip
+    Zoom
   </span>
   
 
@@ -7081,11 +7081,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../zoom/" class="md-nav__link">
+      <a href="../zulip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Zoom
+    Zulip
   </span>
   
 
@@ -11372,7 +11372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/conversation-orchestration/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-conversation-orchestration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11393,7 +11393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/dialog-gpt-faq/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -11414,7 +11414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../generative-ai-tools/dialog-gpt-upcoming-features/" class="md-nav__link">
+      <a href="../../../../generative-ai-tools/dgpt-upcoming-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -17569,14 +17569,15 @@
 <p>The Miro Connector allows ingestion of information about Miro boards into the Search AI application. It captures the details of the boards, such as title, content, URL, and project to which the board belongs.</p>
 <p>The content field in the ingested content contains the name and description of the board.</p>
 <h2 id="racl-support">RACL Support<a class="headerlink" href="#racl-support" title="Permanent link">&para;</a></h2>
-<p>Miro boards can be shared using different access options. For each of the options, the sys_racl is populated as described below. </p>
+<p>By default, when a board is created, it is automatically shared with the other members of the space, hence the sys_racl field is populated with <strong>spaceID</strong>. </p>
+<p>Further, Miro boards can be shared using different access options. For each of the options, the sys_racl is populated as described below. </p>
 <ul>
-<li><strong>Share with specific users via email</strong> - When users are directly added to a board, their email addresses are stored in the sys_racl field.</li>
-<li><strong>Share with team members</strong>  - If a board is shared with a team, the team ID is added to the sys_racl field.</li>
-<li><strong>Everyone in the company</strong>  -When a board is shared at the company level, the Organization ID is stored in the sys_racl field.</li>
+<li><strong>Share with specific users via email</strong> - When users are directly added to a board, their email addresses are stored in the sys_racl field. The members of a space also have default access to the boards within the space. So, along with <strong>individual email addresses</strong>, <strong>the space ID</strong> (also referred to as project ID in Miro) is stored in sys_racl as a permission entity. </li>
+<li><strong>Share with team members</strong>  - If a board is shared with a team, the <strong>team ID</strong> is added to the sys_racl field. Since the space members are a subset of the team, when a board is shared with the team, sys_racl only contains team ID and spaceID is not added. </li>
+<li><strong>Everyone in the company</strong>  -When a board is shared at the company level, the <strong>Organization ID</strong> is stored in the sys_racl field. Since the space members are a subset of the members of the organization, when a board is shared with the organization, sys_racl only contains organizationID and spaceID is not added. </li>
 <li><strong>Public Access</strong>: The sys_racl field is set to *, allowing unrestricted access.</li>
 </ul>
-<p>TeamId and OrganizationID are added as permission entities. Use the Permission Entity APIs to associate users with the entities. </p>
+<p>ProjectID, TeamID and OrganizationID are added as permission entities. Use the Permission Entity APIs to associate users with the entities. </p>
 
 
 
