@@ -7600,17 +7600,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Advanced Configuration
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -7620,36 +7609,6 @@
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this Page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reranking-chunks-beta" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reranking Chunks (Beta)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -7719,6 +7678,120 @@
   
   <span class="md-ellipsis">
     Automatic vs Manual Training
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Best Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../best-practices/data-ingestion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Ingestion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../best-practices/chunking-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chunking Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../best-practices/llm-selection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Selection and Configuration
   </span>
   
 
@@ -17392,23 +17465,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reranking-chunks-beta" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reranking Chunks (Beta)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -17430,22 +17486,33 @@
 <p><a class="glightbox" href="../images/home.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Advanced Configurations" src="../images/home.png" title="Advanced Configurations" /></a></p>
 <p>Search for the config you want to set and select or provide its values. 
 <a class="glightbox" href="../images/home.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Advanced Configurations" src="../images/home.png" title="Advanced Configurations" /></a></p>
-<h2 id="reranking-chunks-beta">Reranking Chunks (Beta)<a class="headerlink" href="#reranking-chunks-beta" title="Permanent link">&para;</a></h2>
-<p><strong>Reranking of Chunks</strong> is helpful in scenarios where the system can retrieve the relevant content successfully, but due to some reasons like the chunks being too similar to each other, the overall ranking of the chunks retrieved is not up to the mark. In such scenarios, use this feature to enhance the chunk retrieval process and improve the relevance and quality of answers. When a user query is made, an initial retrieval process selects chunks relevant to the query based on their similarity score. Reranking involves re-evaluating the retrieved chunks to prioritize or reorder them based on their relevance to the user's query. This process uses specialized models to refine the ranking, ensuring that the most appropriate chunks are used for answer generation.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature does not require training of the application. </p>
-</div>
-<p><strong>Re-Rank Chunks</strong>: Use this property to select the reranking feature and select the Re-Ranker model to be used. Search AI supports the following re-rankers. </p>
-<ul>
-<li><strong>Cross Encoder Re-Ranker</strong> - Uses the <em>cross-encoder/ms-marco-MiniLM-L-6-v2</em> model. It is lightweight, fast, and most suitable for English Language.</li>
-<li><strong>BGE Re-Ranker</strong> - Uses <em>BAAI/bge-reranker-v2-m3</em> model. It is a lightweight re-ranking model and possesses multilingual capabilities. </li>
-<li><strong>MixedBread Re-Ranker</strong> - Uses the <em>mixedbread-ai/mxbai-rerank-large-v1</em> model, which is resource intensive to run and has a higher latency but delivers the highest accuracy and performance.</li>
-</ul>
-<p><strong>Re-Rank Chunk Fields</strong>: Select the fields to rerank the chunks against the user query. It depends on how the content is extracted from documents. By default, Chunk Title, Chunk Text, and Record Title are used for reranking the chunks.  You can select any of the chunk fields for re-ranking. Note that selecting different fields impacts the results generated by the re-ranker.</p>
-<p>For instance, if the embeddings are created using the document title, chunk title, and chunk text, you can use the same fields while re-ranking or include/exclude other metadata that provides additional context for the model. </p>
-<p><strong>Maximum Re-Rank Chunks</strong>: Select the maximum number of chunks to be sent for reranking. This field can take any integer value between 5 and 20. The default value is 20. This field is used only if the reranking of chunks is enabled.</p>
-<p>Increasing the number of fields or chunks for reranking typically leads to higher latency due to the added complexity in computation, data retrieval, and processing load. If you are using the generative model and re-ranking is also enabled, the overall latency includes the latency induced by the re-ranker and the LLM.</p>
+<p>The following table lists the supported configurations. </p>
+<table>
+<thead>
+<tr>
+<th><strong>Configuration</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../reranking-chunks/">Re-Rank Chunks</a></td>
+<td>Used to select the reranking feature and select the Re-Ranker model.</td>
+</tr>
+<tr>
+<td><a href="../reranking-chunks/">Re-Rank Chunk Fields</a></td>
+<td>Used to select the fields used to rerank the chunks.</td>
+</tr>
+<tr>
+<td><a href="../reranking-chunks/">Maximum Re-Rank Chunks</a></td>
+<td>Used to set the maximum number of chunks to be sent for reranking.</td>
+</tr>
+<tr>
+<td><a href="../knn-matching/">Enable Exact KNN Matching</a></td>
+<td>Used to enable the Exact KNN Matching.</td>
+</tr>
+</tbody>
+</table>
 
 
 

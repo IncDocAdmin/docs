@@ -7803,6 +7803,120 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Best Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../best-practices/data-ingestion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Ingestion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../best-practices/chunking-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chunking Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../best-practices/llm-selection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Selection and Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -17614,30 +17728,37 @@
 <li>Configuration of the Salesforce connector in SearchAI</li>
 </ul>
 <h2 id="creating-an-oauth-application-in-salesforce">Creating an OAuth application in Salesforce<a class="headerlink" href="#creating-an-oauth-application-in-salesforce" title="Permanent link">&para;</a></h2>
-<p>Login to the <a href="https://login.salesforce.com/">Salesforce application</a>. Click on the **Setup icon**and go to the Setup.</p>
+<p>Login to the <a href="https://login.salesforce.com/">Salesforce application</a>. Click on the <strong>Setup icon</strong> and go to the Setup.</p>
 <p><a class="glightbox" href="../images/salesforce/salesforce-home.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Salesforce Home" src="../images/salesforce/salesforce-home.png" title="Home" /></a></p>
 <p>This will open the <strong>Object Manager</strong> home page as shown below.</p>
 <p><a class="glightbox" href="../images/salesforce/object-manager.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Object Manager" src="../images/salesforce/object-manager.png" title="Object Manager" /></a></p>
-<p>Go to the <strong>App Manager**and click on **New Connected App</strong>.</p>
+<p>Go to the <strong>App Manager</strong> and click on <strong>New Connected App</strong>.</p>
 <p><a class="glightbox" href="../images/salesforce/create-app.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Create App" src="../images/salesforce/create-app.png" title="Create New App" /></a></p>
 <p>Provide the details for the app. Provide basic information about the application like the name, email address, logo, icon, etc. </p>
 <p><a class="glightbox" href="../images/salesforce/app-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="App details" src="../images/salesforce/app-details.png" title="App details" /></a></p>
-<p><strong>Enable OAuth settings</strong> for API Integration under the <strong>API</strong> section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment. 
-  * JP Region Callback URLs: <a href="https://jp-bots-idp.kore.ai/workflows/callback">https://jp-bots-idp.kore.ai/workflows/callback</a>
-  * DE Region Callback URLs: <a href="https://de-bots-idp.kore.ai/workflows/callback">https://de-bots-idp.kore.ai/workflows/callback</a>
-  * Prod Region Callback URLs: <a href="https://idp.kore.com/workflows/callback">https://idp.kore.com/workflows/callback</a></p>
-<p>Select and add the following to the <strong>Selected OAuth Scopes</strong>. 
-  * Full access (full)
-  * Perform requests at any time (refresh_token, offline_access)</p>
+<p><strong>Enable OAuth settings</strong> for API Integration under the <strong>API</strong> section and provide the callback URL. You can use one of the following callback URLs as per your region or deployment.</p>
+<ul>
+<li>JP Region Callback URLs: <a href="https://jp-bots-idp.kore.ai/workflows/callback">https://jp-bots-idp.kore.ai/workflows/callback</a></li>
+<li>DE Region Callback URLs: <a href="https://de-bots-idp.kore.ai/workflows/callback">https://de-bots-idp.kore.ai/workflows/callback</a></li>
+<li>Prod Region Callback URLs: <a href="https://idp.kore.com/workflows/callback">https://idp.kore.com/workflows/callback</a></li>
+</ul>
+<p>Select and add the following to the <strong>Selected OAuth Scopes</strong>. </p>
+<ul>
+<li>Full access (full)</li>
+<li>Perform requests at any time (refresh_token, offline_access)</li>
+</ul>
+<p>Note that currently, Search AI does not support the PKCE Salesforce feature; hence <strong>disable the field ‘Require Proof Key for Code Exchange (PKCE).</strong></p>
 <p>Leave other settings as default and click <strong>Save</strong> and <strong>Continue</strong>. The summary page for the application will be displayed as shown below. </p>
 <p><a class="glightbox" href="../images/salesforce/save-app.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="App details" src="../images/salesforce/save-app.png" title="App details" /></a></p>
 <p>Click <strong>Manage Consumer Details</strong> to generate the consumer ID and secret from this page. Save this information to complete the connector integration in the next step.</p>
 <h2 id="configuring-the-salesforce-connector">Configuring the Salesforce connector<a class="headerlink" href="#configuring-the-salesforce-connector" title="Permanent link">&para;</a></h2>
-<p>The next step is to configure the Salesforce connector in SearchAI. Go to the <strong>Connectors</strong> tab under <strong>Sources</strong> and select <strong>Salesforce</strong> from the list of available connectors. On the Authorization tab, enter a name for the connector, provide the Consumer ID and Consumer Secret Key, generated in the previous section, select the type of source, and click <strong>Connect</strong>. The field <strong>Type</strong> can take the following values:
-  * <strong>Cloud</strong>- Production environment/instance
-  * <strong>Sandbox</strong>- Test environment/instance. </p>
+<p>The next step is to configure the Salesforce connector in SearchAI. Go to the <strong>Connectors</strong> tab under <strong>Sources</strong> and select <strong>Salesforce</strong> from the list of available connectors. On the Authorization tab, enter a name for the connector, provide the Consumer ID and Consumer Secret Key, generated in the previous section, select the type of source, and click <strong>Connect</strong>. The field <strong>Type</strong> can take the following values:</p>
+<ul>
+<li><strong>Cloud</strong>- Production environment/instance</li>
+<li><strong>Sandbox</strong>- Test environment/instance. </li>
+</ul>
 <p><a class="glightbox" href="../images/salesforce/auth.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Authorization" src="../images/salesforce/auth.png" title="Authorization" /></a></p>
-<p>After the connection is successfully established, the connector is marked as **Connected**and is ready for content ingestion. You can ingest all the content available in your Salesforce account or filter content for ingestion. </p>
+<p>After the connection is successfully established, the connector is marked as <strong>Connected</strong> and is ready for content ingestion. You can ingest all the content available in your Salesforce account or filter content for ingestion. </p>
 <p><a class="glightbox" href="../images/salesforce/content-filter.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Content Filters" src="../images/salesforce/content-filter.png" title="Content Filters" /></a></p>
 <h2 id="content-filters">Content Filters<a class="headerlink" href="#content-filters" title="Permanent link">&para;</a></h2>
 <p>Salesforce Connector allows selective ingestion of content. To set content filters, select <strong>Sync Specific Content</strong> and click on the <strong>Configure</strong> link. The following page allows you to define rules for selecting the content. Each rule can be defined using a parameter, operator, and its value. </p>

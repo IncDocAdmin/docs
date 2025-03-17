@@ -7654,6 +7654,117 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Best Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/best-practices/data-ingestion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Ingestion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/best-practices/chunking-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chunking Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../searchai/best-practices/llm-selection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Selection and Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -17536,6 +17647,7 @@
 <li>Make sure that the sub-entities are not part of the dialog flow in the task using the composite entity.</li>
 <li>If the sub-entity allows multi-items, the parent composite entity accepts only one value for the sub-entity and not a list.</li>
 <li>Normally, the NLP engine can identify and map user input to the correct sub-entity. However, when PII (Personal Identifiable Information) masking is applied to sensitive data, the NLP engine cannot interpret the masked input, making it impossible to determine which sub-entity (e.g., phone number or email address) the data corresponds to.</li>
+<li>The names of entities used in a composite entity must not start with a number.</li>
 </ul>
 <h2 id="passing-values">Passing Values<a class="headerlink" href="#passing-values" title="Permanent link">&para;</a></h2>
 <p>You can pass values to composite entities using the entity pre-assignment from source Dialog tasks, Click <a href="https://docsinternal-kore.github.io/docs/xo/automation/use-cases/dialogs/node-types/working-with-the-dialog-node/?h=dialog+no#instance-properties" target="_blank">here</a> for more information on entity pre-assignment.</p>

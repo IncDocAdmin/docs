@@ -7660,6 +7660,117 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Best Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../searchai/best-practices/data-ingestion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Ingestion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../searchai/best-practices/chunking-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chunking Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../searchai/best-practices/llm-selection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM Selection and Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -17712,6 +17823,12 @@
 <a class="glightbox" href="../images/default-streaming.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/default-streaming.png" alt="default-streaming" title="Default Streaming Prompt" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h3 id="create-custom-streaming-prompts">Create Custom Streaming Prompts<a class="headerlink" href="#create-custom-streaming-prompts" title="Permanent link">&para;</a></h3>
 <p>To create a custom streaming prompt, see <a href="../prompts-library/">How to add Prompts and Requests</a> and enable the streaming response toggle.</p>
+<p>Ensure that the streamed response follows the platform's required format:</p>
+<ul>
+<li>conv_status: Indicates whether the conversation has <strong>ended</strong> or is <strong>ongoing</strong>.</li>
+<li>bot response: The generated response sent to the end user.</li>
+<li>collected entities: A stringified JSON object containing extracted entities.</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
@@ -17722,6 +17839,8 @@
 </div>
 <h2 id="configure-kore-voice-gateway">Configure Kore Voice Gateway<a class="headerlink" href="#configure-kore-voice-gateway" title="Permanent link">&para;</a></h2>
 <p>Streaming is currently supported only by the Kore Voice Gateway channel. To configure it, see Configure <a href="../../channels/kore.ai-voice-gateway/configure-kore-voice-gateway/">Kore Voice Gateway</a>.</p>
+<p>After configuring the settings, enable LLM streaming in the Contact Center. Navigate to <strong>Contact Center AI</strong> &gt; <strong>Contact Center</strong> &gt; <strong>Configurations</strong> &gt; <strong>Advanced Settings</strong> &gt; <strong>LLM Streaming</strong>, then turn on the toggle for <strong>real-time LLM response streaming</strong>.<br />
+<a class="glightbox" href="../images/enable-streaming.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enable-streaming.png" alt="Enable Streaming" title="Enable Streaming" style="border: 1px solid gray; zoom:70%;"></a></p>
 <h2 id="benchmarking">Benchmarking<a class="headerlink" href="#benchmarking" title="Permanent link">&para;</a></h2>
 <table>
   <tr>
