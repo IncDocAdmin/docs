@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../gen-ai-node/">
+        <link rel="prev" href="../audio-to-text-node/">
       
       
         <link rel="next" href="../api-node/">
@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started/release-notes/recent-updates/" class="md-nav__link">
+      <a href="../../../../release-notes/recent-updates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1670,14 +1670,119 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_4_1" id="__nav_4_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI Node
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_4_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            AI Node
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../gen-ai-node/" class="md-nav__link">
+      <a href="../ai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Gen AI Node
+    About AI Nodes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text-to-text-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text to Text Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../text-to-image-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text to Image Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-to-text-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio to Text Node
   </span>
   
 
@@ -1753,6 +1858,14 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -4528,7 +4641,7 @@
 <div class="admonition note">
 <p class="admonition-title">Important Considerations</p>
 <p><ul><li>The user can upload only one file at a time for processing.</li>
-<li>Except for image input handling, the OCR node functions like the existing Gen AI node.</li>
+<li>Except for image input handling, the OCR node functions like the existing AI node.</li>
 <li>Sending images and related settings are handled by the <a href="https://docs.kore.ai/agent-platform/apis/apis-list/upload-file-api/" target="_blank">File Upload API</a>.</li>
 <li>Image input preprocessing is supported in the following formats:</li>
 <ul><li>Binary, base64-encoded for Anthropic models.</li>
@@ -4586,7 +4699,7 @@
 
 <ol start="6"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
 <a class="glightbox" href="../images/connections-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;"></a></li>
-<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as a Gen AI node, Function node, Condition node, API node, or End node.</li>
+<ul><li><b>On Success</b> > <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
 <li><b>On Failure</b> > <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.</li></ul>
 <li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.
 <a class="glightbox" href="../images/click-run.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-run.png" alt="click run" title="click run" style="border: 1px solid gray; zoom:75%;"></a></li></ol>
@@ -4674,7 +4787,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../gen-ai-node/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Gen AI Node">
+          <a href="../audio-to-text-node/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Audio to Text Node">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -4684,7 +4797,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Gen AI Node
+                Audio to Text Node
               </div>
             </div>
           </a>

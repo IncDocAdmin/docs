@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started/release-notes/recent-updates/" class="md-nav__link">
+      <a href="../../../../release-notes/recent-updates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1619,9 +1619,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-inputoutput-variables" class="md-nav__link">
+  <a href="#adding-input-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding Input/Output Variables
+      Adding Input Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-output-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Output Variables
     </span>
   </a>
   
@@ -1732,12 +1741,115 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_4_1" id="__nav_4_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI Node
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            AI Node
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../types-of-nodes/gen-ai-node/" class="md-nav__link">
+      <a href="../../types-of-nodes/ai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Gen AI Node
+    About AI Nodes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types-of-nodes/text-to-text-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text to Text Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types-of-nodes/text-to-image-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text to Image Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types-of-nodes/audio-to-text-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio to Text Node
   </span>
   
 
@@ -1763,6 +1875,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -4514,9 +4634,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-inputoutput-variables" class="md-nav__link">
+  <a href="#adding-input-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding Input/Output Variables
+      Adding Input Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-output-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Output Variables
     </span>
   </a>
   
@@ -4550,10 +4679,10 @@
 <p>Once the input and output variables are defined, you can access these variables using the context object syntax and use them throughout the flow:</p>
 <ul>
 <li>Input variables are available immediately after the Start node. These variables can be accessed using the following syntax: <code>context.steps.Start.inputVariable</code></li>
-<li>Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of a GenAI node using the following syntax: <code>{{context.steps.GenAInode.output}}</code></li>
+<li>Output variables can be set in any node. For example, in the End node, you can select a defined output variable and assign it the result/output of an AI node using the following syntax: <code>{{context.steps.AInode.output}}</code></li>
 </ul>
-<h2 id="adding-inputoutput-variables">Adding Input/Output Variables<a class="headerlink" href="#adding-inputoutput-variables" title="Permanent link">&para;</a></h2>
-<p><strong>Steps to add input variables</strong>:</p>
+<h2 id="adding-input-variables">Adding Input Variables<a class="headerlink" href="#adding-input-variables" title="Permanent link">&para;</a></h2>
+<p>Steps to add input variables:</p>
 <ol>
 <li>
 <p>On the top of the Tool flow canvas, click the <strong>Manage I/O</strong> button.
@@ -4563,7 +4692,7 @@ Alternatively, you can click the <strong>Start</strong> node. The <strong>Manage
 <li>
 <p>On the <strong>Input</strong> tab, click the <strong>+ Add input variable</strong> button.</p>
 <p>The <strong>Enter input variable</strong> dialog is displayed.</p>
-<p><a class="glightbox" href="../images/enter-input-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:50%;"></a></p>
+<p><a class="glightbox" href="../images/enter-input-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:40%;"></a></p>
 </li>
 <li>
 <p>In the <strong>Name (key)</strong> field, provide a name for the input variable. For example, Product_ID.</p>
@@ -4571,26 +4700,33 @@ Alternatively, you can click the <strong>Start</strong> node. The <strong>Manage
 <li>
 <p>In the <strong>Type</strong> field, select a data type from the drop-down list - Text, Number, Boolean, JSON or Remote file.
 If you want to make the data type mandatory, then enable the <strong>Mandatory</strong> toggle.</p>
+<ul>
+<li>
+<p>If you select the <strong>Text</strong>, <strong>Number</strong>, or <strong>Boolean</strong> data types, the <strong>Default value</strong> field appears. You can enable the <strong>Default value</strong> field to set a default value for the input variable.</p>
+</li>
+<li>
+<p>If you select the <strong>Remote file</strong> data type, the <strong>File url timeout</strong> field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</p>
+<p><a class="glightbox" href="../images/url-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:40%;"></a></p>
+</li>
+<li>
+<p>If you select the <strong>List of values (Enum)</strong> data type, you can set predefined values that are allowed for tool input variables by clicking <strong>Add Values +</strong>.</p>
+<p><a class="glightbox" href="../images/enter-input-variable-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable-window.png" alt="Enter Input Variable window" title="Enter Input Variable window" style="border: 1px solid gray; zoom:40%;"></a></p>
+<p>When you enable <strong>Default value</strong>, the defined values get listed in the dropdown for selection. The system validates the input against the defined enum values and provides an error message if an invalid value is provided.</p>
+<p><a class="glightbox" href="../images/add-default-key-value.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-default-key-value.png" alt="add default key value" title="add default key value" style="border: 1px solid gray; zoom:40%;"></a></p>
+</li>
+<li>
+<p>If you select the <strong>JSON</strong> data type, a schema Box/JSON Editor appears, where you need to define the JSON schema for the input parameter. You must ensure to follow the supported JSON schema format standard as detailed here: <a href="../defining-json/" target="_blank">Defining JSON schema</a>.</p>
+<p><a class="glightbox" href="../images/json_schema.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/json_schema.png" alt="defining json" title="defining json" style="border: 1px solid gray; zoom:60%;"></a></p>
+<p>In the <strong>Default Value</strong> field, set a default value for the specified field and validate it against the designated data type, ensuring consistency with the defined JSON schema. You must ensure that the default value matches the schema you’ve defined. If the JSON is invalid, the system will display the relevant error message and execution will fail.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Save</strong>. The input variable is displayed on the Input tab of the <strong>Manage Input &amp; Output</strong> dialog. </p>
 </li>
 </ol>
-<ul><li>If you select the <b>Text</b>, <b>Number</b>, or <b>Boolean</b> data types, the <b>Default value</b> field appears. You can enable the <b>Default value</b> field to set a default value for the input variable.</li>
-<li>If you select the <b>JSON</b> data type and enable <b>Default</b> Value, a code editor appears. You can define a JSON schema or format for the input parameter. This option allows you to set a default value for the specified field, and validate it against the designated data type. If the JSON is invalid, the system will display the relevant error message and execution will fail.
-   <a class="glightbox" href="../images/json-code-screen.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/json-code-screen.png" alt="json Input Variable" title="json Input Variable" style="border: 1px solid gray; zoom:50%;"></a></li>
-<li>If you select the <b>List of values (Enum)</b> data type, you can set predefined values that are allowed for tool input variables by clicking <b>Add Values +</b>.
-<a class="glightbox" href="../images/enter-input-variable-window.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable-window.png" alt="Enter Input Variable window" title="Enter Input Variable window" style="border: 1px solid gray; zoom:50%;"></a></li>
-<li>When you enable <b>Default value</b>, the defined values get listed in the dropdown for selection.
-<a class="glightbox" href="../images/add-default-key-value.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-default-key-value.png" alt="add default key value" title="add default key value" style="border: 1px solid gray; zoom:50%;"></a></li>
-
-The system validates the input against the defined enum values and provides an error message if an invalid value is provided.</ul>
-
-<ul><li>If you select the <b>Remote file</b> data type, the <b>File url timeout</b> field appears. Enter the File URL timeout duration in minutes. The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</li>
-
-<a class="glightbox" href="../images/url-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;"></a></ul>
-
-<ol>
-<li>Click <strong>Save</strong>. The input variable is displayed on the Input tab of the <strong>Manage Input &amp; Output</strong> dialog.</li>
-</ol>
-<p><strong>Steps to add output variables</strong>:</p>
+<h2 id="adding-output-variables">Adding Output Variables<a class="headerlink" href="#adding-output-variables" title="Permanent link">&para;</a></h2>
+<p>Steps to add output variables:</p>
 <ol>
 <li>
 <p>On the top of the canvas of the Tools page, click the <strong>Manage I/O</strong> button. The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
@@ -4609,7 +4745,7 @@ The system validates the input against the defined enum values and provides an e
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><ul><li>The <b>Import</b> button is enabled when the required information is provided.</li>
-<li>GenAI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
+<li>AI node models and guardrail configurations may not be available in the current account. Reconfigure them before running the tool.</li>
 <li>If a type mismatch occurs, the endpoint still succeeds but includes a warning in the response along with the key name and the nature of the mismatch.</li>
 <li>If one or more keys fail validation, the response includes warnings for the failed keys and outputs for the valid ones.</li></ul></p></div>
 

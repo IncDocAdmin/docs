@@ -831,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting-started/release-notes/recent-updates/" class="md-nav__link">
+      <a href="../../../release-notes/recent-updates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1668,12 +1668,115 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_4_1" id="__nav_4_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI Node
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            AI Node
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../tool-flows/types-of-nodes/gen-ai-node/" class="md-nav__link">
+      <a href="../../tool-flows/types-of-nodes/ai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Gen AI Node
+    About AI Nodes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-flows/types-of-nodes/text-to-text-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text to Text Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-flows/types-of-nodes/text-to-image-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text to Image Node
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool-flows/types-of-nodes/audio-to-text-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio to Text Node
   </span>
   
 
@@ -1699,6 +1802,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -4731,7 +4842,7 @@
 <p><strong>All runs</strong>: It shows comprehensive data on all tool run instances and provides a comprehensive record of all the endpoint calls made to the tool. </p>
 </li>
 <li>
-<p><strong>Model runs</strong>: This tab shows specific data on Gen AI node run instances, focusing on endpoint calls made to Gen AI nodes within the tool.</p>
+<p><strong>Model runs</strong>: This tab shows specific data on AI node run instances, focusing on endpoint calls made to AI nodes within the tool.</p>
 </li>
 </ul>
 <p>Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.</p>
@@ -4775,11 +4886,11 @@
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. </p>
 <h2 id="model-runs">Model Runs<a class="headerlink" href="#model-runs" title="Permanent link">&para;</a></h2>
-<p>Each GenAI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three GenAI nodes are used in a tool, three separate requests for each of the three GenAI nodes are displayed.</p>
-<p>If your tool currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.</p>
-<p>The Model runs tab provides the following information for each Gen AI node call:</p>
+<p>Each AI node in the tool is recorded as a separate request in the Model runs tab of the Tool monitor page. For example, if three AI nodes are used in a tool, three separate requests for each of the three AI nodes are displayed.</p>
+<p>If your tool currently does not have any AI nodes, this section will remain empty. Once you add AI nodes, the Model runs will begin to reflect here.</p>
+<p>The Model runs tab provides the following information for each AI node call:</p>
 <ul>
-<li><strong>Request ID</strong>: The unique identifier of the GenAI node request.</li>
+<li><strong>Request ID</strong>: The unique identifier of the AI node request.</li>
 <li><strong>Status</strong>: The current state of the request. It displays one of the following statuses: <ul>
 <li><strong>In Progress</strong>: The request is being processed.</li>
 <li><strong>Waiting</strong>: The request is outside of Agent Platform and is awaiting a response from the connected system (typically for API nodes in Async mode).</li>
@@ -4787,21 +4898,21 @@
 <li><strong>Failed</strong>: The request was not completed successfully.</li>
 </ul>
 </li>
-<li><strong>Node name</strong>: The name of the GenAI node.</li>
-<li><strong>Model name</strong>: The model that is used for the GenAI node.</li>
-<li><strong>Response time</strong>: The amount of time taken by the GenAI node to complete the request.</li>
-<li><strong>Start time</strong>: The time when the GenAI node has started its execution.</li>
-<li><strong>End time</strong>: The time when the GenAI node has completed its execution.</li>
+<li><strong>Node name</strong>: The name of the AI node.</li>
+<li><strong>Model name</strong>: The model that is used for the AI node.</li>
+<li><strong>Response time</strong>: The amount of time taken by the AI node to complete the request.</li>
+<li><strong>Start time</strong>: The time when the AI node has started its execution.</li>
+<li><strong>End time</strong>: The time when the AI node has completed its execution.</li>
 </ul>
 <p>You can also see the following metrics on the top of the page:</p>
 <ul>
-<li><strong>TOTAL REQUESTS</strong>: The total number of Gen AI node requests.</li>
-<li><strong>RESPONSE TIME</strong>: The average response time of all the GenAI node requests. It is measured by the following two metrics:<ul>
+<li><strong>TOTAL REQUESTS</strong>: The total number of AI node requests.</li>
+<li><strong>RESPONSE TIME</strong>: The average response time of all the AI node requests. It is measured by the following two metrics:<ul>
 <li><strong>P90</strong>: This metric represents the response time below which 90% of the requests fall.</li>
 <li><strong>P99</strong>: This metric represents the response time below which 99% of the requests fall.</li>
 </ul>
 </li>
-<li><strong>FAILURE RATE</strong>: The percentage of instances in which the Gen AI node has failed in execution.</li>
+<li><strong>FAILURE RATE</strong>: The percentage of instances in which the AI node has failed in execution.</li>
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.</p>
 <h2 id="viewing-detailed-run-information">Viewing Detailed Run Information<a class="headerlink" href="#viewing-detailed-run-information" title="Permanent link">&para;</a></h2>
@@ -4819,7 +4930,7 @@
 <li><strong>Success</strong>: Displays the log as in the debug panel.</li>
 <li>
 <p><strong>Failure</strong>: Displays failure details as in the debug panel.</p>
-<p>For GenAI nodes, when you expand the node you can see the information related to each node along with the scanner information.</p>
+<p>For AI nodes, when you expand the node you can see the information related to each node along with the scanner information.</p>
 </li>
 </ul>
 </li>
@@ -4893,7 +5004,7 @@
 <ul>
 <li><strong>Authorization:</strong> An error that occurs during API key authorization of a tool.</li>
 <li><strong>Data Validation:</strong> Any discrepancy detected when validating input fields and API calls during a tool run.</li>
-<li><strong>Content Filter:</strong> Breaches of guardrail threshold limits during GenAI node execution.</li>
+<li><strong>Content Filter:</strong> Breaches of guardrail threshold limits during AI node execution.</li>
 <li><strong>Internal Server Error:</strong> Technical issues encountered with the internal server.</li>
 <li><strong>Network</strong>: Technical issues encountered with the network connectivity.</li>
 </ul>
@@ -4963,7 +5074,7 @@
   <tr>
    <td>Guardrail Failure
    </td>
-   <td>The flow execution was aborted at the <strong>GenAI node</strong> due to a guardrail violation, as the risk score exceeded the threshold.
+   <td>The flow execution was aborted at the <strong>AI node</strong> due to a guardrail violation, as the risk score exceeded the threshold.
    </td>
    <td>Content Filter
    </td>
