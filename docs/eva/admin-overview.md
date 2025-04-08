@@ -1,6 +1,6 @@
 # Admin Console Overview
 
-The  Admin Console of **AI for Work** is a centralized management interface for administrators to configure, monitor, and manage system settings, including:
+The  Admin Console of **(In) Business Productivity** is a centralized management interface for administrators to configure, monitor, and manage system settings, including:
 
 * Dashboard
 * Assist Configuration
@@ -15,14 +15,14 @@ The  Admin Console of **AI for Work** is a centralized management interface for 
 To sign up for an Admin account, you must meet the following requirements:
 
 * A valid email address.
-* A validated Kore.ai user account. 
+* A validated user account. 
 * Authorization to control the Admin account. 
 
 ## Access Admin Console
 
-To access the **Admin Console** on **AI for Work**, follow the steps below:
+To access the **Admin Console** on **(In) Business Productivity**, follow the steps below:
 
-1. Log in to [AI for Work](https://eva.kore.ai/login) using your credentials.
+1. Log in to [(In) Business Productivity](https://inc-eva.kore.ai/login) using your credentials.
 2. Click **Admin Console** under your user account menu.  
 <img src="../images/admin-console.png" alt="admin-console" title="admin-console" style="border: 1px solid gray; zoom:80%;">
 

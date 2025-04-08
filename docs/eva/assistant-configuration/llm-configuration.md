@@ -1,12 +1,12 @@
 # LLM Configuration
 
-To use Generative AI features with AI for Work, you must configure the integration with a pre-built or custom LLM. By leveraging LLM and Generative AI capabilities, AI for work can create intelligent, human-like conversational experiences for your end-users.
+To use Generative AI features with  (In) Business Productivity, you must configure the integration with a pre-built or custom LLM. By leveraging LLM and Generative AI capabilities, (In) Business Productivity can create intelligent, human-like conversational experiences for your end-users.
 
 ## General Purpose 
 
 ### Pre-built LLM Integration
 
-AI for work offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. You can effortlessly tap into these services' core capabilities using pre-configured prompts and APIs.
+(In) Business Productivity offers seamless integration with leading AI services like Azure OpenAI, OpenAI, and Anthropic. You can effortlessly tap into these services' core capabilities using pre-configured prompts and APIs.
 
 !!!Note
 
@@ -29,7 +29,7 @@ Steps to configure a pre-built LLM:
 
 ### Custom LLM Integration
 
-AI for work enables enterprises to power up their virtual assistants with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves.
+(In) Business Productivity enables enterprises to power up their virtual assistants with any Large Language Model (LLM) of their preference. The bring-your-own (BYO) model framework supports integrations with externally hosted models by third parties as well as models hosted by the enterprises themselves.
 
 Steps to configure a Custom LLM:
 
@@ -49,7 +49,7 @@ Steps to configure a Custom LLM:
 
 ## Embedding models
 
-This feature allows you to connect and configure models for generating embeddings. AI for work supports both pre-built models (OpenAI and Azure OpenAI) and custom LLMs for this purpose.
+This feature allows you to connect and configure models for generating embeddings. (In) Business Productivity supports both pre-built models (OpenAI and Azure OpenAI) and custom LLMs for this purpose.
 
 The procedure for Integrating Embedding Models is similar to integrating General-purpose LLMs.
 

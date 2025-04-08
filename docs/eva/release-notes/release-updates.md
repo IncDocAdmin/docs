@@ -1,6 +1,6 @@
 # Release Notes
 
-This document provides information on the feature updates and enhancements introduced in the recent release of AI for Work.
+This document provides information on the feature updates and enhancements introduced in the recent release of (In) Business Productivity.
 
 ## v1.7.1 March 6, 2025
 
@@ -24,11 +24,11 @@ Key Benefits:
 
 **Feature Enhancements**
 
-* Kore Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Kore's Agent Platform, enabling seamless integration.
+* Inception Autonomous Agent Integration: Added compatibility and support for the new agentic protocol used by Inception's Agent Platform, enabling seamless integration.
 
-* Enhanced Content Guardrails: Implemented comprehensive guardrails within AI for Work that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
+* Enhanced Content Guardrails: Implemented comprehensive guardrails within (In) Business Productivity that automatically detect and filter inappropriate content requests, providing clear and respectful responses when users request content outside permitted boundaries. This feature is in its early phase; an Admin UI for custom guardrail configuration is currently under development and will be available in a future release.
   
-* Context sharing: Conversation context now flows automatically between AI for Work and Search AI.
+* Context sharing: Conversation context now flows automatically between (In) Business Productivity and Search AI.
 
 **Bug Fixes**
 
@@ -51,7 +51,7 @@ This update includes new features and feature enhancements summarized below.
 * Standard Agentic Apps: You can now organize multiple AI agents in sequence to automate and execute complex business tasks using predefined logic. Tasks and processes can be predefined, eliminating the need for end users to manually execute each step.
 [Learn more :octicons-arrow-right-24:](./../custom-agents/agentic-apps.md)
 
-* Advanced Agentic Apps: You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Kore Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/advanced-agentic-apps.md)
+* Advanced Agentic Apps: You can now leverage non-deterministic AI algorithms to autonomously manage complex business processes. These applications function independently and effortlessly integrate into the Inception Agentic platform, saving time and complexity by eliminating the need for end-to-end conversation setting. [Learn more :octicons-arrow-right-24:](./../custom-agents/advanced-agentic-apps.md)
 
 
 **Feature Enhancements**

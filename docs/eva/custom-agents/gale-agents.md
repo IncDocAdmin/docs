@@ -47,7 +47,7 @@ To create a GALE Agent, follow the steps outlined below:
 ### <a id="details">Step 1: Details and Purpose</a>
 
 Provide a suitable and unique name for the agent and describe the purpose of the
-agent. Defining the agent’s purpose enables “AI for work” to accurately
+agent. Defining the agent’s purpose enables “(In) Business Productivity” to accurately
 recognize the agent’s capabilities and effectively utilize them to respond to
 user queries aligned with the specified intent. It is essential to clearly
 outline the specific use cases for which the agent is designed.
@@ -231,8 +231,7 @@ variables that control data flow and context throughout the agent's execution.
     the results you want to return from the agent.
 
 Once input and output variables are defined in the GALE Flow, they become
-accessible throughout the flow and will be automatically displayed in “AI for
-Work”. This makes it easy to view and manage the data exchange between the agent
+accessible throughout the flow and will be automatically displayed in “(In) Business Productivity”. This makes it easy to view and manage the data exchange between the agent
 and the connected platform.
 
 ![](images/input_output.png)

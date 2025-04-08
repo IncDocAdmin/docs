@@ -1,6 +1,6 @@
 # Enterprise Knowledge
 
-The **Enterprise Knowledge** refers to **Search AI** app and **Agentic App** that is provisioned for every AI for Work account. It serves as a fallback mechanism, ensuring a response can still be generated when no specific agents align with the user’s intent. Its role is to enhance the accuracy and relevance of responses by retrieving content from
+The **Enterprise Knowledge** refers to **Search AI** app and **Agentic App** that is provisioned for every (In) Business Productivity account. It serves as a fallback mechanism, ensuring a response can still be generated when no specific agents align with the user’s intent. Its role is to enhance the accuracy and relevance of responses by retrieving content from
 various sources and then generating a response based on that information. It is automatically available to users when no custom or specific agents are assigned to handle a user query.
 
 ## Key Features

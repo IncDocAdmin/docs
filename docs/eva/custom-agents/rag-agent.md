@@ -6,21 +6,20 @@ to user queries. RAG agents leverage existing knowledge bases to find and
 retrieve relevant information and then use LLM models to generate an accurate
 and precise response.
 
-**RAG agents in AI for Work** can be implemented through **Search AI** applications.
+**RAG agents in (In) Business Productivity** can be implemented through **Search AI** applications.
 Search AI allows you to configure and index content from various knowledge
 bases, files, and websites in the application, which is then used to dynamically
 provide answers to user queries. RAG Agents interact with the Search AI
 application to answer the user queries. [Learn
 more](https://docs.kore.ai/xo/searchai/about-search-ai/){:target="_blank"}.
 
-For instance, you can build a RAG Agent that handles queries related to Kore's
-products by creating a **Search AI application**. Configure the application to
-index all relevant information about Kore products from various sources, such as
+For instance, you can build a RAG Agent that handles queries by creating a **Search AI application**. Configure the application to
+index all relevant information from various sources, such as
 the company website, documentation sites, product guides, and FAQ pages. Once
 the content is indexed, create a **RAG Agent** that can interact with this
 Search AI application to retrieve and generate accurate, up-to-date information.
 This agent will respond to user queries with relevant product details, ensuring
-comprehensive and efficient support for all Kore product-related inquiries.  
+comprehensive and efficient support for all product-related inquiries.  
 
 ![](images/introduction.png)
 
@@ -43,8 +42,7 @@ comprehensive and efficient support for all Kore product-related inquiries.
 The main distinction between **RAG Agents** and **Enterprise Knowledge** lies in their
 configuration and scope:
 
--   **Enterprise Knowledge** uses the Search AI application, provisioned with the AI for
-    Work account by default. It serves as a fallback mechanism when no specific
+-   **Enterprise Knowledge** uses the Search AI application, provisioned with the (In) Business Productivity account by default. It serves as a fallback mechanism when no specific
     agent matches the user's query intent.
 
 -   **RAG Agents** are specifically configured for different intents or
@@ -124,9 +122,8 @@ user queries aligned with the specified intent. It is essential to clearly
 outline the specific use cases for which the agent is designed. This ensures
 that it is used to generate responses to the intended queries.
 
-For instance, if an agent is designed to answer all the user queries related to
-Kore Products, specifying it as the purpose helps the system use this agent whenever a
-user sends a query related to any Kore products.
+For instance, if an agent is designed to answer all the user queries related to products, specifying it as the purpose helps the system use this agent whenever a
+user sends a query related to any products.
 
 ![](images/detailandpurpose.png)
 

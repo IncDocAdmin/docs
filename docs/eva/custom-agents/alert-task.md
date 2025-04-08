@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Bot Agents module of the AI for Work app allows developers to integrate conversation hold and resume functionality within XO Bots. This document provides a procedural overview of how Dialogflow handles brief pauses (holds) and subsequent resumption.
+The Bot Agents module of the (In) Business Productivity app allows developers to integrate conversation hold and resume functionality within XO Bots. This document provides a procedural overview of how Dialogflow handles brief pauses (holds) and subsequent resumption.
 
 ## Core Concepts
 
@@ -112,7 +112,7 @@ print(response); \
 
 #### Displaying the Hold Template
 
-Upon receiving the hold template, the user interface in the AI for Work application:
+Upon receiving the hold template, the user interface in the (In) Business Productivity application:
 
 * Pauses the ongoing conversation.
 * Displays the hold template to the user, including the customized title and description.

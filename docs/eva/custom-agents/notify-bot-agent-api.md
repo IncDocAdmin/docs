@@ -1,6 +1,6 @@
 # Notify API
 
-The Notify API enables developers to send interactive notifications to AI for Work users. These notifications can include customizable response options and action buttons. 
+The Notify API enables developers to send interactive notifications to (In) Business Productivity users. These notifications can include customizable response options and action buttons. 
   
 !!! note
 
@@ -18,7 +18,7 @@ The Notify API enables developers to send interactive notifications to AI for Wo
 
 | Parameter<br>    | Required/Optional<br>    | Description<br>                                                                                                                                                                                                                                                                                                         |
 |------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| host<br>         | Required<br>             | Environment URL, for example, https://work.kore.ai<br>                                                                                                                                                                                                                                                                  |
+| host<br>         | Required<br>             | Environment URL<br>                                                                                                                                                                                                                                                                  |
 | agent ID<br>     | Required<br>             | This portion of the URL is a placeholder for the unique identifier of the specific agent. When making an actual API request, you must replace {agentId} with the actual ID of the agent you want to notify.<br><br> **Note**: Obtain the agent ID from the Post URL field while creating a bot agent. See [Bot Agent](../custom-agents/bot-agent.md/#step-2-add-bot) <img src="../images/Agent_ID.png" alt="AgentID" title="AgentID" style="border: 1px solid gray; zoom:70%;">   |
 
 ## Sample Request
@@ -29,7 +29,7 @@ curl --location --request POST 'https://work.kore.ai/api/1.1/public/agents/ag-44
 --header 'authorization: EypCddcFH6sgaJJkWj6k-Wbz6meimT09RXbTYDnYB3FA8$' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "to": "john.doe@kore.com",
+    "to": "john.doe@inc.com",
     "message": {
         "title": "Agent Update",
         "body": "Notification description"
@@ -70,7 +70,7 @@ curl --location --request POST 'https://work.kore.ai/api/1.1/public/agents/ag-44
    </td>
    <td>Required
    </td>
-   <td>Email address of the AI for Work user (single recipient)
+   <td>Email address of the (In) Business Productivity user (single recipient)
    </td>
   </tr>
   <tr>
@@ -174,7 +174,7 @@ curl --location --request POST 'https://work.kore.ai/api/1.1/public/agents/ag-44
 ```
 
 ## Key Points
-* The email address of the receiver needs to be a valid AI for Work users.
+* The email address of the receiver needs to be a valid (In) Business Productivity users.
 * Custom payload data can be used for tracking and response handling.
-* The ***to*** key in the request payload must be a valid AI for Work user email Id, and it should be singular in the initial implementation.
-* ***actions*** in the request payload will be transmitted to AI for Work users as buttons for input.
+* The ***to*** key in the request payload must be a valid (In) Business Productivity user email Id, and it should be singular in the initial implementation.
+* ***actions*** in the request payload will be transmitted to (In) Business Productivity users as buttons for input.

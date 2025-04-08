@@ -1,14 +1,14 @@
-# Using AI for Work Assistant
+# Using (In) Business Productivity Assistant
 
-Log in to the AI for Work here: [https://work.kore.ai/login](https://work.kore.ai/login){:target="_blank"}
+Log in to the (In) Business Productivity here: [https://inc-eva.kore.ai/login](https://inc-eva.kore.ai/login){:target="_blank"}
 
-The **AI for Work** Assistant is available on the homepage, you can ask an open-ended question to the assistant.
+The **(In) Business Productivity** Assistant is available on the homepage, you can ask an open-ended question to the assistant.
 
 For instance, if you're connected to Jira, you can type “Get my Jira issues” in the **Ask or search anything** search box. The Jira agent will be triggered and retrieve your Jira issues.
 
-<img src="../images/ask-a-question.png" alt="ask-a-question" title="ask-a-question" style="border: 1px solid gray; zoom0%;">
+<img src="../images/ask-a-question.jpg" alt="ask-a-question" title="ask-a-question" style="border: 1px solid gray; zoom0%;">
 
-**AI for Work** can also manage complex workflows by organizing tasks into a structured sequence, each handled by a specialized “agent.” In this approach, each agent performs a unique function and automatically executes its task in the correct order. By passing information seamlessly from one agent to the next, the flow ensures efficient, sequential completion of each step, allowing multiple instructions to be handled with minimal manual effort. This streamlined solution is known as **Agentic Flow**.
+**(In) Business Productivity** can also manage complex workflows by organizing tasks into a structured sequence, each handled by a specialized “agent.” In this approach, each agent performs a unique function and automatically executes its task in the correct order. By passing information seamlessly from one agent to the next, the flow ensures efficient, sequential completion of each step, allowing multiple instructions to be handled with minimal manual effort. This streamlined solution is known as **Agentic Flow**.
 
 ### Agentic Flow Example
 
@@ -20,7 +20,7 @@ For instance, if you're connected to Jira, you can type “Get my Jira issues”
 2. **Google Calendar:** Checks John Doe’s availability for a specified time.
 3. **Gmail:** Sends the fetched Jira issues to John Doe via email. 
 
-<img src="../images/agentic-flow.png" alt="agentic-flow" title="agentic-flow" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agentic-flow.jpg" alt="agentic-flow" title="agentic-flow" style="border: 1px solid gray; zoom:80%;">
 
 **Steps to execute the flow:**
 
@@ -30,4 +30,4 @@ For instance, if you're connected to Jira, you can type “Get my Jira issues”
 4. For the above use case, the first two actions will run automatically.
 5. For the third action, a draft email is created. Review and edit the draft, then click **Send** to complete the task.
 
-<img src="../images/agentic-flow-2.gif" alt="agentic-flow" title="agentic-flow" style="border: 1px solid gray; zoom:60%;">
+<!--- <img src="../images/agentic-flow-2.gif" alt="agentic-flow" title="agentic-flow" style="border: 1px solid gray; zoom:60%;">  -->

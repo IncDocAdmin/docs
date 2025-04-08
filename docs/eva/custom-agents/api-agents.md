@@ -40,7 +40,7 @@ The API agent creation process consists of the following steps:
 
 Prerequisites:
 
-* Administrator access to AI for Work and the system you want to integrate.
+* Administrator access to (In) Business Productivity and the system you want to integrate.
 * API documentation for Schema API and Action API of the system.
 * Curl commands for the ID resolver and the meta resolver of the system.
 
@@ -357,7 +357,7 @@ Follow these steps to create a URL:
 1. To configure the URL, click  **+ Create URL**.
 2. The Open URL pop-up is displayed.  
 <img src="../images/agent(22).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;">
-3. Enter the Static URL. For example, https://koreteam.atlassian.net/browse/.
+3. Enter the Static URL. For example, https://team.atlassian.net/browse/.
 
     !!! note
 

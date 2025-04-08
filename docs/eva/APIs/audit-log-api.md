@@ -91,7 +91,7 @@ Audit Log API enables developers and administrators to retrieve and manage detai
            },
            "htmlText": "Update business rule <b>Answer rule - 67</b>",
            "userName": "John jackob",
-           "emailId": "john.jackob@kore.com",
+           "emailId": "john.jackob@inc.com",
            "keywords": "",
            "cOn": "2024-12-10T14:27:20.286Z",
            "__v": 0

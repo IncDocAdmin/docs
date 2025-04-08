@@ -44,10 +44,10 @@ To create a new Prompt Agent, follow these steps:
 
 1.  In the **Admin Console**, click **AI Agents** from the left pane, and then
     select **Prompt Agents**. A list of available prompt agents will be
-    displayed.![](images/AI_agent.png)
+    displayed.![](images/AI_agent-inc.jpg)
 
 2.  On the Prompt Agents page, click **+Create**
-    Agent.![](images/create_agents.png)
+    Agent.![](images/create_agents_inc.jpg)
 
 3.  The **Prompt Agent creation** wizard will take you through the following
     steps:

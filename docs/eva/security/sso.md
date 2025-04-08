@@ -1,14 +1,14 @@
 # Using Single Sign-On
 
-SSO enables easy access to **AI for Work** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing AI for Work, the system can automatically use the same login credentials.
+SSO enables easy access to **(In) Business Productivity** using your existing identity provider. With SSO, your users can log on once, for example, to your company account, and when accessing (In) Business Productivity, the system can automatically use the same login credentials.
 
-Administrators can configure Single Sign-On (SSO) authentication for **AI for Work** using one of the following sign-on protocols or methods:
+Administrators can configure Single Sign-On (SSO) authentication for **(In) Business Productivity** using one of the following sign-on protocols or methods:
 
 * OpenID Connect
 * Security Assertion Markup Language (SAML)
 * WS-Federation sign-on protocol.
 
-Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the **AI for Work**. Turn on the toggle **Enable SSO** to enable Single Sign-On.  
+Depending on the security required for your company, you can enable or disable Single Sign-On (SSO) for users accessing the **(In) Business Productivity**. Turn on the toggle **Enable SSO** to enable Single Sign-On.  
 <img src="../images/sso.png" alt="sso" title="sso" style="border: 1px solid gray; zoom:80%;">
 
 ## Configure Sign-on Protocol
@@ -36,10 +36,10 @@ Refer to the below steps to configure SSO using the WS-Federation protocol.
 2. In the **Select a suitable Sign-On Protocol**, select **WS-Federation**.
 3. In the **Configure** section, select an identity provider, and then define the settings for:
     1. **Windows Azure®**
-        * **Azure AD sign-on endpoint URL** – The URL that **AI for Work** must use for sign-on and sign-off/out requests using *Azure*. 
+        * **Azure AD sign-on endpoint URL** – The URL that **(In) Business Productivity** must use for sign-on and sign-off/out requests using *Azure*. 
         * **Azure AD Federation metadata Document** – The URL for the federation metadata document used for authentication with *Azure* Active Directory.
     2. **Other** – Generic WS-Federation identity provider configuration, other than Azure
-        * **AD Sign-On endpoint URL** – The URL that **AI for Work** must use for sign-on and sign-off/out requests using your WS-Federation identity provider.
+        * **AD Sign-On endpoint URL** – The URL that **(In) Business Productivity** must use for sign-on and sign-off/out requests using your WS-Federation identity provider.
         * **AD Federation metadata Document URL** – The URL for the WS-Federation metadata document used for authentication with Active Directory.
 4. Click **Save**.  
 <img src="../images/ws-federation.png" alt="ws-federation" title="ws-federation" style="border: 1px solid gray; zoom:80%;">
@@ -50,7 +50,7 @@ Security Assertion Markup Language (SAML) is a standard protocol for web browser
 
 SAML provides a solution to allow your identity provider and service provider to exist separately. When a user logs into a SAML-enabled application, the service provider requests authorization from the appropriate identity provider. The identity provider authenticates the user’s credentials and then returns the authorization for the user to the service provider, and the user can now use the application.
 
-Complete the following steps to configure Single Sign-On (SSO) using SAML protocol in the Admin Console of **AI for Work**.
+Complete the following steps to configure Single Sign-On (SSO) using SAML protocol in the Admin Console of **(In) Business Productivity**.
 
 
 1. Go to **Admin Console > Security > Single Sign-On** and turn on the toggle **Enable SSO**.

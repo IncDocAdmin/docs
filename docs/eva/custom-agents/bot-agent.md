@@ -41,7 +41,7 @@ To create a new Bot Agent, follow these steps:
 2.  On the Bot Agents page, click **+Create
     Agent.![](images/create-agent.png)**
 
-3.  You must link your Bot built on the XO Platform with **AI for Work** and
+3.  You must link your Bot built on the XO Platform with **(In) Business Productivity** and
     create a webhook channel. [Learn
     more](https://docs.kore.ai/xo/channels/add-webhook-channel/?h=webhook).
     
@@ -56,8 +56,7 @@ To create a new Bot Agent, follow these steps:
     2.  Select your required app from the **Webhook** dialog.
         ![](images/webhook_select_app.png)
 
-    3.  Copy the **Bot client ID** and **Bot secret ID** to use in the **AI for
-        Work** platform to complete the
+    3.  Copy the **Bot client ID** and **Bot secret ID** to use in the **(In) Business Productivity** platform to complete the
         integration.![](images/webhook_botID.png)
 
     4.  Under the **Configured Channels** section, click the <**Name of the Bot**> you have created and want to integrate with **AI for Work**. The channel you have created is now enabled. For more information, see
@@ -87,8 +86,8 @@ Provide a suitable and unique name for the agent and describe its purpose. Defin
 #### Step 2: Add Bot 
 
 The Add Bot feature enables seamless integration of a virtual assistant created
-on the Kore.ai platform with your system. To establish this connection, ensure
-that the webhook channel is enabled on the Kore.ai Virtual Assistant. Once
+on the platform with your system. To establish this connection, ensure
+that the webhook channel is enabled on the Virtual Assistant. Once
 activated, follow the integration steps to complete the process:
 
 1. In the **Add Bot** enter the following:

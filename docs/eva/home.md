@@ -1,6 +1,6 @@
 ---
 template: home/home.html
-title: AI for Work
+title: (In) Business Productivity
 social:
   cards_layout_options:
     title: Documentation that simply works
